@@ -115,3 +115,16 @@ dimensionality:
 >>> parser.parse('Sound travels at 0.34 km/s')[0].unit
 Unit(name="kilometre per second", entity=Entity("speed"), uri=None)
 ```
+
+
+Unit conversion
+------------------
+Convert units and compound units to the corresponding SI unit. 
+The SI unit list and conversion rate are crawled from Wikidata.
+
+This library contains 154 SI units and 1688 conversion configurations
+```pycon
+>>> parser.parse('I want a gallon of beer')
+[Quantity(58, "Unit(name="kilometre per hour", entity=Entity("speed"), 
+conversion=Conversion("{'silabel': 'metre per second', 'factor': 0.2777777777777778}"))")]
+```
