@@ -3,22 +3,20 @@
 """
 :mod:`Quantulum` parser.
 """
-
-import logging
+import quantulum3 as q
+import json
 import re
 from collections import defaultdict
 from fractions import Fraction
-from typing import List
+from typing import List, Any
 
 from . import classes as cls
 from . import disambiguate as dis
-from . import language, load
+from . import language, load, const
 from . import regex as reg
 
-_LOGGER = logging.getLogger(__name__)
 
-
-def _get_parser(lang="en_US"):
+def _get_parser(lang=const.LANG):
     """
     Get parser module for given language
     :param lang:
@@ -28,11 +26,11 @@ def _get_parser(lang="en_US"):
 
 
 ###############################################################################
-def extract_spellout_values(text, lang="en_US"):
+def extract_spell_out_values(text, lang=const.LANG):
     """
     Convert spelled out numbers in a given text to digits.
     """
-    return _get_parser(lang).extract_spellout_values(text)
+    return _get_parser(lang).extract_spell_out_values(text)
 
 
 ###############################################################################
@@ -50,13 +48,11 @@ def substitute_values(text, values):
         for char in range(first + 1, len(final_text)):
             shifts[char] = shift
 
-    _LOGGER.debug('Text after numeric conversion: "%s"', final_text)
-
     return final_text, shifts
 
 
 ###############################################################################
-def get_values(item, lang="en_US"):
+def get_values(item, lang=const.LANG):
     """
     Extract value from regex hit.
     """
@@ -64,7 +60,7 @@ def get_values(item, lang="en_US"):
     def callback(pattern):
         return " %s" % (reg.unicode_fractions()[pattern.group(0)])
 
-    fracs = r"|".join(reg.unicode_fractions())
+    fractions = r"|".join(reg.unicode_fractions())
 
     value = item.group("value")
     # Remove grouping operators
@@ -77,17 +73,16 @@ def get_values(item, lang="en_US"):
     )
     # calculate other exponents
     value, factors = resolve_exponents(value)
-    _LOGGER.debug("After exponent resolution: {}".format(value))
 
-    value = re.sub(fracs, callback, value, re.IGNORECASE)
+    value = re.sub(fractions, callback, value, re.IGNORECASE)
 
     range_separator = re.findall(
         r"\d+ ?((?:-\ )?(?:%s)) ?\d" % "|".join(reg.ranges(lang)), value
     )
-    uncer_separator = re.findall(
+    uncertain_separator = re.findall(
         r"\d+ ?(%s) ?\d" % "|".join(reg.uncertainties(lang)), value
     )
-    fract_separator = re.findall(r"\d+/\d+", value)
+    fraction_separator = re.findall(r"\d+/\d+", value)
 
     value = re.sub(" +", " ", value)
     uncertainty = None
@@ -104,11 +99,11 @@ def get_values(item, lang="en_US"):
         mean = sum(values) / len(values)
         uncertainty = mean - min(values)
         values = [mean]
-    elif uncer_separator:
-        values = [float(i) for i in value.split(uncer_separator[0])]
+    elif uncertain_separator:
+        values = [float(i) for i in value.split(uncertain_separator[0])]
         uncertainty = values[1] * factors[1]
         values = [values[0] * factors[0]]
-    elif fract_separator:
+    elif fraction_separator:
         values = value.split()
         try:
             if len(values) > 1:
@@ -120,14 +115,11 @@ def get_values(item, lang="en_US"):
     else:
         values = [float(re.sub(r"-$", "", value)) * factors[0]]
 
-    _LOGGER.debug("\tUncertainty: %s", uncertainty)
-    _LOGGER.debug("\tValues: %s", values)
-
     return uncertainty, values
 
 
 ###############################################################################
-def resolve_exponents(value, lang="en_US"):
+def resolve_exponents(value, lang=const.LANG):
     """Resolve unusual exponents (like 2^4) and return substituted string and
        factor
 
@@ -155,8 +147,8 @@ def resolve_exponents(value, lang="en_US"):
             # either ^ or superscript notation is used
             if re.match(r"\d+\^?", base):
                 if not (
-                    "^" in base
-                    or re.match(r"[%s]" % reg.unicode_superscript_regex(), exp)
+                        "^" in base
+                        or re.match(r"[%s]" % reg.unicode_superscript_regex(), exp)
                 ):
                     factors.append(1)
                     continue
@@ -168,9 +160,6 @@ def resolve_exponents(value, lang="en_US"):
             stripped = str(value).replace(item.group("scale"), "")
             value = stripped
             factors.append(factor)
-            _LOGGER.debug(
-                "Replaced {} by factor {}".format(item.group("scale"), factor)
-            )
         else:
             factors.append(1)
             continue
@@ -178,41 +167,70 @@ def resolve_exponents(value, lang="en_US"):
 
 
 ###############################################################################
-def build_unit_name(dimensions, lang="en_US"):
+def build_unit_name(dimensions, lang=const.LANG):
     """
     Build the name of the unit from its dimensions.
     """
     name = _get_parser(lang).name_from_dimensions(dimensions)
-
-    _LOGGER.debug("\tUnit inferred name: %s", name)
-
     return name
 
 
 ###############################################################################
-def get_unit_from_dimensions(dimensions, text, lang="en_US"):
+def get_conversion_from_dimensions(dimensions, lang='vi'):
+    try:
+        conversion_dict = []
+        res = 1
+        unit_dict = load.units(lang).unit_dict
+        for dimension in dimensions:
+            unit_label = dimension['base']
+            si_label, factor = unit_dict[unit_label]['conversion'].values()
+            dim = dimension['power']
+
+            # TODO handle X/litre: Entity(litre) = volume, si_label = cubic metre
+            if len(si_label.split()) == 2:
+                if 'square' in si_label:
+                    si_label = si_label.split()[1]
+                    dim *= 2
+                if 'cubic' in si_label:
+                    si_label = si_label.split()[1]
+                    dim *= 3
+
+            conversion_dict.append({"base": si_label, "power": dim})
+            res = res * (factor ** dim)
+        # print(conversion_dict)
+        si_units = json.load(open("quantulum3/si_units.json"))
+        for si, value in si_units.items():
+            if value == conversion_dict:
+                return {"silabel": si, "factor": res}
+    except:
+        return None
+
+
+def get_unit_from_dimensions(dimensions, text, lang=const.LANG):
     """
     Reconcile a unit based on its dimensionality.
     """
-
     key = load.get_key_from_dimensions(dimensions)
 
     try:
         unit = load.units(lang).derived[key]
+        if unit.conversion is not None:
+            if len(unit.conversion) == 0:
+                unit.conversion = get_conversion_from_dimensions(dimensions)
+
     except KeyError:
-        _LOGGER.debug(u"\tCould not find unit for: %s", key)
         unit = cls.Unit(
             name=build_unit_name(dimensions, lang),
             dimensions=dimensions,
             entity=get_entity_from_dimensions(dimensions, text, lang),
+            conversion=get_conversion_from_dimensions(dimensions)
         )
-
     # Carry on original composition
     unit.original_dimensions = dimensions
     return unit
 
 
-def name_from_dimensions(dimensions, lang="en_US"):
+def name_from_dimensions(dimensions, lang=const.LANG):
     """
     Build the name of a unit from its dimensions.
     Param:
@@ -231,7 +249,7 @@ def infer_name(unit):
 
 
 ###############################################################################
-def get_entity_from_dimensions(dimensions, text, lang="en_US"):
+def get_entity_from_dimensions(dimensions, text, lang=const.LANG):
     """
     Infer the underlying entity of a unit (e.g. "volume" for "m^3") based on
     its dimensionality.
@@ -242,19 +260,29 @@ def get_entity_from_dimensions(dimensions, text, lang="en_US"):
         for i in dimensions
     ]
 
-    final_derived = sorted(new_derived, key=lambda x: x["base"])
+    # print(load.entities(lang).derived[(('mass', 1), ('volume', -1))])
+    final_derived = []
+    for der in new_derived:
+        # TODO handle {'base': length, 'power': -3} --> {'base': volume, 'power': -1}
+        entity = sorted(load.entities(lang).derived[((der['base'], abs(der['power'])),)], key=lambda x: x.name)
+        if len(entity):
+            der = {
+                'base': list(entity)[0].name,
+                'power': der['power'] // abs(der['power'])
+            }
+        final_derived.append(der)
+
+    final_derived = sorted(final_derived, key=lambda x: x["base"])
     key = load.get_key_from_dimensions(final_derived)
+    ent = dis.disambiguate_entity(key, lang)
 
-    ent = dis.disambiguate_entity(key, text, lang)
     if ent is None:
-        _LOGGER.debug("\tCould not find entity for: %s", key)
         ent = cls.Entity(name="unknown", dimensions=new_derived)
-
     return ent
 
 
 ###############################################################################
-def parse_unit(item, unit, slash, lang="en_US"):
+def parse_unit(item, unit, slash, lang=const.LANG):
     """
     Parse surface and power from unit text.
     """
@@ -262,11 +290,10 @@ def parse_unit(item, unit, slash, lang="en_US"):
 
 
 ###############################################################################
-def get_unit(item, text, lang="en_US"):
+def get_unit(item, text, lang=const.LANG):
     """
     Extract unit from regex hit.
     """
-
     group_units = ["prefix", "unit1", "unit2", "unit3", "unit4"]
     group_operators = ["operator1", "operator2", "operator3", "operator4"]
     # How much of the end is removed because of an "incorrect" regex match
@@ -277,6 +304,7 @@ def get_unit(item, text, lang="en_US"):
     if len(item_units) == 0:
         unit = load.units(lang).names["dimensionless"]
     else:
+        derived: List[Any]
         derived, slash = [], False
         multiplication_operator = False
         for index in range(0, 5):
@@ -288,12 +316,12 @@ def get_unit(item, text, lang="en_US"):
             # Enforce consistency among multiplication and division operators
             # Single exceptions are colloquial number abbreviations (5k miles)
             if operator in reg.multiplication_operators(lang) or (
-                operator is None
-                and unit
-                and not (index == 1 and unit in reg.suffixes(lang))
+                    operator is None
+                    and unit
+                    and not (index == 1 and unit in reg.suffixes(lang))
             ):
                 if multiplication_operator != operator and not (
-                    index == 1 and str(operator).isspace()
+                        index == 1 and str(operator).isspace()
                 ):
                     if multiplication_operator is False:
                         multiplication_operator = operator
@@ -309,13 +337,6 @@ def get_unit(item, text, lang="en_US"):
                             operator_index = group_operators[index - 2]
                         # Remove (original length - new end) characters
                         unit_shortening = item.end() - item.start(operator_index)
-                        _LOGGER.debug(
-                            "Because operator inconsistency, cut from "
-                            "operator: '{}', new surface: {}".format(
-                                operator,
-                                text[item.start() : item.end() - unit_shortening],
-                            )
-                        )
                         break
 
             # Determine whether a negative power has to be applied to following
@@ -325,14 +346,11 @@ def get_unit(item, text, lang="en_US"):
             # Determine which unit follows
             if unit:
                 unit_surface, power = parse_unit(item, unit, slash, lang)
-                base = dis.disambiguate_unit(unit_surface, text, lang)
+                base = dis.disambiguate_unit(unit_surface, lang)
+
                 derived += [{"base": base, "power": power, "surface": unit_surface}]
 
         unit = get_unit_from_dimensions(derived, text, lang)
-
-    _LOGGER.debug("\tUnit: %s", unit)
-    _LOGGER.debug("\tEntity: %s", unit.entity)
-
     return unit, unit_shortening
 
 
@@ -350,11 +368,8 @@ def get_surface(shifts, orig_text, item, text, unit_shortening=0):
         i += 1
     span = (span[0], i)
 
-    _LOGGER.debug('\tInitial span: %s ("%s")', span, text[span[0] : span[1]])
-
     real_span = (span[0] - shifts[span[0]], span[1] - shifts[span[1] - 1])
-    surface = orig_text[real_span[0] : real_span[1]]
-    _LOGGER.debug('\tShifted span: %s ("%s")', real_span, surface)
+    surface = orig_text[real_span[0]: real_span[1]]
 
     while any(surface.endswith(i) for i in [" ", "-"]):
         surface = surface[:-1]
@@ -364,7 +379,6 @@ def get_surface(shifts, orig_text, item, text, unit_shortening=0):
         surface = surface[1:]
         real_span = (real_span[0] + 1, real_span[1])
 
-    _LOGGER.debug('\tFinal span: %s ("%s")', real_span, surface)
     return surface, real_span
 
 
@@ -387,7 +401,7 @@ def is_quote_artifact(orig_text, span):
 
 ###############################################################################
 def build_quantity(
-    orig_text, text, item, values, unit, surface, span, uncert, lang="en_US"
+        orig_text, text, item, values, unit, surface, span, uncert, lang=const.LANG,
 ):
     """
     Build a Quantity object out of extracted information.
@@ -399,12 +413,26 @@ def build_quantity(
 
 
 ###############################################################################
-def clean_text(text, lang="en_US"):
+def clean_text(text, lang=const.LANG):
     """
     Clean text before parsing.
     """
 
     # Replace a few nasty unicode characters with their ASCII equivalent
+    special_words = []
+    special_words.extend([word.replace('_', ' ') for word in reg.units() if '_' in word])
+    special_words.extend([word.replace('_', ' ') for word in reg.tens() if '_' in word])
+    special_words.extend([word.replace('_', ' ') for word in reg.decimals() if '_' in word])
+    for scale in reg.scales():
+        if isinstance(scale, list):
+            special_words.extend([word.replace('_', ' ') for word in scale if '_' in word])
+        elif '_' in scale:
+            special_words.append(scale.replace('_', ' '))
+
+    for word in special_words:
+        if word in text:
+            text = text.replace(word, word.replace(' ', '_'))
+
     maps = {"×": "x", "–": "-", "−": "-"}
     for element in maps:
         text = text.replace(element, maps[element])
@@ -412,64 +440,48 @@ def clean_text(text, lang="en_US"):
     # Language specific cleaning
     text = _get_parser(lang).clean_text(text)
 
-    _LOGGER.debug('Clean text: "%s"', text)
-
     return text
 
 
 ###############################################################################
-def parse(text, lang="en_US", verbose=False) -> List[cls.Quantity]:
+def parse(text, lang=const.LANG) -> List[cls.Quantity]:
     """
     Extract all quantities from unstructured text.
     """
-
-    log_format = "%(asctime)s --- %(message)s"
-    logging.basicConfig(format=log_format)
-
-    if verbose:  # pragma: no cover
-        prev_level = logging.root.getEffectiveLevel()
-        logging.root.setLevel(logging.DEBUG)
-        _LOGGER.debug("Verbose mode")
-
     orig_text = text
-    _LOGGER.debug('Original text: "%s"', orig_text)
 
     text = clean_text(text, lang)
-    values = extract_spellout_values(text, lang)
+    values = extract_spell_out_values(text, lang)
     text, shifts = substitute_values(text, values)
 
     quantities = []
     for item in reg.units_regex(lang).finditer(text):
 
         groups = dict([i for i in item.groupdict().items() if i[1] and i[1].strip()])
-        _LOGGER.debug(u"Quantity found: %s", groups)
 
         try:
-            uncert, values = get_values(item, lang)
+            uncertain, values = get_values(item, lang)
 
             unit, unit_shortening = get_unit(item, text)
             surface, span = get_surface(shifts, orig_text, item, text, unit_shortening)
             objs = build_quantity(
-                orig_text, text, item, values, unit, surface, span, uncert, lang
+                orig_text, text, item, values, unit, surface, span, uncertain, lang
             )
             if objs is not None:
                 quantities += objs
         except ValueError as err:
-            _LOGGER.debug("Could not parse quantity: %s", err)
-
-    if verbose:  # pragma: no cover
-        logging.root.setLevel(prev_level)
+            print("Could not parse quantity: %s", err)
 
     return quantities
 
 
 ###############################################################################
-def inline_parse(text, verbose=False):  # pragma: no cover
+def inline_parse(text):  # pragma: no cover
     """
     Extract all quantities from unstructured text.
     """
 
-    parsed = parse(text, verbose=verbose)
+    parsed = parse(text)
 
     shift = 0
     for quantity in parsed:
@@ -477,42 +489,5 @@ def inline_parse(text, verbose=False):  # pragma: no cover
         to_add = u" {" + str(quantity) + u"}"
         text = text[0:index] + to_add + text[index:]
         shift += len(to_add)
-
-    return text
-
-
-###############################################################################
-def inline_parse_and_replace(text, lang="en_US", verbose=False):  # pragma: no cover
-    """
-    Parse text and replace with the standardised quantities as string
-    """
-
-    parsed = parse(text, lang=lang, verbose=verbose)
-
-    shift = 0
-    for quantity in parsed:
-        index_start = quantity.span[0] + shift
-        index_end = quantity.span[1] + shift
-        to_add = str(quantity)
-        text = text[0:index_start] + to_add + text[index_end:]
-        shift += len(to_add) - (quantity.span[1] - quantity.span[0])
-
-    return text
-
-
-###############################################################################
-def inline_parse_and_expand(text, lang="en_US", verbose=False):
-    """
-    Parse text and replace qunatities with speakable version
-    """
-    parsed = parse(text, lang=lang, verbose=verbose)
-
-    shift = 0
-    for quantity in parsed:
-        index_start = quantity.span[0] + shift
-        index_end = quantity.span[1] + shift
-        to_add = quantity.to_spoken()
-        text = text[0:index_start] + to_add + text[index_end:]
-        shift += len(to_add) - (quantity.span[1] - quantity.span[0])
 
     return text

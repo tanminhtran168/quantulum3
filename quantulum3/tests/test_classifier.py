@@ -30,12 +30,28 @@ COLOR2 = "\033[91m%s\033[0m"
 TOPDIR = os.path.dirname(__file__) or "."
 
 
+def inline_parse_and_expand(text, lang="vi", verbose=False):
+    """
+    Parse text and replace qunatities with speakable version
+    """
+    parsed = p.parse(text, lang=lang, verbose=verbose)
+
+    shift = 0
+    for quantity in parsed:
+        index_start = quantity.span[0] + shift
+        index_end = quantity.span[1] + shift
+        to_add = quantity.to_spoken()
+        text = text[0:index_start] + to_add + text[index_end:]
+        shift += len(to_add) - (quantity.span[1] - quantity.span[0])
+
+    return text
+
 ###############################################################################
 class ClassifierBuild(unittest.TestCase):
     """Test suite for the quantulum3 project."""
 
     @multilang
-    def test_training(self, lang="en_US"):
+    def test_training(self, lang="vi"):
         """Test that classifier training works"""
         # Test that no errors are thrown during training
         # Also stores result, to be included in package
@@ -50,7 +66,7 @@ class ClassifierTest(unittest.TestCase):
         add_type_equalities(self)
 
     @multilang
-    def test_parse_classifier(self, lang="en_US"):
+    def test_parse_classifier(self, lang="vi"):
         """Test that parsing works with classifier usage"""
         # forcedly activate classifier
         clf.USE_CLF = True
@@ -93,16 +109,16 @@ class ClassifierTest(unittest.TestCase):
         )
 
     @multilang
-    def test_expand(self, lang="en_US"):
+    def test_expand(self, lang="vi"):
         """Test that parsing and expanding works correctly"""
         all_tests = load_expand_tests(lang=lang)
         for test in all_tests:
             with self.subTest(input=test["req"]):
-                result = p.inline_parse_and_expand(test["req"], lang=lang)
+                result = inline_parse_and_expand(test["req"], lang=lang)
                 self.assertEqual(result, test["res"])
 
     @multilang
-    def test_errors(self, lang="en_US"):
+    def test_errors(self, lang="vi"):
         """Test that no errors are thrown in edge cases"""
         all_tests = load_error_tests(lang=lang)
         for test in all_tests:
@@ -112,12 +128,12 @@ class ClassifierTest(unittest.TestCase):
 
     @unittest.skip("Not necessary, as classifier is live built")
     @multilang
-    def test_classifier_up_to_date(self, lang="en_US"):
+    def test_classifier_up_to_date(self, lang="vi"):
         """
         Test that the classifier has been built with the latest version of
         scikit-learn
         """
-        path = language.topdir(lang).joinpath("clf.joblib")
+        path = language.top_dir(lang).joinpath("clf.joblib")
         with path.open("rb") as clf_file:
             obj = joblib.load(clf_file)
         clf_version = obj["scikit-learn_version"]
@@ -136,7 +152,7 @@ class ClassifierTest(unittest.TestCase):
 
     @unittest.skip("Skipped, as already run in build")
     @multilang
-    def test_training(self, lang="en_US"):
+    def test_training(self, lang="vi"):
         """Test that classifier training works"""
         # Test that no errors are thrown during training
         obj = clf.train_classifier(store=False, lang=lang)

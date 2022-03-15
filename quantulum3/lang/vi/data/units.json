@@ -1,0 +1,2365 @@
+{
+  "unk": {
+    "entity": "dimensionless",
+    "URI": "Dimensionless_quantity",
+    "dimensions": [],
+    "symbols": []
+  },
+  "dimensionless": {
+    "surfaces": [
+      "dimensionless"
+    ],
+    "entity": "dimensionless",
+    "URI": "Dimensionless_quantity",
+    "dimensions": [],
+    "symbols": []
+  },
+  "pair": {
+    "surfaces": [
+      "pair",
+      "cặp",
+      "đôi"
+    ],
+    "entity": "dimensionless",
+    "URI": "2",
+    "dimensions": [],
+    "symbols": []
+  },
+  "set": {
+    "surfaces": [
+      "set",
+      "pack",
+      "piece",
+      "pc",
+      "chiếc",
+      "cái"
+    ],
+    "entity": "dimensionless",
+    "URI": "Set_(mathematics)",
+    "dimensions": [],
+    "symbols": []
+  },
+  "percentage": {
+    "surfaces": [
+      "percentage",
+      "percent",
+      "phần trăm"
+    ],
+    "entity": "dimensionless",
+    "URI": "Percentage",
+    "dimensions": [],
+    "symbols": [
+      "%",
+      "pct",
+      "pct."
+    ]
+  },
+  "per mille": {
+    "surfaces": [
+      "per mille",
+      "permill",
+      "permil",
+      "permille",
+      "per mil",
+      "per mill",
+      "phần nghìn",
+      "phần ngàn"
+    ],
+    "entity": "dimensionless",
+    "URI": "Per_mille",
+    "dimensions": [],
+    "symbols": [
+      "\u2030"
+    ]
+  },
+  "parts-per-million": {
+    "surfaces": [
+      "parts-per-million",
+      "parts per million",
+      "phần triêu"
+    ],
+    "entity": "dimensionless",
+    "URI": "Parts-per_notation",
+    "dimensions": [],
+    "symbols": [
+      "ppm"
+    ]
+  },
+  "parts-per-billion": {
+    "surfaces": [
+      "parts-per-billion",
+      "parts per billion",
+      "phần tỷ",
+      "phần tỉ"
+    ],
+    "entity": "dimensionless",
+    "URI": "Parts-per_notation",
+    "dimensions": [],
+    "symbols": [
+      "ppb"
+    ]
+  },
+  "parts-per-trillion": {
+    "surfaces": [
+      "parts-per-trillion",
+      "parts per trillion"
+    ],
+    "entity": "dimensionless",
+    "URI": "Parts-per_notation",
+    "dimensions": [],
+    "symbols": [
+      "ppt",
+      "phần triệu tỷ",
+      "phần triệu tỉ"
+    ]
+  },
+  "basis point": {
+    "surfaces": [
+      "basis point",
+      "bip",
+      "beep",
+      "permyriad",
+      "per myriad",
+      "per ten thousand",
+      "phần chục nghìn",
+      "phần muời nghìn"
+    ],
+    "entity": "dimensionless",
+    "URI": "Basis_point",
+    "dimensions": [],
+    "symbols": [
+      "bp",
+      "\u2031"
+    ]
+  },
+  "count": {
+    "surfaces": [
+      "instance",
+      "time",
+      "count",
+      "lần"
+    ],
+    "entity": "dimensionless",
+    "URI": "Count_data",
+    "dimensions": [],
+    "symbols": []
+  },
+  "turn": {
+    "surfaces": [
+      "turn",
+      "revolution",
+      "cycle",
+      "circle",
+      "vòng",
+      "chu kỳ"
+    ],
+    "entity": "dimensionless",
+    "URI": "Turn_(geometry)",
+    "dimensions": [],
+    "symbols": []
+  },
+  "metre": {
+    "surfaces": [
+      "metre",
+      "meter",
+      "mét",
+      "met"
+    ],
+    "entity": "length",
+    "URI": "Metre",
+    "dimensions": [],
+    "symbols": [
+      "m"
+    ],
+    "prefixes": [
+      "E",
+      "P",
+      "T",
+      "G",
+      "M",
+      "k",
+      "h",
+      "da",
+      "d",
+      "m",
+      "n",
+      "p",
+      "f",
+      "a",
+      "z",
+      "y"
+    ]
+  },
+  "hectometre": {
+    "surfaces": [
+      "hectometre",
+      "hectometer",
+      "hêctômét"
+    ],
+    "entity": "length",
+    "URI": "Hectometre",
+    "dimensions": [],
+    "symbols": [
+      "hm"
+    ]
+  },
+  "decametre": {
+    "surfaces": [
+      "decametre",
+      "decameter",
+      "dekametre",
+      "dekameter",
+      "đêcamét",
+      "đềcamét"
+    ],
+    "entity": "length",
+    "URI": "Decametre",
+    "dimensions": [],
+    "symbols": [
+      "dam",
+      "Dm",
+      "dkm"
+    ]
+  },
+  "centimetre": {
+    "surfaces": [
+      "centimetre",
+      "centimeter",
+      "centimet",
+      "xen-ti-mét",
+      "xăng-ti-mét"
+    ],
+    "entity": "length",
+    "URI": "Centimetre",
+    "dimensions": [],
+    "symbols": [
+      "cm"
+    ]
+  },
+  "micrometre": {
+    "surfaces": [
+      "micrometre",
+      "micrometer",
+      "micron",
+      "micrômét"
+    ],
+    "entity": "length",
+    "URI": "Micrometre",
+    "dimensions": [],
+    "symbols": [
+      "\u00b5m"
+    ]
+  },
+  "light-year": {
+    "surfaces": [
+      "light-year",
+      "light year",
+      "năm ánh sáng"
+    ],
+    "entity": "length",
+    "URI": "Light-year",
+    "dimensions": [],
+    "symbols": [
+      "ly"
+    ]
+  },
+  "astronomical unit": {
+    "surfaces": [
+      "astronomical unit",
+      "đơn vị thiên văn"
+    ],
+    "entity": "length",
+    "URI": "Astronomical_unit",
+    "dimensions": [],
+    "symbols": [
+      "au",
+      "AU",
+      "ua",
+      "UA"
+    ]
+  },
+  "mile": {
+    "surfaces": [
+      "mile",
+      "statute mile",
+      "dặm",
+      "dặm anh"
+    ],
+    "entity": "length",
+    "URI": "Mile",
+    "dimensions": [],
+    "symbols": [
+      "mi"
+    ]
+  },
+  "fathom": {
+    "surfaces": [
+      "fathom",
+      "sải"
+    ],
+    "entity": "length",
+    "URI": "Fathom",
+    "dimensions": [],
+    "symbols": [
+      "fath",
+      "ftm"
+    ]
+  },
+  "yard": {
+    "surfaces": [
+      "yard",
+      "thước",
+      "thước anh",
+      "mã"
+    ],
+    "entity": "length",
+    "URI": "Yard",
+    "dimensions": [],
+    "symbols": [
+      "yd"
+    ]
+  },
+  "solar mass": {
+    "surfaces": [
+      "solar mass",
+      "khối lượng mặt trời"
+    ],
+    "entity": "mass",
+    "URI": "Solar_mass",
+    "dimensions": [],
+    "symbols": [
+      "M\u2609"
+    ]
+  },
+  "earth mass": {
+    "surfaces": [
+      "earth mass",
+      "khối lượng trái đất"
+    ],
+    "entity": "mass",
+    "URI": "Earth_mass",
+    "dimensions": [],
+    "symbols": [
+      "M\u2295"
+    ]
+  },
+  "short ton": {
+    "surfaces": [
+      "short ton",
+      "ton",
+      "tấn thiếu"
+    ],
+    "entity": "mass",
+    "URI": "Short_ton",
+    "dimensions": [],
+    "symbols": []
+  },
+  "long ton": {
+    "surfaces": [
+      "long ton",
+      "imperial ton",
+      "weight ton",
+      "tấn dài",
+      "tấn anh",
+      "tấn gộp"
+    ],
+    "entity": "mass",
+    "URI": "Long_ton",
+    "dimensions": [],
+    "symbols": []
+  },
+  "kilogram": {
+    "surfaces": [
+      "kilogram",
+      "kilogramme",
+      "kilo",
+      "kg",
+      "kgs",
+      "cân"
+    ],
+    "entity": "mass",
+    "URI": "Kilogram",
+    "dimensions": [],
+    "symbols": [
+      "kg"
+    ]
+  },
+  "gram": {
+    "surfaces": [
+      "gram",
+      "gramme",
+      "gam",
+      "gờ-ram",
+      "cở-ram"
+    ],
+    "entity": "mass",
+    "URI": "Gram",
+    "dimensions": [],
+    "symbols": [
+      "g",
+      "gm"
+    ],
+    "prefixes": [
+      "k",
+      "m"
+    ]
+  },
+  "atomic mass unit": {
+    "surfaces": [
+      "atomic mass unit",
+      "unified atomic mass unit",
+      "dalton",
+      "đơn vị khối lượng nguyên tử"
+    ],
+    "entity": "mass",
+    "URI": "Atomic_mass_unit",
+    "dimensions": [],
+    "symbols": [
+      "u",
+      "Da",
+      "amu"
+    ]
+  },
+  "pound-mass": {
+    "surfaces": [
+      "pound",
+      "pound-mass",
+      "cân anh"
+    ],
+    "entity": "mass",
+    "URI": "Pound_(mass)",
+    "dimensions": [],
+    "symbols": [
+      "lb",
+      "lbm",
+      "lbs"
+    ]
+  },
+  "ounce": {
+    "surfaces": [
+      "ounce",
+      "aoxơ",
+      "ao-xơ",
+      "ao xơ"
+    ],
+    "entity": "mass",
+    "URI": "Ounce",
+    "dimensions": [],
+    "symbols": [
+      "oz",
+      "\u2125"
+    ]
+  },
+  "ton": {
+    "surfaces": [
+      "ton",
+      "tấn"
+    ],
+    "entity": "mass",
+    "URI": "Ton",
+    "dimensions": [],
+    "symbols": []
+  },
+  "tonne": {
+    "surfaces": [
+      "tonne",
+      "metric ton"
+    ],
+    "entity": "mass",
+    "URI": "Tonne",
+    "dimensions": [],
+    "symbols": [
+      "t"
+    ]
+  },
+  "carat": {
+    "surfaces": [
+      "carat",
+      "cara"
+    ],
+    "entity": "mass",
+    "URI": "Carat_(mass)",
+    "dimensions": [],
+    "symbols": [
+      "ct"
+    ]
+  },
+  "dollar": {
+    "surfaces": [
+      "dollar",
+      "đô la",
+      "đô"
+    ],
+    "entity": "currency",
+    "URI": "Dollar",
+    "dimensions": [],
+    "symbols": [
+      "$"
+    ],
+    "currency_code": "USD",
+    "comment": "Treat as us-dollar for expanding purposes"
+  },
+  "united states dollar": {
+    "surfaces": [
+      "united states dollar",
+      "us dollar",
+      "american dollar",
+      "đô la mỹ",
+      "mỹ kim"
+    ],
+    "entity": "currency",
+    "URI": "United_States_dollar",
+    "dimensions": [],
+    "symbols": [
+      "USD",
+      "US$"
+    ],
+    "currency_code": "USD"
+  },
+  "euro": {
+    "surfaces": [
+      "euro",
+      "âu kim"
+    ],
+    "entity": "currency",
+    "URI": "Euro",
+    "dimensions": [],
+    "symbols": [
+      "\u20ac",
+      "EUR"
+    ],
+    "currency_code": "EUR"
+  },
+  "pound sterling": {
+    "surfaces": [
+      "pound sterling",
+      "pound",
+      "bảng anh",
+      "bảng"
+    ],
+    "entity": "currency",
+    "URI": "Pound_sterling",
+    "dimensions": [],
+    "symbols": [
+      "\u00a3",
+      "GBP"
+    ],
+    "currency_code": "GBP"
+  },
+  "canadian dollar": {
+    "surfaces": [
+      "canadian dollar",
+      "đô la canada"
+    ],
+    "entity": "currency",
+    "URI": "Pound_sterling",
+    "dimensions": [],
+    "symbols": [
+      "CAD",
+      "C$"
+    ],
+    "currency_code": "CAD"
+  },
+  "australian dollar": {
+    "surfaces": [
+      "australian dollar",
+      "đô la úc",
+      "đô la australia"
+    ],
+    "entity": "currency",
+    "URI": "Australian_dollar",
+    "dimensions": [],
+    "symbols": [
+      "AUD",
+      "A$"
+    ],
+    "currency_code": "AUD"
+  },
+  "new zealand dollar": {
+    "surfaces": [
+      "new zealand dollar",
+      "đô la new zealand"
+    ],
+    "entity": "currency",
+    "URI": "New_Zealand_dollar",
+    "dimensions": [],
+    "symbols": [
+      "NZD",
+      "NZ$"
+    ],
+    "currency_code": "NZD"
+  },
+  "japanese yen": {
+    "surfaces": [
+      "japanese yen",
+      "yen",
+      "yên",
+      "yên nhật"
+    ],
+    "entity": "currency",
+    "URI": "Japanese_yen",
+    "dimensions": [],
+    "symbols": [
+      "\u5186",
+      "\u5713",
+      "\u00a5",
+      "JPY"
+    ],
+    "currency_code": "JPY"
+  },
+  "swiss franc": {
+    "surfaces": [
+      "swiss franc",
+      "franc",
+      "franc thụy sĩ"
+    ],
+    "entity": "currency",
+    "URI": "Swiss_franc",
+    "dimensions": [],
+    "symbols": [
+      "Fr",
+      "SFr",
+      "FS",
+      "CHF"
+    ],
+    "currency_code": "CHF"
+  },
+  "south african rand": {
+    "surfaces": [
+      "south african rand",
+      "rand",
+      "ran nam phi"
+    ],
+    "entity": "currency",
+    "URI": "South_African_rand",
+    "dimensions": [],
+    "symbols": [
+      "R",
+      "ZAR"
+    ],
+    "currency_code": "ZAR"
+  },
+  "brazilian real": {
+    "surfaces": [
+      "brazilian real",
+      "real",
+      "reais",
+      "real brazil"
+    ],
+    "entity": "currency",
+    "URI": "South_African_rand",
+    "dimensions": [],
+    "symbols": [
+      "R$",
+      "BRL"
+    ],
+    "currency_code": "BRL"
+  },
+  "indian rupee": {
+    "surfaces": [
+      "indian rupee",
+      "rupee",
+      "rúp ấn độ"
+    ],
+    "entity": "currency",
+    "URI": "Indian_rupee",
+    "dimensions": [],
+    "symbols": [
+      "\u20b9",
+      "INR"
+    ],
+    "currency_code": "INR"
+  },
+  "mexican peso": {
+    "surfaces": [
+      "mexican peso",
+      "peso",
+      "peso méxico"
+    ],
+    "entity": "currency",
+    "URI": "Mexican_peso",
+    "dimensions": [],
+    "symbols": [
+      "MXN"
+    ],
+    "currency_code": "MXN"
+  },
+  "russian ruble": {
+    "surfaces": [
+      "russian ruble",
+      "russian rouble",
+      "ruble",
+      "rouble",
+      "rúp",
+      "rúp nga"
+    ],
+    "entity": "currency",
+    "URI": "Russian_ruble",
+    "dimensions": [],
+    "symbols": [
+      "\u20bd",
+      "RUB"
+    ],
+    "currency_code": "RUB"
+  },
+  "chinese yuan": {
+    "surfaces": [
+      "chinese yuan",
+      "yuan",
+      "yuan trung quốc"
+    ],
+    "entity": "currency",
+    "URI": "Chinese_yuan",
+    "dimensions": [],
+    "symbols": [
+      "\u00a5",
+      "\u5143",
+      "CNY"
+    ],
+    "currency_code": "CNY"
+  },
+  "south korean won": {
+    "surfaces": [
+      "south korean won",
+      "won",
+      "korean republic won",
+      "won hàn quốc"
+    ],
+    "entity": "currency",
+    "URI": "South_Korean_won",
+    "dimensions": [],
+    "symbols": [
+      "\uc6d0",
+      "\u20a9",
+      "KRW"
+    ],
+    "currency_code": "KRW"
+  },
+  "vietnamese dong": {
+    "surfaces": [
+      "vietnamese dong",
+      "vietnamese đồng",
+      "dong",
+      "đồng",
+      "việt nam đồng"
+    ],
+    "entity": "currency",
+    "URI": "Vietnamese_đồng",
+    "dimensions": [],
+    "symbols": [
+      "\u20ab",
+      "\u0111",
+      "VNĐ",
+      "VND"
+    ],
+    "currency_code": "VND"
+  },
+  "cubic metre": {
+    "surfaces": [
+      "cubic metre",
+      "cubic meter",
+      "kiloliter",
+      "kilolitre",
+      "mét khối",
+      "khối"
+    ],
+    "entity": "volume",
+    "URI": "Cubic_metre",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": 3
+      }
+    ],
+    "symbols": [
+      "cu m",
+      "kL"
+    ]
+  },
+  "cubic kilometre": {
+    "surfaces": [
+      "cubic kilometre",
+      "cubic kilometer",
+      "kilômét khối"
+    ],
+    "entity": "volume",
+    "URI": "Cubic_metre",
+    "dimensions": [
+      {
+        "base": "kilometre",
+        "power": 3
+      }
+    ],
+    "symbols": []
+  },
+  "cubic centimetre": {
+    "surfaces": [
+      "cubic centimetre",
+      "cubic centimeter",
+      "millilitre",
+      "milliliter",
+      "xentimét khối"
+    ],
+    "entity": "volume",
+    "URI": "Cubic_centimetre",
+    "dimensions": [
+      {
+        "base": "centimetre",
+        "power": 3
+      }
+    ],
+    "symbols": [
+      "cc",
+      "ccm",
+      "mL",
+      "ml"
+    ]
+  },
+  "cubic millimetre": {
+    "surfaces": [
+      "cubic millimetre",
+      "cubic millimeter",
+      "microliter",
+      "microlitre",
+      "millimét khối"
+    ],
+    "entity": "volume",
+    "URI": "Cubic_metre",
+    "dimensions": [
+      {
+        "base": "millimetre",
+        "power": 3
+      }
+    ],
+    "symbols": [
+      "\u00b5l",
+      "\u00b5L"
+    ]
+  },
+  "litre": {
+    "surfaces": [
+      "cubic decimetre",
+      "cubic decimeter",
+      "litre",
+      "liter",
+      "lít",
+      "đềximét khối"
+    ],
+    "entity": "volume",
+    "URI": "Litre",
+    "dimensions": [
+      {
+        "base": "decimetre",
+        "power": 3
+      }
+    ],
+    "symbols": [
+      "l",
+      "L",
+      "ltr",
+      "\u2113"
+    ]
+  },
+  "centilitre": {
+    "surfaces": [
+      "centiliter",
+      "centilitre",
+      "centilít"
+    ],
+    "entity": "volume",
+    "URI": "Centilitre",
+    "dimensions": [],
+    "symbols": [
+      "cl",
+      "cL"
+    ]
+  },
+  "hectolitre": {
+    "surfaces": [
+      "hectorlitre",
+      "hectorliter",
+      "hectalít"
+    ],
+    "entity": "volume",
+    "URI": "Hectolitre",
+    "dimensions": [],
+    "symbols": [
+      "hl",
+      "hL"
+    ]
+  },
+  "decilitre": {
+    "surfaces": [
+      "decilitre",
+      "deciliter",
+      "decilít"
+    ],
+    "entity": "volume",
+    "URI": "Decilitre",
+    "dimensions": [],
+    "symbols": [
+      "dl",
+      "dL"
+    ]
+  },
+  "drop": {
+    "surfaces": [
+      "drop",
+      "giọt"
+    ],
+    "entity": "volume",
+    "URI": "Drop_(unit)",
+    "dimensions": [],
+    "symbols": []
+  },
+  "barrel": {
+    "surfaces": [
+      "barrel",
+      "barrel dry",
+      "dry barrel",
+      "thùng"
+    ],
+    "entity": "volume",
+    "URI": "Barrel_(unit)",
+    "dimensions": [],
+    "symbols": [
+      "bbl",
+      "bbl dry"
+    ]
+  },
+  "gallon": {
+    "surfaces": [
+      "gallon",
+      "galông"
+    ],
+    "entity": "volume",
+    "URI": "Gallon",
+    "dimensions": [],
+    "symbols": [
+      "gal"
+    ]
+  },
+  "cup": {
+    "surfaces": [
+      "cup",
+      "tách",
+      "chén"
+    ],
+    "entity": "volume",
+    "URI": "Cup_(unit)",
+    "dimensions": [],
+    "symbols": []
+  },
+  "tablespoon": {
+    "surfaces": [
+      "tablespoon",
+      "table spoon",
+      "thìa canh"
+    ],
+    "entity": "volume",
+    "URI": "Tablespoon",
+    "dimensions": [],
+    "symbols": [
+      "tbsp"
+    ]
+  },
+  "dessertspoon": {
+    "surfaces": [
+      "dessertspoon",
+      "dessert spoon",
+      "thìa tráng miệng"
+    ],
+    "entity": "volume",
+    "URI": "Dessert_spoon",
+    "dimensions": [],
+    "symbols": [
+      "dstspn"
+    ]
+  },
+  "teaspoon": {
+    "surfaces": [
+      "teaspoon",
+      "tea spoon",
+      "thìa cà phê"
+    ],
+    "entity": "volume",
+    "URI": "Teaspoon",
+    "dimensions": [],
+    "symbols": [
+      "tsp"
+    ]
+  },
+  "cubic mile": {
+    "surfaces": [
+      "cubic mile",
+      "cu mile",
+      "dặm khối",
+      "dặm khối anh"
+    ],
+    "entity": "volume",
+    "URI": "Cubic_mile",
+    "dimensions": [
+      {
+        "base": "mile",
+        "power": 3
+      }
+    ],
+    "symbols": [
+      "cu mi"
+    ]
+  },
+  "cubic yard": {
+    "surfaces": [
+      "cubic yard",
+      "cu yard",
+      "thước khối",
+      "thước khối anh"
+    ],
+    "entity": "volume",
+    "URI": "Cubic_yard",
+    "dimensions": [
+      {
+        "base": "yard",
+        "power": 3
+      }
+    ],
+    "symbols": [
+      "cu yd"
+    ]
+  },
+  "kelvin": {
+    "surfaces": [
+      "kelvin",
+      "độ k"
+    ],
+    "entity": "temperature",
+    "URI": "Kelvin",
+    "dimensions": [],
+    "symbols": [
+      "K",
+      "\u00b0K"
+    ]
+  },
+  "degree Celsius": {
+    "surfaces": [
+      "degree celsius",
+      "degree Celsius",
+      "Celsius",
+      "centigrade",
+      "degree centigrade",
+      "degree Centigrade",
+      "độ celsius",
+      "độ c"
+    ],
+    "entity": "temperature",
+    "URI": "Celsius",
+    "dimensions": [],
+    "symbols": [
+      "C",
+      "\u00b0C"
+    ]
+  },
+  "degree fahrenheit": {
+    "surfaces": [
+      "degree fahrenheit",
+      "Fahrenheit",
+      "độ fahrenheit",
+      "độ f"
+    ],
+    "entity": "temperature",
+    "URI": "Fahrenheit",
+    "dimensions": [],
+    "symbols": [
+      "F",
+      "\u00b0F"
+    ]
+  },
+  "degree rankine": {
+    "surfaces": [
+      "degree rankine",
+      "Rankine",
+      "độ rankine",
+      "độ r"
+    ],
+    "entity": "temperature",
+    "URI": "Rankine_scale",
+    "dimensions": [],
+    "symbols": [
+      "\u00b0R",
+      "\u00b0Ra"
+    ]
+  },
+  "square metre": {
+    "surfaces": [
+      "square metre",
+      "square meter",
+      "mét vuông"
+    ],
+    "entity": "area",
+    "URI": "Square_metre",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": 2
+      }
+    ],
+    "symbols": [
+      "sq m"
+    ]
+  },
+  "square kilometre": {
+    "surfaces": [
+      "square kilometre",
+      "square kilometer",
+      "kilômét vuông"
+    ],
+    "entity": "area",
+    "URI": "Square_kilometre",
+    "dimensions": [
+      {
+        "base": "kilometre",
+        "power": 2
+      }
+    ],
+    "symbols": [
+      "sq km"
+    ]
+  },
+  "hectare": {
+    "surfaces": [
+      "square hectometre",
+      "square hectometer",
+      "héc-ta",
+      "hecta"
+    ],
+    "entity": "area",
+    "URI": "Hectare",
+    "dimensions": [
+      {
+        "base": "hectometre",
+        "power": 2
+      }
+    ],
+    "symbols": [
+      "sq hm",
+      "ha"
+    ]
+  },
+  "square mile": {
+    "surfaces": [
+      "square mile",
+      "dặm vuông",
+      "dặm vuông anh"
+    ],
+    "entity": "area",
+    "URI": "Square_mile",
+    "dimensions": [
+      {
+        "base": "mile",
+        "power": 2
+      }
+    ],
+    "symbols": [
+      "sq mi"
+    ]
+  },
+  "square yard": {
+    "surfaces": [
+      "square yard",
+      "gaj",
+      "thước vuông",
+      "thước vuông anh"
+    ],
+    "entity": "area",
+    "URI": "Square_yard",
+    "dimensions": [
+      {
+        "base": "yard",
+        "power": 2
+      }
+    ],
+    "symbols": [
+      "sq yd"
+    ]
+  },
+  "acre": {
+    "surfaces": [
+      "acre",
+      "mẫu anh"
+    ],
+    "entity": "area",
+    "URI": "Acre",
+    "dimensions": [],
+    "symbols": [
+      "ac"
+    ]
+  },
+  "millimeter of mercury": {
+    "surfaces": [
+      "millimetre of mercury",
+      "millimetre mercury",
+      "millimeter of mercury",
+      "millimeter mercury",
+      "milimét thủy ngân"
+    ],
+    "entity": "pressure",
+    "URI": "Millimeter_of_mercury",
+    "dimensions": [],
+    "symbols": [
+      "mmHg",
+      "mm Hg"
+    ]
+  },
+  "standard atmosphere": {
+    "surfaces": [
+      "standard atmosphere",
+      "atmosphere",
+      "átmốtphe tiêu chuẩn",
+      "átmốtphe"
+    ],
+    "entity": "pressure",
+    "URI": "Atmosphere_(unit)",
+    "dimensions": [],
+    "symbols": [
+      "atm"
+    ]
+  },
+  "technical atmosphere": {
+    "surfaces": [
+      "technical atmosphere",
+      "átmốtphe kỹ thuật"
+    ],
+    "entity": "pressure",
+    "URI": "Technical_atmosphere",
+    "dimensions": [],
+    "symbols": []
+  },
+  "joule": {
+    "surfaces": [
+      "joule",
+      "jun"
+    ],
+    "entity": "energy",
+    "URI": "Joule",
+    "dimensions": [],
+    "symbols": [
+      "J"
+    ]
+  },
+  "millijoule": {
+    "surfaces": [
+      "millijoule",
+      "milijun"
+    ],
+    "entity": "energy",
+    "URI": "Joule",
+    "dimensions": [],
+    "symbols": [
+      "mJ"
+    ]
+  },
+  "kilojoule": {
+    "surfaces": [
+      "kilojoule",
+      "kilôjun"
+    ],
+    "entity": "energy",
+    "URI": "Joule",
+    "dimensions": [],
+    "symbols": [
+      "kJ"
+    ]
+  },
+  "electronvolt": {
+    "surfaces": [
+      "electron volt",
+      "electronvolt",
+      "electron-volt",
+      "electronvôn"
+    ],
+    "entity": "energy",
+    "URI": "Electronvolt",
+    "dimensions": [],
+    "symbols": [
+      "eV"
+    ]
+  },
+  "kilowatt hour": {
+    "surfaces": [
+      "kilowatt hour",
+      "kilowatthour",
+      "kilowatt-hour",
+      "kilôwatt giờ",
+      "kilôoát giờ"
+    ],
+    "entity": "energy",
+    "URI": "Kilowatt_hour",
+    "dimensions": [
+      {
+        "base": "kilowatt",
+        "power": 1
+      },
+      {
+        "base": "hour",
+        "power": 1
+      }
+    ],
+    "symbols": [
+      "kWh"
+    ]
+  },
+  "watt second": {
+    "surfaces": [
+      "watt second",
+      "watt-second",
+      "wattsecond",
+      "watt giây",
+      "oát giây"
+    ],
+    "entity": "energy",
+    "URI": "Watt_second",
+    "dimensions": [
+      {
+        "base": "watt",
+        "power": 1
+      },
+      {
+        "base": "second",
+        "power": 1
+      }
+    ],
+    "symbols": [
+      "Ws"
+    ]
+  },
+  "calorie": {
+    "surfaces": [
+      "calorie",
+      "small calorie",
+      "gram calorie",
+      "calo",
+      "ca-lo",
+      "ca-lo-ri"
+    ],
+    "entity": "energy",
+    "URI": "Calorie",
+    "dimensions": [],
+    "symbols": [
+      "cal"
+    ]
+  },
+  "kilocalorie": {
+    "surfaces": [
+      "kilocalorie",
+      "large calorie",
+      "kilogram calorie",
+      "kilocalo"
+    ],
+    "entity": "energy",
+    "URI": "Calorie",
+    "dimensions": [],
+    "symbols": [
+      "kcal",
+      "Cal"
+    ]
+  },
+  "british thermal unit": {
+    "surfaces": [
+      "british thermal unit",
+      "đơn vị nhiệt anh"
+    ],
+    "entity": "energy",
+    "URI": "British_thermal_unit",
+    "dimensions": [],
+    "symbols": [
+      "btu",
+      "BTU",
+      "Btu"
+    ]
+  },
+  "watt": {
+    "surfaces": [
+      "watt",
+      "oát"
+    ],
+    "entity": "power",
+    "URI": "Watt",
+    "dimensions": [],
+    "prefixes": [
+      "a",
+      "f",
+      "p",
+      "n",
+      "\u00b5",
+      "m",
+      "k",
+      "M",
+      "G",
+      "T",
+      "P",
+      "E"
+    ],
+    "symbols": [
+      "W"
+    ]
+  },
+  "horsepower": {
+    "surfaces": [
+      "horsepower",
+      "pferdestarke",
+      "uk horsepower",
+      "british horsepower",
+      "boiler horsepower",
+      "metric horsepower",
+      "hydraulic horsepower",
+      "mã lực"
+    ],
+    "entity": "power",
+    "URI": "Horsepower",
+    "dimensions": [],
+    "symbols": [
+      "hp"
+    ]
+  },
+  "volt-ampere": {
+    "surfaces": [
+      "volt-ampere",
+      "volt ampere",
+      "voltampere",
+      "vôn ampe"
+    ],
+    "entity": "power",
+    "URI": "Volt-ampere",
+    "dimensions": [
+      {
+        "base": "volt",
+        "power": 1
+      },
+      {
+        "base": "ampere",
+        "power": 1
+      }
+    ],
+    "symbols": [
+      "VA"
+    ]
+  },
+  "newton": {
+    "surfaces": [
+      "newton",
+      "niu-tơn",
+      "newtơn"
+    ],
+    "entity": "force",
+    "URI": "Newton_(unit)",
+    "dimensions": [],
+    "symbols": [
+      "N"
+    ]
+  },
+  "kilonewton": {
+    "surfaces": [
+      "kilonewton",
+      "kilônewtơn"
+    ],
+    "entity": "force",
+    "URI": "Newton_(unit)",
+    "dimensions": [],
+    "symbols": [
+      "kN"
+    ]
+  },
+  "second": {
+    "surfaces": [
+      "second",
+      "giây"
+    ],
+    "entity": "time",
+    "URI": "Second",
+    "dimensions": [],
+    "symbols": [
+      "s",
+      "sec",
+      "\"",
+      "\u2033",
+      "gi"
+    ]
+  },
+  "millisecond": {
+    "surfaces": [
+      "millisecond",
+      "mili giây"
+    ],
+    "entity": "time",
+    "URI": "Millisecond",
+    "dimensions": [],
+    "symbols": [
+      "ms",
+      "msec"
+    ]
+  },
+  "microsecond": {
+    "surfaces": [
+      "\u00b5s",
+      "microsecond",
+      "micrô giây"
+    ],
+    "entity": "time",
+    "URI": "Microsecond",
+    "dimensions": [],
+    "symbols": [
+      "\u03bcs",
+      "\u03bcsec"
+    ]
+  },
+  "nanosecond": {
+    "surfaces": [
+      "nanosecond",
+      "nano giây"
+    ],
+    "entity": "time",
+    "URI": "Nanosecond",
+    "dimensions": [],
+    "symbols": [
+      "ns",
+      "nsec"
+    ]
+  },
+  "minute": {
+    "surfaces": [
+      "minute",
+      "phút"
+    ],
+    "entity": "time",
+    "URI": "Minute",
+    "dimensions": [],
+    "symbols": [
+      "min",
+      "'",
+      "\u2032",
+      "ph"
+    ]
+  },
+  "hour": {
+    "surfaces": [
+      "hour",
+      "giờ",
+      "tiếng",
+      "tiếng đồng hồ"
+    ],
+    "entity": "time",
+    "URI": "Hour",
+    "dimensions": [],
+    "symbols": [
+      "h",
+      "hr",
+      "hs"
+    ]
+  },
+  "day": {
+    "surfaces": [
+      "day",
+      "ngày"
+    ],
+    "entity": "time",
+    "URI": "Day",
+    "dimensions": [],
+    "symbols": [
+      "d"
+    ]
+  },
+  "week": {
+    "surfaces": [
+      "week",
+      "tuần"
+    ],
+    "entity": "time",
+    "URI": "Week",
+    "dimensions": [],
+    "symbols": []
+  },
+  "month": {
+    "surfaces": [
+      "month",
+      "tháng"
+    ],
+    "entity": "time",
+    "URI": "Month",
+    "dimensions": [],
+    "symbols": []
+  },
+  "year": {
+    "surfaces": [
+      "year",
+      "annum",
+      "năm",
+      "niên"
+    ],
+    "entity": "time",
+    "URI": "Year",
+    "dimensions": [],
+    "symbols": [
+      "a",
+      "y",
+      "yr"
+    ],
+    "prefixes": [
+      "k",
+      "M",
+      "G",
+      "T",
+      "P",
+      "E"
+    ]
+  },
+  "decade": {
+    "surfaces": [
+      "decade",
+      "thập kỷ",
+      "thập niên",
+      "thập niên kỷ",
+      "niên đại"
+    ],
+    "entity": "time",
+    "URI": "Decade",
+    "dimensions": [],
+    "symbols": []
+  },
+  "century": {
+    "surfaces": [
+      "century",
+      "thế kỷ"
+    ],
+    "entity": "time",
+    "URI": "Century",
+    "dimensions": [],
+    "symbols": []
+  },
+  "millennium": {
+    "surfaces": [
+      "millennium",
+      "thiên niên kỷ",
+      "thiên kỷ"
+    ],
+    "entity": "time",
+    "URI": "Millennium",
+    "dimensions": [],
+    "symbols": []
+  },
+  "speed of light": {
+    "surfaces": [
+      "speed of light",
+      "lightspeed",
+      "tốc độ ánh sáng"
+    ],
+    "entity": "speed",
+    "URI": "Speed_of_light",
+    "dimensions": [],
+    "symbols": [
+      "c"
+    ]
+  },
+  "knot": {
+    "surfaces": [
+      "knot",
+      "nút"
+    ],
+    "entity": "speed",
+    "URI": "Knot_(unit)",
+    "dimensions": [],
+    "symbols": [
+      "kn",
+      "kt"
+    ]
+  },
+  "metre per second": {
+    "surfaces": [
+      "metre per second",
+      "meter per second",
+      "mét trên giây"
+    ],
+    "entity": "speed",
+    "URI": "Metre_per_second",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": 1
+      },
+      {
+        "base": "second",
+        "power": -1
+      }
+    ],
+    "symbols": [
+      "mps"
+    ]
+  },
+  "metre per hour": {
+    "surfaces": [
+      "metre per hour",
+      "meter per hour",
+      "mét trên giờ"
+    ],
+    "entity": "speed",
+    "URI": "Metre_per_hour",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": 1
+      },
+      {
+        "base": "hour",
+        "power": -1
+      }
+    ],
+    "symbols": []
+  },
+  "kilometre per hour": {
+    "surfaces": [
+      "kilometre per hour",
+      "kilometer per hour",
+      "kilômét trên giờ"
+    ],
+    "entity": "speed",
+    "URI": "Kilometres_per_hour",
+    "dimensions": [
+      {
+        "base": "kilometre",
+        "power": 1
+      },
+      {
+        "base": "hour",
+        "power": -1
+      }
+    ],
+    "symbols": [
+      "kph"
+    ]
+  },
+  "mile per hour": {
+    "surfaces": [
+      "mile per hour",
+      "dặm trên giờ"
+    ],
+    "entity": "speed",
+    "URI": "Miles_per_hour",
+    "dimensions": [
+      {
+        "base": "mile",
+        "power": 1
+      },
+      {
+        "base": "hour",
+        "power": -1
+      }
+    ],
+    "symbols": [
+      "MPH",
+      "mph"
+    ]
+  },
+  "degree angle": {
+    "surfaces": [
+      "degree",
+      "degree of arc",
+      "arc degree",
+      "arcdegree",
+      "angular degree",
+      "độ"
+    ],
+    "entity": "angle",
+    "URI": "Degree_(angle)",
+    "dimensions": [],
+    "symbols": [
+      "\u00b0",
+      "deg",
+      "arcdeg"
+    ]
+  },
+  "radian": {
+    "surfaces": [
+      "radian",
+      "rađian"
+    ],
+    "entity": "angle",
+    "URI": "Radian",
+    "dimensions": [],
+    "symbols": [
+      "rad",
+      "\u33ad"
+    ]
+  },
+  "steradian": {
+    "surfaces": [
+      "steradian",
+      "square radian",
+      "sterađian"
+    ],
+    "entity": "angle",
+    "URI": "Steradian",
+    "dimensions": [],
+    "symbols": [
+      "sr"
+    ]
+  },
+  "minute of arc": {
+    "surfaces": [
+      "minute",
+      "minute of arc",
+      "arcminute",
+      "minute arc",
+      "angular minute",
+      "arc minute",
+      "phút góc",
+      "phút cung"
+    ],
+    "entity": "angle",
+    "URI": "Minute_and_second_of_arc",
+    "dimensions": [],
+    "symbols": [
+      "'",
+      "\u2032",
+      "MOA",
+      "arcmin",
+      "amin"
+    ]
+  },
+  "bit": {
+    "surfaces": [
+      "bit",
+      "bít"
+    ],
+    "entity": "data storage",
+    "URI": "Bit",
+    "dimensions": [],
+    "symbols": [
+      "b"
+    ]
+  },
+  "newton metre": {
+    "surfaces": [
+      "newton metre",
+      "newton meter",
+      "newton-meter",
+      "newton-metre",
+      "newton mét",
+      "newton-mét"
+    ],
+    "entity": "torque",
+    "URI": "Newton_metre",
+    "dimensions": [
+      {
+        "base": "newton",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": 1
+      }
+    ],
+    "symbols": [
+      "Nm"
+    ]
+  },
+  "decibel": {
+    "surfaces": [
+      "decibel",
+      "đề-xi-ben"
+    ],
+    "entity": "sound level",
+    "URI": "Decibel",
+    "dimensions": [],
+    "symbols": [
+      "dB"
+    ]
+  },
+  "cycle per second": {
+    "surfaces": [
+      "cycle per second",
+      "chu kỳ trên giây",
+      "chu kỳ mỗi giây"
+    ],
+    "entity": "instance frequency",
+    "URI": "Cycle_per_second",
+    "dimensions": [
+      {
+        "base": "turn",
+        "power": 1
+      },
+      {
+        "base": "second",
+        "power": -1
+      }
+    ],
+    "symbols": [
+      "cps"
+    ]
+  },
+  "revolutions per minute": {
+    "surfaces": [
+      "revolutions per minute",
+      "số vòng quay một phút"
+    ],
+    "entity": "instance frequency",
+    "URI": "Revolutions_per_minute",
+    "dimensions": [
+      {
+        "base": "turn",
+        "power": 1
+      },
+      {
+        "base": "minute",
+        "power": -1
+      }
+    ],
+    "symbols": [
+      "rpm",
+      "RPM"
+    ]
+  },
+  "hertz": {
+    "surfaces": [
+      "hertz",
+      "revolutions per second",
+      "héc"
+    ],
+    "entity": "frequency",
+    "URI": "Hertz",
+    "dimensions": [],
+    "symbols": [
+      "Hz",
+      "\u3390",
+      "rps"
+    ],
+    "prefixes": [
+      "k",
+      "M",
+      "G",
+      "T",
+      "P",
+      "E"
+    ]
+  },
+  "inverse second": {
+    "surfaces": [
+      "inverse second",
+      "reciprocal second",
+      "per second",
+      "giây nghịch đảo"
+    ],
+    "entity": "frequency",
+    "URI": "Inverse_second",
+    "dimensions": [
+      {
+        "base": "second",
+        "power": -1
+      }
+    ],
+    "symbols": []
+  },
+  "mole": {
+    "surfaces": [
+      "mole",
+      "mol"
+    ],
+    "entity": "amount of substance",
+    "URI": "Mole_(unit)",
+    "dimensions": [],
+    "symbols": [
+      "mol"
+    ]
+  },
+  "coulomb": {
+    "surfaces": [
+      "coulomb",
+      "culông",
+      "cu-lông"
+    ],
+    "entity": "charge",
+    "URI": "Coulomb",
+    "dimensions": [],
+    "symbols": [
+      "C"
+    ]
+  },
+  "millicoulomb": {
+    "surfaces": [
+      "millicoulomb",
+      "miliculông"
+    ],
+    "entity": "charge",
+    "URI": "Coulomb",
+    "dimensions": [],
+    "symbols": [
+      "mC"
+    ]
+  },
+  "microcoulomb": {
+    "surfaces": [
+      "microcoulomb",
+      "micrôculông"
+    ],
+    "entity": "charge",
+    "URI": "Coulomb",
+    "dimensions": [],
+    "symbols": [
+      "\u00b5C"
+    ]
+  },
+  "ampere-hour": {
+    "surfaces": [
+      "ampere-hour",
+      "ampere hour",
+      "amp-hour",
+      "ampe giờ"
+    ],
+    "entity": "charge",
+    "URI": "Coulomb",
+    "dimensions": [
+      {
+        "base": "ampere",
+        "power": 1
+      },
+      {
+        "base": "hour",
+        "power": 1
+      }
+    ],
+    "symbols": [
+      "Ah"
+    ]
+  },
+  "milliampere-hour": {
+    "surfaces": [
+      "milliampere-hour",
+      "milliampere hour",
+      "milliamp-hour",
+      "miliampe giờ"
+    ],
+    "entity": "charge",
+    "URI": "Coulomb",
+    "dimensions": [
+      {
+        "base": "ampere",
+        "power": 1
+      },
+      {
+        "base": "hour",
+        "power": 1
+      }
+    ],
+    "symbols": [
+      "mAh",
+      "mah"
+    ]
+  },
+  "ampere": {
+    "surfaces": [
+      "ampere"
+    ],
+    "entity": "current",
+    "URI": "Ampere",
+    "dimensions": [],
+    "symbols": [
+      "A",
+      "amp",
+      "ampe",
+      "am-pe"
+    ],
+    "prefixes": [
+      "a",
+      "f",
+      "p",
+      "n",
+      "\u00b5",
+      "m",
+      "k",
+      "M",
+      "G",
+      "T",
+      "P",
+      "E"
+    ]
+  },
+  "volt": {
+    "surfaces": [
+      "volt",
+      "vôn"
+    ],
+    "entity": "electric potential",
+    "URI": "Volt",
+    "dimensions": [],
+    "prefixes": [
+      "m",
+      "k",
+      "G",
+      "T"
+    ],
+    "symbols": [
+      "V"
+    ]
+  },
+  "ohm": {
+    "surfaces": [
+      "ohm",
+      "ôm"
+    ],
+    "entity": "electrical resistance",
+    "URI": "Ohm",
+    "dimensions": [],
+    "symbols": [
+      "\u2126",
+      "\u03a9"
+    ],
+    "prefixes": [
+      "m",
+      "k",
+      "M",
+      "G"
+    ]
+  },
+  "farad": {
+    "surfaces": [
+      "farad",
+      "fara"
+    ],
+    "entity": "capacitance",
+    "URI": "Farad",
+    "dimensions": [],
+    "symbols": [
+      "F"
+    ],
+    "prefixes": [
+      "\u00b5",
+      "m",
+      "k",
+      "M",
+      "G"
+    ]
+  },
+  "henry": {
+    "surfaces": [
+      "henry",
+      "hen-ry",
+      "hen-ri"
+    ],
+    "entity": "inductance",
+    "URI": "Henry_(unit)",
+    "dimensions": [],
+    "symbols": [
+      "H"
+    ]
+  },
+  "rad": {
+    "surfaces": [
+      "rad"
+    ],
+    "entity": "radiation absorbed dose",
+    "URI": "Rad_(unit)",
+    "dimensions": [],
+    "symbols": [
+      "rd"
+    ]
+  },
+  "pixel": {
+    "surfaces": [
+      "pixel",
+      "dots",
+      "pel",
+      "picture element",
+      "điểm ảnh"
+    ],
+    "entity": "typographical element",
+    "URI": "Pixel",
+    "dimensions": [],
+    "symbols": [
+      "px"
+    ],
+    "prefixes": [
+      "M"
+    ]
+  },
+  "gram per cubic centimetre": {
+    "surfaces": [
+      "gram per cubic centimetre",
+      "gram per cubic centimeter",
+      "gam trên xen-ti-mét khối"
+    ],
+    "entity": "density",
+    "URI": "Gram_per_cubic_centimetre",
+    "dimensions": [
+      {
+        "base": "gram",
+        "power": 1
+      },
+      {
+        "base": "centimetre",
+        "power": -3
+      }
+    ],
+    "symbols": []
+  },
+  "kilogram per cubic metre": {
+    "surfaces": [
+      "kilogram per cubic metre",
+      "kilogram per cubic meter",
+      "ki-lô-gram trên mét khối"
+    ],
+    "entity": "density",
+    "URI": "Kilogram_per_cubic_metre",
+    "dimensions": [
+      {
+        "base": "kilogram",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -3
+      }
+    ],
+    "symbols": []
+  },
+  "cubic metre per second": {
+    "surfaces": [
+      "cubic metre per second",
+      "cubic meter per second",
+      "cumec",
+      "mét khối trên giây"
+    ],
+    "entity": "volumetric flow",
+    "URI": "Cubic_metre_per_second",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": 3
+      },
+      {
+        "base": "second",
+        "power": -1
+      }
+    ],
+    "symbols": []
+  },
+  "bit per second": {
+    "surfaces": [
+      "bit per second",
+      "bit trên giây"
+    ],
+    "entity": "data transfer rate",
+    "URI": "Bit_rate",
+    "dimensions": [
+      {
+        "base": "bit",
+        "power": 1
+      },
+      {
+        "base": "second",
+        "power": -1
+      }
+    ],
+    "symbols": [
+      "bps"
+    ]
+  },
+  "penny": {
+    "surfaces": [
+      "penny",
+      "xu anh"
+    ],
+    "entity": "currency",
+    "URI": "Penny",
+    "dimensions": [],
+    "symbols": [
+      "p",
+      "d."
+    ]
+  },
+  "dozen": {
+    "surfaces": [
+      "dozen",
+      "group of twelve",
+      "tá"
+    ],
+    "entity": "dimensionless",
+    "URI": "Dozen",
+    "dimensions": [],
+    "symbols": [
+      "dz",
+      "doz"
+    ]
+  },
+  "dime": {
+    "surfaces": [
+      "dime",
+      "xu mỹ"
+    ],
+    "entity": "currency",
+    "URI": "Dime_(United_States_coin)",
+    "dimensions": [],
+    "symbols": [
+      "\u20ab"
+    ]
+  },
+  "base pair": {
+    "surfaces": [
+      "base pair",
+      "cặp base",
+      "cặp ba-zơ"
+    ],
+    "entity": "length",
+    "URI": "Base_pair",
+    "dimensions": [],
+    "symbols": [
+      "bp"
+    ]
+  },
+  "nucleotide": {
+    "surfaces": [
+      "nucleotide",
+      "nu-clê-ô-tit"
+    ],
+    "entity": "length",
+    "URI": "Nucleotide",
+    "dimensions": [],
+    "symbols": [
+      "nt"
+    ]
+  },
+  "lạng": {
+    "surfaces": [
+      "lạng",
+      "lượng"
+    ],
+    "entity": "mass",
+    "URI": "Lạng",
+    "dimensions": [],
+    "symbols": []
+  },
+  "yến": {
+    "surfaces": [
+      "yến"
+    ],
+    "entity": "mass",
+    "URI": "Yến (đo lường)",
+    "dimensions": [],
+    "symbols": []
+  },
+  "mẫu": {
+    "surfaces": [
+      "mẫu"
+    ],
+    "entity": "area",
+    "URI": "Mẫu (đơn vị đo)",
+    "dimensions": [],
+    "symbols": []
+  },
+  "sào": {
+    "surfaces": [
+      "sào"
+    ],
+    "entity": "area",
+    "URI": "Sào",
+    "dimensions": [],
+    "symbols": []
+  }
+}

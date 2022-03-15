@@ -24,7 +24,7 @@ def clean_surface(surface, span):
 
     surface = surface.replace("-", " ")
     no_start = ["and", " "]
-    no_end = [" "] + [" {}".format(misc) for misc in reg.miscnum(lang)]
+    no_end = [" "] + [" {}".format(misc) for misc in reg.misc_num(lang)]
 
     found = True
     while found:
@@ -45,7 +45,7 @@ def clean_surface(surface, span):
 
     split = surface.lower().split()
     if (
-        split[0] in reg.miscnum(lang)
+        split[0] in reg.misc_num(lang)
         and len(split) > 1
         and split[1] in reg.units(lang) + reg.tens(lang)
     ):
@@ -56,7 +56,7 @@ def clean_surface(surface, span):
 
 
 ###############################################################################
-def extract_spellout_values(text):
+def extract_spell_out_values(text):
     """
     Convert spelled out numbers in a given text to digits.
     """
@@ -82,7 +82,7 @@ def extract_spellout_values(text):
                     )
                 except ValueError:
                     match = re.search(reg.numberwords_regex(), word)
-                    scale, increment = reg.numberwords(lang)[match.group(0)]
+                    scale, increment = reg.number_words(lang)[match.group(0)]
                 curr = curr * scale + increment
                 if scale > 100 or word == "and":
                     result += curr
@@ -339,6 +339,7 @@ def build_quantity(orig_text, text, item, values, unit, surface, span, uncert):
         return
 
     objs = []
+
     for value in values:
         obj = cls.Quantity(
             value=value,
@@ -374,7 +375,6 @@ def name_from_dimensions(dimensions):
     """
 
     name = ""
-
     for unit in dimensions:
         if unit["power"] < 0:
             name += "per "
@@ -390,5 +390,4 @@ def name_from_dimensions(dimensions):
         name += " "
 
     name = name.strip()
-
     return name

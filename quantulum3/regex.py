@@ -6,13 +6,11 @@
 
 import re
 
-from . import language, load
-from .load import cached
+from . import language, load, const
 
 
 ###############################################################################
-@cached
-def _get_regex(lang="en_US"):
+def _get_regex(lang=const.LANG):
     """
     Get regex module for given language
     :param lang:
@@ -22,82 +20,83 @@ def _get_regex(lang="en_US"):
 
 
 ###############################################################################
-def units(lang="en_US"):
+def units(lang=const.LANG):
     return _get_regex(lang).UNITS
 
 
-def tens(lang="en_US"):
+def tens(lang=const.LANG):
     return _get_regex(lang).TENS
 
 
-def scales(lang="en_US"):
+def scales(lang=const.LANG):
     return _get_regex(lang).SCALES
 
 
-def decimals(lang="en_US"):
+def decimals(lang=const.LANG):
     return _get_regex(lang).DECIMALS
 
 
-def miscnum(lang="en_US"):
+def misc_num(lang=const.LANG):
     return _get_regex(lang).MISCNUM
 
 
-def powers(lang="en_US"):
+def powers(lang=const.LANG):
     return _get_regex(lang).POWERS
 
 
-def exponents_regex(lang="en_US"):
+def exponents_regex(lang=const.LANG):
     return _get_regex(lang).EXPONENTS_REGEX
 
 
-@cached
-def ranges(lang="en_US"):
+def ranges(lang=const.LANG):
     ranges_ = {"-"}
     ranges_.update(_get_regex(lang).RANGES)
     return ranges_
 
 
-@cached
-def uncertainties(lang="en_US"):
+def uncertainties(lang=const.LANG):
     uncertainties_ = {r"\+/-", r"±"}
     uncertainties_.update(_get_regex(lang).UNCERTAINTIES)
     return uncertainties_
 
 
 ###############################################################################
-@cached
-def numberwords(lang="en_US"):
+def number_words(lang=const.LANG):
     """
     Convert number words to integers in a given text.
     """
 
     numwords = {}
 
-    numwords.update(miscnum(lang))
+    numwords.update(misc_num(lang))
 
     for idx, word in enumerate(units(lang)):
         numwords[word] = (1, idx)
     for idx, word in enumerate(tens(lang)):
         numwords[word] = (1, idx * 10)
     for idx, word in enumerate(scales(lang)):
-        numwords[word] = (10 ** (idx * 3 or 2), 0)
+        if isinstance(word, list):
+            for w in word:
+                numwords[w] = (10 ** (idx * 3 or 2), 0)
+        else:
+            numwords[word] = (10 ** (idx * 3 or 2), 0)
     for word, factor in decimals(lang).items():
         numwords[word] = (factor, 0)
-        numwords[load.pluralize(word, lang=lang)] = (factor, 0)
+        # numwords[load.pluralize(word, lang=lang)] = (factor, 0)
 
+    # print(numwords)
     return numwords
 
 
-@cached
-def numberwords_regex(lang="en_US"):
+def numberwords_regex(lang=const.LANG):
     all_numbers = r"|".join(
-        r"((?<=\W)|^)%s((?=\W)|$)" % i for i in list(numberwords(lang).keys()) if i
+        r"((?<=\W)|^)%s((?=\W)|$)" % i for i in list(number_words(lang).keys()) if i
     )
     return all_numbers
 
 
 ###############################################################################
-def suffixes(lang="en_US"):
+def suffixes(lang=const.LANG):
     return _get_regex(lang).SUFFIXES
 
 
@@ -149,48 +148,41 @@ def unicode_fractions_regex():
     return re.escape("".join(list(unicode_fractions().keys())))
 
 
-@cached
-def multiplication_operators(lang="en_US"):
+def multiplication_operators(lang=const.LANG):
     mul = {u"*", u" ", u"·", u"x"}
     mul.update(_get_regex(lang).MULTIPLICATION_OPERATORS)
     return mul
 
 
-@cached
-def multiplication_operators_regex(lang="en_US"):
+def multiplication_operators_regex(lang=const.LANG):
     return r"|".join(r"%s" % re.escape(i) for i in multiplication_operators(lang))
 
 
-@cached
-def division_operators(lang="en_US"):
+def division_operators(lang=const.LANG):
     div = {u"/"}
     div.update(_get_regex(lang).DIVISION_OPERATORS)
     return div
 
 
-@cached
-def grouping_operators(lang="en_US"):
+def grouping_operators(lang=const.LANG):
     grouping_ops = {" "}
     grouping_ops.update(_get_regex(lang).GROUPING_OPERATORS)
     return grouping_ops
 
 
-def grouping_operators_regex(lang="en_US"):
+def grouping_operators_regex(lang=const.LANG):
     return "".join(grouping_operators(lang))
 
 
-@cached
-def decimal_operators(lang="en_US"):
+def decimal_operators(lang=const.LANG):
     return _get_regex(lang).DECIMAL_OPERATORS
 
 
-@cached
-def decimal_operators_regex(lang="en_US"):
+def decimal_operators_regex(lang=const.LANG):
     return "".join(decimal_operators(lang))
 
 
-@cached
-def operators(lang="en_US"):
+def operators(lang=const.LANG):
     ops = set()
     ops.update(multiplication_operators(lang))
     ops.update(division_operators(lang))
@@ -223,8 +215,7 @@ def number_pattern():
     return NUM_PATTERN
 
 
-@cached
-def number_pattern_no_groups(lang="en_US"):
+def number_pattern_no_groups(lang=const.LANG):
     return NUM_PATTERN.format(
         number=":",
         decimals=":",
@@ -240,8 +231,7 @@ def number_pattern_no_groups(lang="en_US"):
     )
 
 
-@cached
-def number_pattern_groups(lang="en_US"):
+def number_pattern_groups(lang=const.LANG):
     return NUM_PATTERN.format(
         number="P<number>",
         decimals="P<decimals>",
@@ -257,8 +247,7 @@ def number_pattern_groups(lang="en_US"):
     )
 
 
-@cached
-def range_pattern(lang="en_US"):
+def range_pattern(lang=const.LANG):
     num_pattern_no_groups = number_pattern_no_groups(lang)
     return r"""                        # Pattern for a range of numbers
 
@@ -278,8 +267,7 @@ def range_pattern(lang="en_US"):
     )
 
 
-@cached
-def text_pattern_reg(lang="en_US"):
+def text_pattern_reg(lang=const.LANG):
     txt_pattern = _get_regex(lang).TEXT_PATTERN.format(
         number_pattern_no_groups=number_pattern_no_groups(lang),
         numberwords_regex=numberwords_regex(lang),
@@ -289,8 +277,7 @@ def text_pattern_reg(lang="en_US"):
 
 
 ###############################################################################
-@cached
-def units_regex(lang="en_US"):
+def units_regex(lang=const.LANG):
     """
     Build a compiled regex object. Groups of the extracted items, with 4
     repetitions, are:
@@ -324,6 +311,7 @@ def units_regex(lang="en_US"):
     """
 
     op_keys = sorted(list(operators(lang)), key=len, reverse=True)
+    # print('op_keys =', op_keys)
     unit_keys = sorted(
         list(load.units(lang).surfaces.keys()) + list(load.units(lang).symbols.keys()),
         key=len,
@@ -352,6 +340,7 @@ def units_regex(lang="en_US"):
         [all_symbols, range_pattern(lang)]
         + 4 * [all_ops, all_units, exponent, all_units, exponent]
     )
+
     regex = re.compile(pattern, re.VERBOSE | re.IGNORECASE)
 
     return regex

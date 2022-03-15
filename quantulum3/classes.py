@@ -6,8 +6,6 @@
 
 from typing import Any, Dict, List, Optional, Tuple
 
-from . import speak
-
 
 ###############################################################################
 class Entity(object):
@@ -16,10 +14,10 @@ class Entity(object):
     """
 
     def __init__(
-        self,
-        name: str,
-        dimensions: List[Dict[str, Any]] = [],
-        uri: Optional[str] = None,
+            self,
+            name: str,
+            dimensions: List[Dict[str, Any]] = [],
+            uri: Optional[str] = None,
     ):
 
         self.name = name
@@ -48,6 +46,27 @@ class Entity(object):
         return hash(repr(self))
 
 
+class Conversion(object):
+    """
+    Class for an entity (e.g. "volume").
+    """
+
+    def __init__(
+            self,
+            name: str,
+            silabel: str,
+            factor: float,
+    ):
+        self.name = name
+        self.silabel = silabel
+        self.factor = factor
+
+    def __repr__(self):
+        msg = '(SI="%s", factor=%f)'
+        msg = msg % (self.silabel, self.factor)
+        return msg
+
+
 ###############################################################################
 class Unit(object):
     """
@@ -55,21 +74,23 @@ class Unit(object):
     """
 
     def __init__(
-        self,
-        name: str,
-        entity: Entity,
-        surfaces: List[str] = [],
-        uri: Optional[str] = None,
-        symbols: List[str] = [],
-        dimensions: List[Dict[str, Any]] = [],
-        currency_code: Optional[str] = None,
-        original_dimensions: Optional[List[Dict[str, Any]]] = None,
-        lang="en_US",
+            self,
+            name: str,
+            entity: Entity,
+            conversion: Conversion,
+            surfaces: List[str] = [],
+            uri: Optional[str] = None,
+            symbols: List[str] = [],
+            dimensions: List[Dict[str, Any]] = [],
+            currency_code: Optional[str] = None,
+            original_dimensions: Optional[List[Dict[str, Any]]] = None,
+            lang="vi",
     ):
         """Initialization method."""
         self.name = name
         self.surfaces = surfaces
         self.entity = entity
+        self.conversion = conversion
         self.uri = uri
         self.symbols = symbols
         self.dimensions = dimensions
@@ -78,36 +99,22 @@ class Unit(object):
         self.currency_code = currency_code
         self.lang = lang
 
-    def to_spoken(self, count=1, lang=None) -> str:
-        """
-        Convert a given unit to the unit in words, correctly inflected.
-        :param count: The value of the quantity (i.e. 1 for one watt, 2 for
-                      two seconds)
-        :param lang: Language of result
-        :return: A string with the correctly inflected spoken version of the
-                 unit
-        """
-        return speak.unit_to_spoken(self, count, lang or self.lang)
-
     def __repr__(self):
 
-        msg = 'Unit(name="%s", entity=Entity("%s"), uri=%s)'
-        msg = msg % (self.name, self.entity.name, self.uri)
+        msg = 'Unit(name="%s", entity=Entity("%s"), conversion=Conversion("%s"))'
+        msg = msg % (self.name, self.entity.name, self.conversion)
         return msg
-
-    def __str__(self):
-        return self.to_spoken()
 
     def __eq__(self, other):
 
         if isinstance(other, self.__class__):
             return (
-                self.name == other.name
-                and self.entity == other.entity
-                and all(
-                    dim1["base"] == dim2["base"] and dim1["power"] == dim2["power"]
-                    for dim1, dim2 in zip(self.dimensions, other.dimensions)
-                )
+                    self.name == other.name
+                    and self.entity == other.entity
+                    and all(
+                dim1["base"] == dim2["base"] and dim1["power"] == dim2["power"]
+                for dim1, dim2 in zip(self.dimensions, other.dimensions)
+            )
             )
         else:
             return False
@@ -130,13 +137,13 @@ class Quantity(object):
     """
 
     def __init__(
-        self,
-        value: float,
-        unit: Unit,
-        surface: Optional[str] = None,
-        span: Optional[Tuple[int, int]] = None,
-        uncertainty: Optional[float] = None,
-        lang="en_US",
+            self,
+            value: float,
+            unit: Unit,
+            surface: Optional[str] = None,
+            span: Optional[Tuple[int, int]] = None,
+            uncertainty: Optional[float] = None,
+            lang="vi",
     ):
 
         self.value = value
@@ -156,11 +163,11 @@ class Quantity(object):
 
         if isinstance(other, self.__class__):
             return (
-                self.value == other.value
-                and self.unit == other.unit
-                and self.surface == other.surface
-                and self.span == other.span
-                and self.uncertainty == other.uncertainty
+                    self.value == other.value
+                    and self.unit == other.unit
+                    and self.surface == other.surface
+                    and self.span == other.span
+                    and self.uncertainty == other.uncertainty
             )
         else:
             return False

@@ -237,18 +237,6 @@
       "dkm"
     ]
   },
-  "decimetre": {
-    "surfaces": [
-      "decimetre",
-      "decimeter"
-    ],
-    "entity": "length",
-    "URI": "Decimetre",
-    "dimensions": [],
-    "symbols": [
-      "dm"
-    ]
-  },
   "centimetre": {
     "surfaces": [
       "centimetre",
@@ -463,8 +451,7 @@
   },
   "short ton": {
     "surfaces": [
-      "short ton",
-      "ton"
+      "short ton"
     ],
     "entity": "mass",
     "URI": "Short_ton",
@@ -2454,7 +2441,8 @@
   "kilometre per hour": {
     "surfaces": [
       "kilometre per hour",
-      "kilometer per hour"
+      "kilometer per hour",
+      "kilômét trên giờ"
     ],
     "entity": "speed",
     "URI": "Kilometres_per_hour",
@@ -3251,22 +3239,6 @@
       "E"
     ]
   },
-  "inverse second": {
-    "surfaces": [
-      "inverse second",
-      "reciprocal second",
-      "per second"
-    ],
-    "entity": "frequency",
-    "URI": "Inverse_second",
-    "dimensions": [
-      {
-        "base": "second",
-        "power": -1
-      }
-    ],
-    "symbols": []
-  },
   "mole": {
     "surfaces": [
       "mole"
@@ -3417,21 +3389,11 @@
       "m",
       "k",
       "G",
-      "T"
+      "T",
+      "M"
     ],
     "symbols": [
       "V"
-    ]
-  },
-  "megavolt": {
-    "surfaces": [
-      "megavolt"
-    ],
-    "entity": "electric potential",
-    "URI": "Volt",
-    "dimensions": [],
-    "symbols": [
-      "MV"
     ]
   },
   "ohm": {

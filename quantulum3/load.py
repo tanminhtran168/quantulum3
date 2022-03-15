@@ -3,16 +3,15 @@
 """
 :mod:`Quantulum` unit and entity loading functions.
 """
-
+import quantulum3 as q
 import json
 from collections import defaultdict
 from pathlib import Path
 from typing import Any, List, Tuple, Union
 
-from . import classes as c
-from . import language
+from . import language, classes, const
 
-TOPDIR = Path(__file__).parent or Path(".")
+TOP_DIR = Path(__file__).parent or Path("")
 
 ###############################################################################
 _CACHE_DICT = {}
@@ -28,7 +27,7 @@ def cached(funct):
     """
     assert callable(funct)
 
-    def cached_function(lang="en_US"):
+    def cached_function(lang=const.LANG):
         try:
             return _CACHE_DICT[id(funct)][lang]
         except KeyError:
@@ -53,21 +52,21 @@ def object_pairs_hook_defer_duplicate_keys(object_pairs: List[Tuple[str, Any]]):
 
 
 ###############################################################################
-@cached
-def _get_load(lang="en_US"):
+# @cached
+def _get_load(lang=const.LANG):
     return language.get("load", lang)
 
 
-GENERAL_UNITS_PATH = TOPDIR.joinpath("units.json")
-GENERAL_ENTITIES_PATH = TOPDIR.joinpath("entities.json")
+GENERAL_UNITS_PATH = TOP_DIR.joinpath("data/units.json")
+GENERAL_ENTITIES_PATH = TOP_DIR.joinpath("data/entities.json")
 
 
-def LANGUAGE_ENTITIES_PATH(lang="en_US"):
-    return TOPDIR.joinpath(language.topdir(lang), "entities.json")
+def LANGUAGE_ENTITIES_PATH(lang=const.LANG):
+    return TOP_DIR.joinpath(language.top_dir(lang), "data/entities.json")
 
 
-def LANGUAGE_UNITS_PATH(lang="en_US"):
-    return TOPDIR.joinpath(language.topdir(lang), "units.json")
+def LANGUAGE_UNITS_PATH(lang=const.LANG):
+    return TOP_DIR.joinpath(language.top_dir(lang), "data/unit_conversion.json")
 
 
 def _load_json(path_or_string: Union[Path, str]):
@@ -93,62 +92,35 @@ CUSTOM_ENTITIES = defaultdict(dict)
 CUSTOM_UNITS = defaultdict(dict)
 
 ###############################################################################
-def to_int_iff_int(value):
-    """
-    Returns int type number if the value is an integer value
-    :param value:
-    :return:
-    """
-    try:
-        if int(value) == value:
-            return int(value)
-    except (TypeError, ValueError):
-        pass
-    return value
-
-
-def pluralize(singular, count=None, lang="en_US"):
-    # Make spelling integers more natural
-    count = to_int_iff_int(count)
-    return _get_load(lang).pluralize(singular, count)
-
-
-def number_to_words(count, lang="en_US"):
-    # Make spelling integers more natural
-    count = to_int_iff_int(count)
-    return _get_load(lang).number_to_words(count)
-
-
-###############################################################################
 METRIC_PREFIXES = {
-    "Y": "yotta",
-    "Z": "zetta",
-    "E": "exa",
-    "P": "peta",
-    "T": "tera",
-    "G": "giga",
-    "M": "mega",
-    "k": "kilo",
-    "h": "hecto",
-    "da": "deca",
-    "d": "deci",
-    "c": "centi",
-    "m": "milli",
-    "µ": "micro",
-    "n": "nano",
-    "p": "pico",
-    "f": "femto",
-    "a": "atto",
-    "z": "zepto",
-    "y": "yocto",
-    "Ki": "kibi",
-    "Mi": "mebi",
-    "Gi": "gibi",
-    "Ti": "tebi",
-    "Pi": "pebi",
-    "Ei": "exbi",
-    "Zi": "zebi",
-    "Yi": "yobi",
+    "Y": (["yotta", "yôta", "yô-ta-"], 1e24),
+    "Z": (["zetta", "zêta", "zê-ta-"], 1e21),
+    "E": (["exa", "êxa", "ê-xa-"], 1e18),
+    "P": (["peta", "pêta", "pê-ta-"], 1e15),
+    "T": (["tera", "têra", "tê-ra-"], 1e12),
+    "G": (["giga", "gi-ga-"], 1e9),
+    "M": (["mega", "mêga", "mê-ga-"], 1e6),
+    "k": (["kilo", "kilô", "ki-lô-"], 1e3),
+    "h": (["hecto", "héctô", "héc-tô-"], 1e2),
+    "da": (["deca", "deka", "đêca", "đề-ca-"], 10),
+    "d": (["deci", "đêxi", "đề-xi-"], 1e-1),
+    "c": (["centi", "xenti", "xăngti", "xen-ti-", "xăng-ti-"], 1e-2),
+    "m": (["milli", "mili", "mi-li-"], 1e-3),
+    "µ": (["micro", "micrô", "mi-crô-"], 1e-6),
+    "n": (["nano", "nanô", "na-nô-"], 1e-9),
+    "p": (["pico", "picô", "pi-cô-"], 1e-12),
+    "f": (["femto", "femtô", "fem-tô-"], 1e-15),
+    "a": (["atto", "atô", "a-tô-"], 1e-18),
+    "z": (["zepto", "zeptô", "zep-tô-"], 1e-21),
+    "y": (["yocto", "yóctô", "yóc-tô-"], 1e-24),
+    "Ki": (["kibi"], 2e10),
+    "Mi": (["mebi"], 2e20),
+    "Gi": (["gibi"], 2e30),
+    "Ti": (["tebi"], 2e40),
+    "Pi": (["pebi"], 2e50),
+    "Ei": (["exbi"], 2e60),
+    "Zi": (["zebi"], 2e70),
+    "Yi": (["yobi"], 2e80)
 }
 
 
@@ -157,7 +129,6 @@ def get_key_from_dimensions(derived):
     """
     Translate dimensionality into key for DERIVED_UNI and DERIVED_ENT dicts.
     """
-
     return tuple((i["base"], i["power"]) for i in derived)
 
 
@@ -168,7 +139,7 @@ class Entities(object):
         Load entities from JSON file.
         """
 
-        # Merge entity dictionarys
+        # Merge entity dictionary's
         all_entities = defaultdict(dict)
         for ed in entity_dicts:
             for new_name, new_ent in _load_json_dict(ed).items():
@@ -177,7 +148,7 @@ class Entities(object):
         self.names = dict(
             (
                 name,
-                c.Entity(
+                classes.Entity(
                     name=name,
                     dimensions=props.get("dimensions", []),
                     uri=props.get("URI"),
@@ -227,7 +198,7 @@ class Entities(object):
 
 
 @cached
-def entities(lang="en_US"):
+def entities(lang=const.LANG):
     """
     Cached entity object
     """
@@ -257,31 +228,42 @@ def get_derived_units(names):
             for i in names[name].dimensions
         ]
 
+    # print(derived_uni[(('kilogram', 1), ('metre', -3))])
     return derived_uni
 
 
 ###############################################################################
 class Units(object):
-    def __init__(self, unit_dict_json: List[Union[str, Path, dict]], lang="en_US"):
+    def __init__(self, unit_dict_json: List[Union[str, Path, dict]], lang=const.LANG):
         """
         Load units from JSON file.
         """
-
         # names of all units
         self.names = {}
         self.symbols, self.symbols_lower = defaultdict(set), defaultdict(set)
         self.surfaces, self.surfaces_lower = defaultdict(set), defaultdict(set)
         self.prefix_symbols = defaultdict(set)
         self.lang = lang
+        self.unit_dict = None
 
         unit_dict = defaultdict(dict)
         for ud in unit_dict_json:
             for name, unit in _load_json_dict(ud).items():
-                for nname, nunit in self.prefixed_units(name, unit):
-                    unit_dict[nname].update(nunit)
+                for _name, _unit in self.prefixed_units(name, unit):
+                    # unit_dict[_name].update(_unit)
+                    if unit_dict.get(_name) is None:
+                        unit_dict[_name] = _unit
+                    else:
+                        surfaces = unit_dict[_name].get('surfaces', []).extend(_unit.get('surfaces', []))
+                        if surfaces is not None:
+                            unit_dict[_name]["surfaces"] = list(set(surfaces))
+                        if _unit.get("conversion") is not None:
+                            unit_dict[_name]["conversion"] = _unit["conversion"]
 
         for name, unit in unit_dict.items():
             self.load_unit(name, unit)
+
+        self.unit_dict = unit_dict
 
         self.derived = get_derived_units(self.names)
 
@@ -300,10 +282,11 @@ class Units(object):
             msg = "Two units with same name in units.json: %s" % name
             raise Exception(msg)
 
-        obj = c.Unit(
+        obj = classes.Unit(
             name=name,
             surfaces=unit.get("surfaces", []),
             entity=entities().names[unit["entity"]],
+            conversion=unit.get("conversion", []),
             uri=unit.get("URI"),
             symbols=unit.get("symbols", []),
             dimensions=unit.get("dimensions", []),
@@ -322,9 +305,6 @@ class Units(object):
         for surface in unit.get("surfaces", []):
             self.surfaces[surface].add(obj)
             self.surfaces_lower[surface.lower()].add(obj)
-            plural = pluralize(surface, lang=self.lang)
-            self.surfaces[plural].add(obj)
-            self.surfaces_lower[plural.lower()].add(obj)
 
     @staticmethod
     def prefixed_units(name, unit):
@@ -332,27 +312,35 @@ class Units(object):
         # If SI-prefixes are given, add them
         for prefix in unit.get("prefixes", []):
             assert (
-                prefix in METRIC_PREFIXES
+                    prefix in METRIC_PREFIXES
             ), "Given prefix '{}' for unit '{}' not supported".format(prefix, name)
             assert (
-                len(unit["dimensions"]) <= 1
+                    len(unit["dimensions"]) <= 1
             ), "Prefixing not supported for multiple dimensions in {}".format(name)
+            surfaces = []
+            for prefix_mention in METRIC_PREFIXES[prefix][0]:
+                surfaces.extend([prefix_mention + i for i in unit["surfaces"]])
 
-            uri = METRIC_PREFIXES[prefix].capitalize() + unit["URI"].lower()
+            uri = METRIC_PREFIXES[prefix][0][0].capitalize() + unit["URI"].lower()
             # we usually do not want the "_(unit)" postfix for prefixed units
             uri = uri.replace("_(unit)", "")
+            # try:
+            #     print(unit["conversion"])
+            # except:
+            #     pass
 
-            yield METRIC_PREFIXES[prefix] + name, {
-                "surfaces": [METRIC_PREFIXES[prefix] + i for i in unit["surfaces"]],
+            yield METRIC_PREFIXES[prefix][0][0] + name, {
+                "surfaces": surfaces,
                 "entity": unit["entity"],
                 "URI": uri,
                 "dimensions": [],
                 "symbols": [prefix + i for i in unit["symbols"]],
+                "conversion": {"silabel": name, "factor": METRIC_PREFIXES[prefix][1]}
             }
 
 
 @cached
-def units(lang="en_US"):
+def units(lang=const.LANG):
     """
     Cached unit object
     """
@@ -361,10 +349,10 @@ def units(lang="en_US"):
 
 ###############################################################################
 @cached
-def training_set(lang="en_US"):
+def training_set(lang=const.LANG):
     training_set_ = []
 
-    path = language.topdir(lang).joinpath("train")
+    path = language.top_dir(lang).joinpath("train")
     for file in path.iterdir():
         if file.suffix == ".json":
             with file.open("r", encoding="utf-8") as train_file:
@@ -410,7 +398,7 @@ def add_custom_entity(name: str, **kwargs):
 
 def remove_custom_entity(name: str):
     """
-    Removes a entity from the set of custom entities
+    Removes an entity from the set of custom entities
     Note: causes a reload of all entities
     :param name: Name of the entity to remove. This will not affect entities that are loaded per default.
     """
