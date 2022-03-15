@@ -124,7 +124,7 @@ The SI unit list and conversion rate are crawled from Wikidata.
 
 This library contains 154 SI units and 1688 conversion configurations
 ```pycon
->>> parser.parse('I want a gallon of beer')
+>>> parser.parse('The speed of leopard is 58km/h')
 [Quantity(58, "Unit(name="kilometre per hour", entity=Entity("speed"), 
 conversion=Conversion("{'silabel': 'metre per second', 'factor': 0.2777777777777778}"))")]
 ```
