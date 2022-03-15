@@ -198,11 +198,11 @@ def get_conversion_from_dimensions(dimensions, lang='vi'):
             conversion_dict.append({"base": si_label, "power": dim})
             res = res * (factor ** dim)
         # print(conversion_dict)
-        si_units = json.load(open("quantulum3/si_units.json"))
+        si_units = json.load(open("quantulum3/data/si_units.json"))
         for si, value in si_units.items():
             if value == conversion_dict:
                 return {"silabel": si, "factor": res}
-    except:
+    except KeyError:
         return None
 
 

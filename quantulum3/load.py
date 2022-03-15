@@ -324,10 +324,6 @@ class Units(object):
             uri = METRIC_PREFIXES[prefix][0][0].capitalize() + unit["URI"].lower()
             # we usually do not want the "_(unit)" postfix for prefixed units
             uri = uri.replace("_(unit)", "")
-            # try:
-            #     print(unit["conversion"])
-            # except:
-            #     pass
 
             yield METRIC_PREFIXES[prefix][0][0] + name, {
                 "surfaces": surfaces,

@@ -4,7 +4,7 @@ import json
 def create_file_with_conversion():
     units = json.load(open("data/units.json", encoding='utf-8'))
     vi_units = json.load(open("lang/vi/data/units.json", encoding='utf-8'))
-    conversions = json.load(open("./unitConversionConfig.json", encoding='utf-8'))
+    conversions = json.load(open(".data/unitConversionConfig.json", encoding='utf-8'))
 
     for unit in units:
         if vi_units.get(unit) is None:
@@ -24,7 +24,7 @@ def create_file_with_conversion():
 
 
 def create_si_unit_list():
-    conversions = json.load(open("./unitConversionConfig.json", encoding='utf-8'))
+    conversions = json.load(open(".data/unitConversionConfig.json", encoding='utf-8'))
     units = json.load(open("lang/vi/data/unit_conversion.json", encoding='utf-8'))
     si_units = {}
     for conversion in conversions.values():
@@ -50,7 +50,11 @@ def create_si_unit_list():
             else:
                 si_units[si_unit] = {'base': si_unit, 'power': 1}
 
-    json.dump(si_units, open("./si_units_new.json", "w", encoding='utf-8'), ensure_ascii=False)
+    json.dump(si_units, open(".data/si_units.json", "w", encoding='utf-8'), ensure_ascii=False)
+
+
+def get_si_entity_list():
+    pass
 
 
 if __name__ == '__main__':

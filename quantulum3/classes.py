@@ -5,6 +5,7 @@
 """
 
 from typing import Any, Dict, List, Optional, Tuple
+from . import const
 
 
 ###############################################################################
@@ -46,27 +47,6 @@ class Entity(object):
         return hash(repr(self))
 
 
-class Conversion(object):
-    """
-    Class for an entity (e.g. "volume").
-    """
-
-    def __init__(
-            self,
-            name: str,
-            silabel: str,
-            factor: float,
-    ):
-        self.name = name
-        self.silabel = silabel
-        self.factor = factor
-
-    def __repr__(self):
-        msg = '(SI="%s", factor=%f)'
-        msg = msg % (self.silabel, self.factor)
-        return msg
-
-
 ###############################################################################
 class Unit(object):
     """
@@ -77,14 +57,14 @@ class Unit(object):
             self,
             name: str,
             entity: Entity,
-            conversion: Conversion,
+            conversion: Optional[dict] = None,
             surfaces: List[str] = [],
             uri: Optional[str] = None,
             symbols: List[str] = [],
             dimensions: List[Dict[str, Any]] = [],
             currency_code: Optional[str] = None,
             original_dimensions: Optional[List[Dict[str, Any]]] = None,
-            lang="vi",
+            lang=const.LANG,
     ):
         """Initialization method."""
         self.name = name
@@ -101,7 +81,7 @@ class Unit(object):
 
     def __repr__(self):
 
-        msg = 'Unit(name="%s", entity=Entity("%s"), conversion=Conversion("%s"))'
+        msg = 'Unit(name="%s", entity=Entity("%s"), \nConversion("%s"))'
         msg = msg % (self.name, self.entity.name, self.conversion)
         return msg
 
