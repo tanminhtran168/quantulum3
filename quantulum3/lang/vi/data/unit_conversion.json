@@ -1470,7 +1470,8 @@
       "factor": 1.60217656535e-19
     },
     "prefixes": [
-      "m"
+      "m",
+      "f"
     ]
   },
   "kilowatt hour": {

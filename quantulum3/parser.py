@@ -469,7 +469,6 @@ def parse(text, lang=const.LANG, has_value=True) -> List[cls.Quantity]:
     quantities = []
     for item in reg.units_regex(lang, has_value).finditer(text):
         if item.group() != '':
-            # groups = dict([i for i in item.groupdict().items() if i[1] and i[1].strip()])
             try:
                 if has_value:
                     uncertain, _values = get_values(item, lang)
@@ -490,8 +489,40 @@ def parse(text, lang=const.LANG, has_value=True) -> List[cls.Quantity]:
                     quantities += objs
             except ValueError as err:
                 print("Could not parse quantity: %s", err)
-
+    if has_value:
+        try:
+            quantities = merge_unit(quantities, text)
+        except:
+            pass
     return quantities
+
+
+def merge_unit(quantities, text):
+    """
+    Handle "124 keV - 300+ GeV" --> "150 000 000 keV"
+    """
+    new_quantities = []
+    i = 0
+    while i < len(quantities) - 1:
+        if quantities[i].unit.conversion['silabel'] == quantities[i+1].unit.conversion['silabel']:
+            start = quantities[i].span[0]
+            end = quantities[i+1].span[0]
+            if '-' in text[start:end]:
+                first_value = quantities[i].value
+                second_value = quantities[i+1].value * quantities[i+1].unit.conversion['factor'] / quantities[i].unit.conversion['factor']
+                new_quantity = cls.Quantity(
+                    value=(first_value + second_value) / 2,
+                    unit=quantities[i].unit,
+                    uncertainty=(second_value - first_value) / 2
+                )
+                new_quantities.append(new_quantity)
+                i += 2
+        else:
+            new_quantities.append(quantities[i])
+            i += 1
+    if i == len(quantities) - 1:
+        new_quantities.append(quantities[i])
+    return new_quantities
 
 
 ###############################################################################

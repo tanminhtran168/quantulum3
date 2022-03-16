@@ -309,8 +309,6 @@ def units_regex(lang=const.LANG, has_value=True):
         10: None
 
     """
-
-    # TODO different unit in number range. e.g: "124 keV - 300+ GeV"
     op_keys = sorted(list(operators(lang)), key=len, reverse=True)
     unit_keys = sorted(
         list(load.units(lang).surfaces.keys()) + list(load.units(lang).symbols.keys()),
