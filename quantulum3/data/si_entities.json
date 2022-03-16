@@ -1,0 +1,5489 @@
+{
+  "mass": {
+    "surfaces": [
+      "mass",
+      "weight",
+      "khối lượng"
+    ],
+    "description": "property of matter to resist changes of the state of motion and to attract other bodies",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": 1
+      }
+    ]
+  },
+  "length": {
+    "surfaces": [
+      "length",
+      "chiều dài",
+      "kích thước",
+      "quãng đường",
+      "độ dài"
+    ],
+    "description": "measured dimension of an object in a physical space",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 1
+      }
+    ]
+  },
+  "time": {
+    "surfaces": [
+      "time",
+      "thời gian"
+    ],
+    "description": "dimension in which events can be ordered from the past through the present into the future",
+    "dimensions": [
+      {
+        "base": "time",
+        "power": 1
+      }
+    ]
+  },
+  "currency": {
+    "surfaces": [
+      "currency",
+      "monetary unit",
+      "unit of money",
+      "money unit",
+      "tiền tệ",
+      "đơn vị tiền tệ",
+      "đồng tiền",
+      "đơn vị đồng tiền"
+    ],
+    "description": "generally accepted medium of exchange for goods or services",
+    "dimensions": [
+      {
+        "base": "currency",
+        "power": 1
+      }
+    ]
+  },
+  "distance": {
+    "surfaces": [
+      "distance",
+      "Euclidian distance",
+      "Euclidean distance",
+      "distant",
+      "khoảng cách"
+    ],
+    "description": "length of straight line that connects two points in a measurable space or in an observable physical space",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 1
+      }
+    ]
+  },
+  "position vector": {
+    "surfaces": [
+      "position vector",
+      "location vector",
+      "radius vector",
+      "position",
+      "Vị trí (vector)"
+    ],
+    "description": "vector representing the position of a point with respect to a fixed origin",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 1
+      }
+    ]
+  },
+  "diffusion coefficient for fluence rate": {
+    "surfaces": [
+      "diffusion coefficient for fluence rate",
+      "diffusion coefficient for particle fluence rate"
+    ],
+    "description": "proportionality constant between the particle current density and the gradient of the particle fluence rate",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 1
+      }
+    ]
+  },
+  "proper length": {
+    "surfaces": [
+      "proper length",
+      "rest length"
+    ],
+    "description": "length of an object in the object's rest frame",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 1
+      }
+    ]
+  },
+  "duration": {
+    "surfaces": [
+      "duration",
+      "length of time",
+      "time span",
+      "time",
+      "length",
+      "khoảng thời gian",
+      "thời gian"
+    ],
+    "description": "length of time of an event or process; quality of an event or process with beginning and end",
+    "dimensions": [
+      {
+        "base": "time",
+        "power": 1
+      }
+    ]
+  },
+  "specific impulse by weight": {
+    "surfaces": [
+      "specific impulse by weight",
+      "specific impulse (weight basis)",
+      "impulse per weight of fuel"
+    ],
+    "description": "representation of specific impulse",
+    "dimensions": [
+      {
+        "base": "time",
+        "power": 1
+      }
+    ]
+  },
+  "temperature": {
+    "surfaces": [
+      "thermodynamic temperature",
+      "absolute temperature",
+      "temperature"
+    ],
+    "description": "absolute measure of temperature",
+    "dimensions": [
+      {
+        "base": "temperature",
+        "power": 1
+      }
+    ]
+  },
+  "color temperature": {
+    "surfaces": [
+      "color temperature",
+      "colour temperature",
+      "Nhiệt độ màu"
+    ],
+    "description": "property of light sources related to black-body radiation",
+    "dimensions": [
+      {
+        "base": "temperature",
+        "power": 1
+      }
+    ]
+  },
+  "force": {
+    "surfaces": [
+      "force",
+      "mass times acceleration",
+      "lực"
+    ],
+    "description": "physical influence that tends to cause an object to change motion unless opposed by other forces",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 1
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "radiant flux": {
+    "surfaces": [
+      "radiant flux",
+      "radiant power"
+    ],
+    "description": "physical quantity",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      }
+    ]
+  },
+  "power": {
+    "surfaces": [
+      "power",
+      "Power(physics)",
+      "potency",
+      "Công suất"
+    ],
+    "description": "rate at which energy is transferred, used, or transformed",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      }
+    ]
+  },
+  "voltage": {
+    "surfaces": [
+      "voltage",
+      "electromotive force",
+      "U",
+      "V",
+      "electric tension",
+      "hiệu điện thế"
+    ],
+    "description": "difference in the electric potential between two points in space",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      },
+      {
+        "base": "current",
+        "power": -1
+      }
+    ]
+  },
+  "electromotive force": {
+    "surfaces": [
+      "electromotive force",
+      "source voltage",
+      "source tension",
+      "lực điện động"
+    ],
+    "description": "scalar physical quantity",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      },
+      {
+        "base": "current",
+        "power": -1
+      }
+    ]
+  },
+  "electric potential": {
+    "surfaces": [
+      "electric potential",
+      "electric field potential",
+      "electrostatic potential",
+      "electric scalar potential",
+      "điện thế"
+    ],
+    "description": "voltage between the measurement point and a reference ground; integral of the electric field",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      },
+      {
+        "base": "current",
+        "power": -1
+      }
+    ]
+  },
+  "electric potential difference": {
+    "surfaces": [
+      "electric potential difference"
+    ],
+    "description": "line integral over the sum of electric field strength and the time derivative of the magnetic vector potential",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      },
+      {
+        "base": "current",
+        "power": -1
+      }
+    ]
+  },
+  "bioelectric potential difference": {
+    "surfaces": [
+      "bioelectric potential difference"
+    ],
+    "description": "энергетическая характеристика взаимодействия зарядов",
+    "dimensions": []
+  },
+  "membrane potential": {
+    "surfaces": [
+      "membrane potential",
+      "transmembrane potential",
+      "membrane voltage",
+      "Điện thế màng"
+    ],
+    "description": "type of physical quantity",
+    "dimensions": []
+  },
+  "Peltier coefficient": {
+    "surfaces": [
+      "Peltier coefficient"
+    ],
+    "description": "quotient of Peltier heat power and electric current",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      },
+      {
+        "base": "current",
+        "power": -1
+      }
+    ]
+  },
+  "electrotonic potential": {
+    "surfaces": [
+      "electrotonic potential"
+    ],
+    "description": "passive spread of charge inside a neuron and between cardiac muscle cells or smooth muscle cells",
+    "dimensions": []
+  },
+  "hjärnans elektriska potential": {
+    "surfaces": [
+      "hjärnans elektriska potential"
+    ],
+    "description": "обобщенная характеристика взаимодействия зарядов, находящихся в исследуемой области мозга, с зарядом наложенного на эту область электрода",
+    "dimensions": []
+  },
+  "energy": {
+    "surfaces": [
+      "energy",
+      "năng lượng"
+    ],
+    "description": "measure for the ability of a system to do work",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "work": {
+    "surfaces": [
+      "work",
+      "physical work",
+      "force x distance",
+      "f x d",
+      "mechanical work",
+      "công cơ học",
+      "công năng"
+    ],
+    "description": "energy transferred to an object via the application of force on it through a displacement",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "heat": {
+    "surfaces": [
+      "heat",
+      "amount of heat",
+      "heat energy",
+      "nhiệt năng",
+      "nhật",
+      "nóng",
+      "sức nóng",
+      "hơi nóng",
+      "sự nóng"
+    ],
+    "description": "energy that is transferred from one body to another as the result of a difference in temperature",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "current": {
+    "surfaces": [
+      "current",
+      "electric current",
+      "I",
+      "i",
+      "electric current intensity"
+    ],
+    "description": "base quantity of the International System of Quantities (ISQ), measured in ampere (A)",
+    "dimensions": [
+      {
+        "base": "current",
+        "power": 1
+      }
+    ]
+  },
+  "magnetic scalar potential": {
+    "surfaces": [
+      "magnetic scalar potential",
+      "scalar magnetic potential"
+    ],
+    "description": "scalar potential whose negative gradient is the magnetic field strength",
+    "dimensions": [
+      {
+        "base": "current",
+        "power": 1
+      }
+    ]
+  },
+  "magnetomotive force": {
+    "surfaces": [
+      "magnetomotive force",
+      "F",
+      "MMF"
+    ],
+    "description": "a quantity representing the sum of magnetizing forces along a circuit",
+    "dimensions": [
+      {
+        "base": "current",
+        "power": 1
+      }
+    ]
+  },
+  "magnetic tension": {
+    "surfaces": [
+      "magnetic tension"
+    ],
+    "description": "line integral of the magnetic field strength between two points",
+    "dimensions": [
+      {
+        "base": "current",
+        "power": 1
+      }
+    ]
+  },
+  "area": {
+    "surfaces": [
+      "area",
+      "surface area",
+      "diện tích"
+    ],
+    "description": "quantity that expresses the extent of a two-dimensional surface or shape, or planar lamina, in the plane",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      }
+    ]
+  },
+  "atomic attenuation coefficient": {
+    "surfaces": [
+      "atomic attenuation coefficient"
+    ],
+    "description": "in nuclear physics, quotient of particle linear attenuation coefficient and number density of atoms in the medium",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      }
+    ]
+  },
+  "nuclear quadrupole moment": {
+    "surfaces": [
+      "nuclear quadrupole moment"
+    ],
+    "description": "measure for the deviation of the nuclear charge distribution from spherical symmetry",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      }
+    ]
+  },
+  "direction distribution of cross section": {
+    "surfaces": [
+      "direction distribution of cross section",
+      "angular cross-section"
+    ],
+    "description": "differential quotient of the cross section for scattering a particle in a given direction and the solid angle around that direction",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      }
+    ]
+  },
+  "electric charge": {
+    "surfaces": [
+      "electric charge",
+      "electrical charge",
+      "charge",
+      "điện tích"
+    ],
+    "description": "physical property that quantifies an object's interaction with electric fields",
+    "dimensions": [
+      {
+        "base": "time",
+        "power": 1
+      },
+      {
+        "base": "current",
+        "power": 1
+      }
+    ]
+  },
+  "electric flux": {
+    "surfaces": [
+      "electric flux",
+      "electric flow",
+      "electrical flux",
+      "electrostatic flux",
+      "dielectrical flow",
+      "sliding flow",
+      "Thông lượng"
+    ],
+    "description": "measure of how much of the field passes through the given surface area",
+    "dimensions": [
+      {
+        "base": "time",
+        "power": 1
+      },
+      {
+        "base": "current",
+        "power": 1
+      }
+    ]
+  },
+  "volume": {
+    "surfaces": [
+      "volume",
+      "volume (derived quantities)",
+      "thể tích",
+      "dung tích"
+    ],
+    "description": "quantity of three-dimensional space",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 3
+      }
+    ]
+  },
+  "data storage": {
+    "surfaces": [
+      "storage",
+      "data storage"
+    ],
+    "description": "hardware or software for recording data",
+    "dimensions": [
+      {
+        "base": "data storage",
+        "power": 1
+      }
+    ]
+  },
+  "fuel economy": {
+    "surfaces": [
+      "fuel economy"
+    ],
+    "description": "physical quantity; quotient of distance traveled and volume of fuel used",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      }
+    ]
+  },
+  "section modulus": {
+    "surfaces": [
+      "section modulus"
+    ],
+    "description": "begrep i teknisk mekanikk",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 3
+      }
+    ]
+  },
+  "angular measure": {
+    "surfaces": [
+      "angular measure",
+      "angle",
+      "plane angle",
+      "angular distance",
+      "plane angular measure"
+    ],
+    "description": "measure for how wide an angle is",
+    "dimensions": []
+  },
+  "frequency": {
+    "surfaces": [
+      "frequency",
+      "temporal frequency",
+      "tần số"
+    ],
+    "description": "inverse of period duration of a periodic phenomenon",
+    "dimensions": [
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "amount of substance": {
+    "surfaces": [
+      "amount of substance",
+      "số lượng vật chất",
+      "số lượng vật liệu"
+    ],
+    "description": "extensive physical property",
+    "dimensions": [
+      {
+        "base": "amount of substance",
+        "power": 1
+      }
+    ]
+  },
+  "extent of reaction": {
+    "surfaces": [
+      "extent of reaction"
+    ],
+    "description": "difference between equilibrium and initial amount of a substance, divided by its stoichiometric number",
+    "dimensions": [
+      {
+        "base": "amount of substance",
+        "power": 1
+      }
+    ]
+  },
+  "pressure": {
+    "surfaces": [
+      "pressure",
+      "áp suất"
+    ],
+    "description": "ratio of force applied over an area",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -1
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "stress": {
+    "surfaces": [
+      "stress",
+      "mechanical stress",
+      "stress, mechanical",
+      "Ứng suất"
+    ],
+    "description": "physical quantity that expresses internal forces in a continuous material",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -1
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "shear modulus": {
+    "surfaces": [
+      "shear modulus",
+      "modulus of rigidity",
+      "Coulomb modulus",
+      "Modul ngang"
+    ],
+    "description": "ratio of shear stress to the shear strain",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -1
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "bulk modulus": {
+    "surfaces": [
+      "bulk modulus",
+      "modulus of compression",
+      "Mô đun khối"
+    ],
+    "description": "measure of how incompressible / resistant to compressibility a substance is",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -1
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "Young's modulus": {
+    "surfaces": [
+      "Young's modulus",
+      "elastic modulus",
+      "E",
+      "modulus of elasticity",
+      "Young modulus",
+      "mô đun Young"
+    ],
+    "description": "mechanical property of linear elastic solid materials",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -1
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "electrical resistance": {
+    "surfaces": [
+      "electrical resistance",
+      "electric resistance",
+      "resistance in wires",
+      "resistance",
+      "resistance (derived quantities)",
+      "điện trở",
+      "điện trở thuần"
+    ],
+    "description": "opposition to the passage of an electric current",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      },
+      {
+        "base": "current",
+        "power": -2
+      }
+    ]
+  },
+  "impedance": {
+    "surfaces": [
+      "impedance",
+      "electrical impedance",
+      "complex impedance",
+      "electric impedance",
+      "trở kháng",
+      "cảm kháng",
+      "điện kháng",
+      "dung kháng"
+    ],
+    "description": "quotient of the voltage phasor and the electric current phasor",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      },
+      {
+        "base": "current",
+        "power": -2
+      }
+    ]
+  },
+  "electric reactance": {
+    "surfaces": [
+      "electric reactance",
+      "reactance",
+      "Điện kháng"
+    ],
+    "description": "a circuit element's opposition to changes in current due to its inductance or capacitance",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      },
+      {
+        "base": "current",
+        "power": -2
+      }
+    ]
+  },
+  "modulus of impedance": {
+    "surfaces": [
+      "modulus of impedance",
+      "apparent impedance"
+    ],
+    "description": "physical quantity",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      },
+      {
+        "base": "current",
+        "power": -2
+      }
+    ]
+  },
+  "luminous intensity": {
+    "surfaces": [
+      "luminous intensity",
+      "cường độ sáng"
+    ],
+    "description": "luminous flux per solid angle in a given direction",
+    "dimensions": [
+      {
+        "base": "luminous intensity",
+        "power": 1
+      }
+    ]
+  },
+  "conventional retinal illuminance": {
+    "surfaces": [
+      "conventional retinal illuminance"
+    ],
+    "description": "",
+    "dimensions": [
+      {
+        "base": "luminous intensity",
+        "power": 1
+      }
+    ]
+  },
+  "natural pupil luminance": {
+    "surfaces": [
+      "natural pupil luminance"
+    ],
+    "description": "",
+    "dimensions": [
+      {
+        "base": "luminous intensity",
+        "power": 1
+      }
+    ]
+  },
+  "radioactivity": {
+    "surfaces": [
+      "activity",
+      "radioactive activity",
+      "activity referred to a radionuclide",
+      "activity of a radionuclide",
+      "radioactivity"
+    ],
+    "description": "physical quantity in nuclear physics, measured in becquerel, revealing the average number of nucleuses experiencing a spontaneous reaction per second",
+    "dimensions": [
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "dose equivalent": {
+    "surfaces": [
+      "dose equivalent",
+      "equivalent absorbed radiation dose",
+      "equivalent dose of ionizing radiation",
+      "equivalent dose"
+    ],
+    "description": "absorbed dose of ionizing radiation weighted with the quality factor",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "capacitance": {
+    "surfaces": [
+      "capacitance",
+      "electrostatic capacity",
+      "electric capacitance",
+      "Điện dung"
+    ],
+    "description": "ability of a body to store an electrical charge per unit change in potential (general concept)",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": 4
+      },
+      {
+        "base": "current",
+        "power": 2
+      }
+    ]
+  },
+  "magnetic flux density": {
+    "surfaces": [
+      "magnetic flux density",
+      "B-field",
+      "magnetic induction"
+    ],
+    "description": "production of a potential difference across a conductor when it is exposed to a varying magnetic field",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      },
+      {
+        "base": "current",
+        "power": -1
+      }
+    ]
+  },
+  "magnetic polarization": {
+    "surfaces": [
+      "magnetic polarization"
+    ],
+    "description": "magnetization multiplied by the magnetic constant µ₀",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      },
+      {
+        "base": "current",
+        "power": -1
+      }
+    ]
+  },
+  "inductance": {
+    "surfaces": [
+      "inductance",
+      "self inductance",
+      "magnetic inductance",
+      "Hiện tượng tự cảm"
+    ],
+    "description": "property of electrical conductors to oppose changes in current flow",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      },
+      {
+        "base": "current",
+        "power": -2
+      }
+    ]
+  },
+  "permeance": {
+    "surfaces": [
+      "permeance",
+      "magnetic permeance"
+    ],
+    "description": "inverse of the magnetic reluctance",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      },
+      {
+        "base": "current",
+        "power": -2
+      }
+    ]
+  },
+  "electrical conductance": {
+    "surfaces": [
+      "electrical conductance",
+      "electric conductance",
+      "conductance",
+      "điện dẫn",
+      "độ dẫn điện"
+    ],
+    "description": "reciprocal of electrical resistance",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": 3
+      },
+      {
+        "base": "current",
+        "power": 2
+      }
+    ]
+  },
+  "admittance": {
+    "surfaces": [
+      "admittance",
+      "complex admittance",
+      "electric admittance"
+    ],
+    "description": "reciprocal of the complex impedance",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": 3
+      },
+      {
+        "base": "current",
+        "power": 2
+      }
+    ]
+  },
+  "susceptance": {
+    "surfaces": [
+      "susceptance",
+      "electric susceptance"
+    ],
+    "description": "imaginary part of the admittance",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": 3
+      },
+      {
+        "base": "current",
+        "power": 2
+      }
+    ]
+  },
+  "AC conductance": {
+    "surfaces": [
+      "AC conductance",
+      "conductance",
+      "electric conductance for alternating current",
+      "conductance for alternating current"
+    ],
+    "description": "real part of the complex admittance",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": 3
+      },
+      {
+        "base": "current",
+        "power": 2
+      }
+    ]
+  },
+  "modulus of admittance": {
+    "surfaces": [
+      "modulus of admittance",
+      "apparent admittance"
+    ],
+    "description": "physical quantity",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": 3
+      },
+      {
+        "base": "current",
+        "power": 2
+      }
+    ]
+  },
+  "magnetic flux": {
+    "surfaces": [
+      "magnetic flux",
+      "Φ",
+      "Từ thông"
+    ],
+    "description": "surface integral of the magnetic flux density",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      },
+      {
+        "base": "current",
+        "power": -1
+      }
+    ]
+  },
+  "linked flux": {
+    "surfaces": [
+      "linked flux",
+      "flux linkage"
+    ],
+    "description": "line integral of the magnetic vector potential over a (open or closed) curve",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      },
+      {
+        "base": "current",
+        "power": -1
+      }
+    ]
+  },
+  "solid angle": {
+    "surfaces": [
+      "solid angle",
+      "Ω",
+      "solid angular measure",
+      "Góc khối"
+    ],
+    "description": "measure of a subtended portion of a sphere, used to describe the apparent size of items in a three-dimensional field of view",
+    "dimensions": []
+  },
+  "illuminance": {
+    "surfaces": [
+      "illuminance",
+      "độ rọi sáng"
+    ],
+    "description": "luminous flux incident on a surface per area",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "luminous intensity",
+        "power": 1
+      }
+    ]
+  },
+  "speed": {
+    "surfaces": [
+      "speed",
+      "tốc độ"
+    ],
+    "description": "magnitude of velocity of motion",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "velocity": {
+    "surfaces": [
+      "velocity",
+      "vận tốc"
+    ],
+    "description": "rate of change of the position of an object as a function of time, and the direction of that change",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "specific impulse by mass": {
+    "surfaces": [
+      "specific impulse by mass",
+      "specific impulse (mass basis)",
+      "impulse per mass of fuel"
+    ],
+    "description": "representation of specific impulse",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "absorbed dose": {
+    "surfaces": [
+      "absorbed dose",
+      "total ionizing dose",
+      "absorbed dose of ionizing radiation"
+    ],
+    "description": "dose quantity which is the measure of the energy deposited in matter by ionizing radiation per mass",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "kerma": {
+    "surfaces": [
+      "kerma",
+      "kinetic energy released in matter"
+    ],
+    "description": "kinetic energy released per mass",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "specific energy imparted": {
+    "surfaces": [
+      "specific energy imparted"
+    ],
+    "description": "in nuclear physics, energy imparted per mass",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "catalytic activity": {
+    "surfaces": [
+      "catalytic activity"
+    ],
+    "description": "measure for the rate at which a catalysts transforms an educt to products",
+    "dimensions": [
+      {
+        "base": "time",
+        "power": -1
+      },
+      {
+        "base": "amount of substance",
+        "power": 1
+      }
+    ]
+  },
+  "torque": {
+    "surfaces": [
+      "torque",
+      "mô men lực",
+      "mô-men lực"
+    ],
+    "description": "tendency of a force to rotate an object",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "bending moment of force": {
+    "surfaces": [
+      "bending moment of force",
+      "bending moment"
+    ],
+    "description": "moment that results in the bending of a structural element",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "moment of force": {
+    "surfaces": [
+      "moment of force",
+      "torque"
+    ],
+    "description": "vector product of the position vector with respect to the axis of rotation and the force",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "rest energy": {
+    "surfaces": [
+      "rest energy"
+    ],
+    "description": "product of the rest mass and the square of the speed of light in vacuum",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "luminance": {
+    "surfaces": [
+      "luminance",
+      "độ chói sáng"
+    ],
+    "description": "photometric measure of the luminous intensity per area of light travelling in a given direction",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "luminous intensity",
+        "power": 1
+      }
+    ]
+  },
+  "luminous flux": {
+    "surfaces": [
+      "luminous flux",
+      "luminous power",
+      "Quang thông"
+    ],
+    "description": "physical quantity",
+    "dimensions": [
+      {
+        "base": "luminous intensity",
+        "power": 1
+      }
+    ]
+  },
+  "apparent power": {
+    "surfaces": [
+      "apparent power",
+      "electric apparent power"
+    ],
+    "description": "product of the RMS values of voltage and electric current",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      }
+    ]
+  },
+  "electric power": {
+    "surfaces": [
+      "electric power",
+      "Điện lực",
+      "Điện năng",
+      "Năng lượng điện"
+    ],
+    "description": "rate at which electric energy is transferred by an electric circuit",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      }
+    ]
+  },
+  "reactive power": {
+    "surfaces": [
+      "reactive power",
+      "electric reactive power",
+      "Công suất điện xoay chiều",
+      "Công suất biểu kiến",
+      "Công suất phức",
+      "Công suất thực"
+    ],
+    "description": "type of electrical power",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      }
+    ]
+  },
+  "volume flow rate": {
+    "surfaces": [
+      "volume flow rate",
+      "rate of fluid flow",
+      "volume velocity",
+      "flow rate",
+      "volumetric flow rate",
+      "discharge",
+      "lưu lượng dòng chảy"
+    ],
+    "description": "volume of fluid which passes per time",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 3
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "recombination coefficient": {
+    "surfaces": [
+      "recombination coefficient"
+    ],
+    "description": "measure for the recombination rate of ions",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 3
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "density": {
+    "surfaces": [
+      "density",
+      "volumetric mass density",
+      "ρ",
+      "mass density",
+      "volumic mass",
+      "khối lượng riêng",
+      "tỷ khối",
+      "khối lượng riêng trung bình",
+      "mật độ khối lượng",
+      "tỷ trọng riêng",
+      "tỉ khối",
+      "tỉ trọng riêng"
+    ],
+    "description": "mass per volume",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -3
+      },
+      {
+        "base": "mass",
+        "power": 1
+      }
+    ]
+  },
+  "mass concentration": {
+    "surfaces": [
+      "mass concentration"
+    ],
+    "description": "chemical term for density of a component in a mixture",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -3
+      },
+      {
+        "base": "mass",
+        "power": 1
+      }
+    ]
+  },
+  "luminous energy": {
+    "surfaces": [
+      "luminous energy",
+      "quantity of light"
+    ],
+    "description": "scalar physical quantity",
+    "dimensions": [
+      {
+        "base": "time",
+        "power": 1
+      },
+      {
+        "base": "luminous intensity",
+        "power": 1
+      }
+    ]
+  },
+  "acceleration": {
+    "surfaces": [
+      "acceleration",
+      "gia tốc"
+    ],
+    "description": "rate at which the magnitude and/or direction of velocity changes with time",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "angular speed": {
+    "surfaces": [
+      "angular velocity",
+      "angular speed",
+      "vận tốc góc"
+    ],
+    "description": "physical quantity, the rate of change of angular position, and if regarded as a vector, the direction is the axis of rotation",
+    "dimensions": [
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "angular frequency": {
+    "surfaces": [
+      "angular frequency",
+      "ω",
+      "radian frequency",
+      "Tần số góc",
+      "Tốc độ góc"
+    ],
+    "description": "rate of change of the phase angle",
+    "dimensions": [
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "electrical resistivity": {
+    "surfaces": [
+      "electrical resistivity",
+      "specific resistance",
+      "resistivity",
+      "volume resistivity",
+      "electric resistivity",
+      "điện trở suất"
+    ],
+    "description": "inverse of the electric conductivity",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 3
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      },
+      {
+        "base": "current",
+        "power": -2
+      }
+    ]
+  },
+  "thermal conductivity": {
+    "surfaces": [
+      "thermal conductivity",
+      "độ dẫn nhiệt"
+    ],
+    "description": "capacity of a material to conduct heat",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 1
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      },
+      {
+        "base": "temperature",
+        "power": -1
+      }
+    ]
+  },
+  "action": {
+    "surfaces": [
+      "action",
+      "action (physics)"
+    ],
+    "description": "physical quantity of dimension energy × time",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "angular momentum": {
+    "surfaces": [
+      "angular momentum",
+      "moment of momentum",
+      "Mô men động lượng",
+      "Bảo toàn mômen động lượng",
+      "Momen động lượng",
+      "Định luật bảo toàn mômen động lượng",
+      "Mômen động lượng",
+      "Mô men quay",
+      "Mômen xung lượng",
+      "Mô men xung lượng",
+      "Bảo toàn mô men động lượng",
+      "Động lượng quay",
+      "Động lượng góc",
+      "Mô men góc"
+    ],
+    "description": "measure of the extent to which an object will continue to rotate in the absence of an applied torque",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "molar concentration": {
+    "surfaces": [
+      "molar concentration",
+      "molarity",
+      "amount concentration",
+      "substance concentration",
+      "amount of substance concentration",
+      "amount-of-substance concentration"
+    ],
+    "description": "measure of the concentration of a solute in a solution, or of any chemical species, in terms of amount of substance in a given volume; most commonly expressed in units of moles of solute per litre of solution",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -3
+      },
+      {
+        "base": "amount of substance",
+        "power": 1
+      }
+    ]
+  },
+  "electric current density": {
+    "surfaces": [
+      "electric current density",
+      "areic electric current"
+    ],
+    "description": "electric current per area of cross section",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "current",
+        "power": 1
+      }
+    ]
+  },
+  "magnetic field strength": {
+    "surfaces": [
+      "magnetic field strength",
+      "H-field",
+      "magnetizing field",
+      "magnetizing field strength",
+      "H field",
+      "magnetic field intensity"
+    ],
+    "description": "strength of a magnetic field",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -1
+      },
+      {
+        "base": "current",
+        "power": 1
+      }
+    ]
+  },
+  "linear electric current density": {
+    "surfaces": [
+      "linear electric current density",
+      "lineic electric current"
+    ],
+    "description": "physical quantity",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -1
+      },
+      {
+        "base": "current",
+        "power": 1
+      }
+    ]
+  },
+  "coercivity": {
+    "surfaces": [
+      "coercivity",
+      "magnetic coercivity",
+      "coercive field strength",
+      "Vật liệu từ mềm"
+    ],
+    "description": "measure of the ability of a ferromagnetic material to withstand an external magnetic field without becoming demagnetized",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -1
+      },
+      {
+        "base": "current",
+        "power": 1
+      }
+    ]
+  },
+  "magnetization": {
+    "surfaces": [
+      "magnetization",
+      "magnetic polarization",
+      "magnetic induction",
+      "Từ hóa"
+    ],
+    "description": "physical quantity, density of magnetic moment per volume",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -1
+      },
+      {
+        "base": "current",
+        "power": 1
+      }
+    ]
+  },
+  "specific entropy": {
+    "surfaces": [
+      "specific entropy"
+    ],
+    "description": "entropy per mass",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "time",
+        "power": -2
+      },
+      {
+        "base": "temperature",
+        "power": -1
+      }
+    ]
+  },
+  "specific gas constant": {
+    "surfaces": [
+      "specific gas constant"
+    ],
+    "description": "quotient of the Boltzmann constant and the mass of a gas particle",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "time",
+        "power": -2
+      },
+      {
+        "base": "temperature",
+        "power": -1
+      }
+    ]
+  },
+  "volumetric heat capacity": {
+    "surfaces": [
+      "volumetric heat capacity"
+    ],
+    "description": "thermal quality",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -1
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      },
+      {
+        "base": "temperature",
+        "power": -1
+      }
+    ]
+  },
+  "thermal resistance": {
+    "surfaces": [
+      "thermal resistance",
+      "absolute thermal resistance"
+    ],
+    "description": "objects' resistance to heat transfer; reciprocal of thermal conductance",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": 3
+      },
+      {
+        "base": "temperature",
+        "power": 1
+      }
+    ]
+  },
+  "thermal insulance": {
+    "surfaces": [
+      "thermal insulance",
+      "coefficient of thermal insulance"
+    ],
+    "description": "inverse of the heat transfer coefficient",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": 3
+      },
+      {
+        "base": "temperature",
+        "power": 1
+      }
+    ]
+  },
+  "climate sensitivity": {
+    "surfaces": [
+      "climate sensitivity",
+      "độ nhạy khí hậu"
+    ],
+    "description": "measurement of how much temperature will rise givent an increase in CO2",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": 3
+      },
+      {
+        "base": "temperature",
+        "power": 1
+      }
+    ]
+  },
+  "specific volume": {
+    "surfaces": [
+      "specific volume",
+      "massic volume",
+      "inverse mass density",
+      "Thể tích riêng"
+    ],
+    "description": "ratio of a substance's volume to its mass",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 3
+      },
+      {
+        "base": "mass",
+        "power": -1
+      }
+    ]
+  },
+  "kinematic viscosity": {
+    "surfaces": [
+      "kinematic viscosity"
+    ],
+    "description": "characteristic of a fluid",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "thermal diffusivity": {
+    "surfaces": [
+      "thermal diffusivity"
+    ],
+    "description": "measures the rate of transfer of heat of a material from the hot side to the cold side",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "thermal diffusion coefficient": {
+    "surfaces": [
+      "thermal diffusion coefficient"
+    ],
+    "description": "product of thermal diffusion ratio and diffusion coefficient",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "diffusion coefficient": {
+    "surfaces": [
+      "diffusion coefficient",
+      "diffusivity",
+      "mass diffusivity"
+    ],
+    "description": "proportionality constant in some physical laws",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "diffusion coefficient for particle number density": {
+    "surfaces": [
+      "diffusion coefficient for particle number density",
+      "diffusion coefficient"
+    ],
+    "description": "proportionality constant between the particle current density and the gradient of the particle number density",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "magnetic diffusivity": {
+    "surfaces": [
+      "magnetic diffusivity",
+      "magnetic viscosity"
+    ],
+    "description": "a parameter in plasma physics",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "impulse": {
+    "surfaces": [
+      "impulse",
+      "Imp",
+      "xung lượng"
+    ],
+    "description": "integral of a force over the time interval for which it acts; term in classical mechanics",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 1
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "electric field strength": {
+    "surfaces": [
+      "electric field strength",
+      "electric intensity",
+      "electric field intensity",
+      "Cường độ điện trường"
+    ],
+    "description": "vector physical quantity of electrostatics and electrodynamics",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 1
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      },
+      {
+        "base": "current",
+        "power": -1
+      }
+    ]
+  },
+  "heat flux": {
+    "surfaces": [
+      "heat flux",
+      "thermal flux",
+      "heat flux density",
+      "areic heat flow rate",
+      "density of heat flow rate",
+      "Mật độ dòng nhiệt"
+    ],
+    "description": "flow of energy per area and time",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      }
+    ]
+  },
+  "irradiance": {
+    "surfaces": [
+      "irradiance"
+    ],
+    "description": "physical quantity",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      }
+    ]
+  },
+  "intensity": {
+    "surfaces": [
+      "intensity"
+    ],
+    "description": "power transferred per unit area, where the area is measured on the plane perpendicular to the direction of propagation of the energy",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      }
+    ]
+  },
+  "radiant exitance": {
+    "surfaces": [
+      "radiant exitance",
+      "radiant emittance"
+    ],
+    "description": "areal density of exiting radiant flux",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      }
+    ]
+  },
+  "Poynting vector": {
+    "surfaces": [
+      "Poynting vector",
+      "Umov–Poynting vector",
+      "vectơ Poynting"
+    ],
+    "description": "measure of directional energy flux",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      }
+    ]
+  },
+  "energy fluence rate": {
+    "surfaces": [
+      "energy fluence rate",
+      "fluence rate"
+    ],
+    "description": "in nuclear physics, time derivative of the energy fluence",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      }
+    ]
+  },
+  "radiative forcing": {
+    "surfaces": [
+      "radiative forcing",
+      "climate forcing",
+      "radiative forcing capacity"
+    ],
+    "description": "氣候變化的因素引起的大氣能量通量變化",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      }
+    ]
+  },
+  "spherical irradiance": {
+    "surfaces": [
+      "spherical irradiance",
+      "fluence rate"
+    ],
+    "description": "",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      }
+    ]
+  },
+  "heat transfer coefficient": {
+    "surfaces": [
+      "heat transfer coefficient",
+      "convective heat transfer",
+      "coefficient of heat transfer",
+      "thermal transmittance"
+    ],
+    "description": "measure of heat transfer on a surface",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      },
+      {
+        "base": "temperature",
+        "power": -1
+      }
+    ]
+  },
+  "heat convection coefficient": {
+    "surfaces": [
+      "heat convection coefficient"
+    ],
+    "description": "",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      },
+      {
+        "base": "temperature",
+        "power": -1
+      }
+    ]
+  },
+  "heat radiation coefficient": {
+    "surfaces": [
+      "heat radiation coefficient"
+    ],
+    "description": "",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      },
+      {
+        "base": "temperature",
+        "power": -1
+      }
+    ]
+  },
+  "surface coefficient of heat transfer": {
+    "surfaces": [
+      "surface coefficient of heat transfer",
+      "surface heat transfer coefficient"
+    ],
+    "description": "quotient of the density of heat flow rate and the temperature difference between surface and surroundings",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      },
+      {
+        "base": "temperature",
+        "power": -1
+      }
+    ]
+  },
+  "damping coefficient": {
+    "surfaces": [
+      "damping coefficient",
+      "δ"
+    ],
+    "description": "inverse of the time constant of an exponentially decaying quantity",
+    "dimensions": [
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "strain rate tensor": {
+    "surfaces": [
+      "strain rate tensor",
+      "rate-of-strain tensor"
+    ],
+    "description": "physical quantity that describes the rate of change of the deformation of a material",
+    "dimensions": [
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "reciprocal duration": {
+    "surfaces": [
+      "reciprocal duration",
+      "reciprocal time",
+      "inverse duration",
+      "inverse time"
+    ],
+    "description": "",
+    "dimensions": [
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "electrical energy": {
+    "surfaces": [
+      "electrical energy",
+      "electric energy",
+      "Năng lượng điện",
+      "Điện năng"
+    ],
+    "description": "energy newly derived from electric potential energy",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "reciprocal length": {
+    "surfaces": [
+      "reciprocal length",
+      "inverse length"
+    ],
+    "description": "physical quantity",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -1
+      }
+    ]
+  },
+  "wavenumber": {
+    "surfaces": [
+      "wavenumber",
+      "wave number",
+      "repetency",
+      "Số sóng"
+    ],
+    "description": "inverse of the wavelength",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -1
+      }
+    ]
+  },
+  "curvature": {
+    "surfaces": [
+      "curvature",
+      "Độ cong"
+    ],
+    "description": "inverse of the radius of curvature",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -1
+      }
+    ]
+  },
+  "wave vector": {
+    "surfaces": [
+      "wave vector"
+    ],
+    "description": "vector pointing in the direction of a wave and whose magnitude is equal to the wavenumber",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -1
+      }
+    ]
+  },
+  "angular wavenumber": {
+    "surfaces": [
+      "angular wavenumber",
+      "angular repetency"
+    ],
+    "description": "magnitude of the wave vector",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -1
+      }
+    ]
+  },
+  "phase coefficient": {
+    "surfaces": [
+      "phase coefficient",
+      "β"
+    ],
+    "description": "measure for the change of phase angle of a plane wave along the path travelled",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -1
+      }
+    ]
+  },
+  "volumic total cross section": {
+    "surfaces": [
+      "volumic total cross section",
+      "macroscopic total cross section"
+    ],
+    "description": "in nuclear physics, product of the number density of atoms of a given type and the total cross section",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -1
+      }
+    ]
+  },
+  "volumic cross section": {
+    "surfaces": [
+      "volumic cross section",
+      "macroscopic cross section"
+    ],
+    "description": "in nuclear physics, product of the number density of atoms of a given type and the cross section",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -1
+      }
+    ]
+  },
+  "molar energy": {
+    "surfaces": [
+      "molar energy"
+    ],
+    "description": "energy per amount of substance",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      },
+      {
+        "base": "amount of substance",
+        "power": -1
+      }
+    ]
+  },
+  "chemical affinity": {
+    "surfaces": [
+      "chemical affinity",
+      "affinity of reaction",
+      "affinity of a chemical reaction",
+      "Ái lực hóa học"
+    ],
+    "description": "used to describe or characterise elements' or compounds' readiness to form bonds",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      },
+      {
+        "base": "amount of substance",
+        "power": -1
+      }
+    ]
+  },
+  "radiant intensity": {
+    "surfaces": [
+      "radiant intensity"
+    ],
+    "description": "physical quantity",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      }
+    ]
+  },
+  "electrical conductivity": {
+    "surfaces": [
+      "electrical conductivity",
+      "electric conductivity",
+      "conductivity",
+      "dẫn điện",
+      "độ dẫn điện",
+      "chất dẫn điện"
+    ],
+    "description": "fundamental property that quantifies how readily a given material allows the flow of electric current",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -3
+      },
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": 3
+      },
+      {
+        "base": "current",
+        "power": 2
+      }
+    ]
+  },
+  "molar entropy": {
+    "surfaces": [
+      "molar entropy"
+    ],
+    "description": "entropy per amount of substance",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      },
+      {
+        "base": "temperature",
+        "power": -1
+      },
+      {
+        "base": "amount of substance",
+        "power": -1
+      }
+    ]
+  },
+  "dynamic viscosity": {
+    "surfaces": [
+      "dynamic viscosity",
+      "viscosity"
+    ],
+    "description": "physical property of a moving fluid",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -1
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "magnetic moment": {
+    "surfaces": [
+      "magnetic moment",
+      "magnetic dipole moment",
+      "magnetic area moment",
+      "mômen lưỡng cực từ",
+      "Mômen từ"
+    ],
+    "description": "physical quantity; measured in ampere square metre",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "current",
+        "power": 1
+      }
+    ]
+  },
+  "gyromagnetic ratio": {
+    "surfaces": [
+      "gyromagnetic ratio",
+      "magnetogyric ratio",
+      "gyromagnetic coefficient"
+    ],
+    "description": "ratio of magnetic dipole moment to total angular momentum",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": 1
+      },
+      {
+        "base": "current",
+        "power": 1
+      }
+    ]
+  },
+  "permittivity": {
+    "surfaces": [
+      "permittivity",
+      "electric permittivity",
+      "absolute permittivity",
+      "Hằng số điện môi"
+    ],
+    "description": "physical quantity, measure of the resistance to the electric field",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -3
+      },
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": 4
+      },
+      {
+        "base": "current",
+        "power": 2
+      }
+    ]
+  },
+  "magnetic permeability": {
+    "surfaces": [
+      "magnetic permeability",
+      "electromagnetic permeability",
+      "absolute permeability",
+      "Độ từ thẩm"
+    ],
+    "description": "measure of the ability of a material to support the formation of a magnetic field within itself",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 1
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      },
+      {
+        "base": "current",
+        "power": -2
+      }
+    ]
+  },
+  "entropy": {
+    "surfaces": [
+      "entropy",
+      "thermodynamic entropy",
+      "entropy",
+      "entropy nhiệt động lực"
+    ],
+    "description": "physical property of the state of a system, measure of disorder",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      },
+      {
+        "base": "temperature",
+        "power": -1
+      }
+    ]
+  },
+  "Massieu function": {
+    "surfaces": [
+      "Massieu function"
+    ],
+    "description": "negative quotient of Helmholtz energy and temperature",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      },
+      {
+        "base": "temperature",
+        "power": -1
+      }
+    ]
+  },
+  "Planck function": {
+    "surfaces": [
+      "Planck function"
+    ],
+    "description": "negative quotient of Gibbs energy and temperature",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      },
+      {
+        "base": "temperature",
+        "power": -1
+      }
+    ]
+  },
+  "gravitational constant": {
+    "surfaces": [
+      "gravitational constant"
+    ],
+    "description": "physical quantity measuring the gravitational coupling",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 3
+      },
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "molar charge density": {
+    "surfaces": [
+      "molar charge density",
+      "molar charge"
+    ],
+    "description": "electric charge per amount of substance",
+    "dimensions": [
+      {
+        "base": "time",
+        "power": 1
+      },
+      {
+        "base": "current",
+        "power": 1
+      },
+      {
+        "base": "amount of substance",
+        "power": -1
+      }
+    ]
+  },
+  "volumetric number density": {
+    "surfaces": [
+      "volumetric number density",
+      "inverse volume",
+      "number density"
+    ],
+    "description": "count per volume",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -3
+      }
+    ]
+  },
+  "molecular concentration": {
+    "surfaces": [
+      "molecular concentration"
+    ],
+    "description": "number of molecules of a substance in a mixture per volume",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -3
+      }
+    ]
+  },
+  "reciprocal volume": {
+    "surfaces": [
+      "reciprocal volume",
+      "inverse volume"
+    ],
+    "description": "",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -3
+      }
+    ]
+  },
+  "molar volume": {
+    "surfaces": [
+      "molar volume",
+      "Thể tích mol"
+    ],
+    "description": "volume per amount of substance",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 3
+      },
+      {
+        "base": "amount of substance",
+        "power": -1
+      }
+    ]
+  },
+  "molar magnetic susceptibility": {
+    "surfaces": [
+      "molar magnetic susceptibility",
+      "molar susceptibility"
+    ],
+    "description": "",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 3
+      },
+      {
+        "base": "amount of substance",
+        "power": -1
+      }
+    ]
+  },
+  "jerk": {
+    "surfaces": [
+      "jerk",
+      "jolt",
+      "surge",
+      "lurch",
+      "Jerk (đại lượng vật lý)"
+    ],
+    "description": "rate of change of acceleration",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      }
+    ]
+  },
+  "body mass index": {
+    "surfaces": [
+      "body mass index",
+      "BMI",
+      "Chỉ số khối cơ thể",
+      "BMI"
+    ],
+    "description": "measure of relative weight based on an individual's mass and height",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      }
+    ]
+  },
+  "surface density": {
+    "surfaces": [
+      "surface density",
+      "areic density",
+      "mass thickness",
+      "areal density",
+      "areal mass density",
+      "areic mass",
+      "surface mass density",
+      "area density"
+    ],
+    "description": "the density of a two-dimensional object, or of the surface of a three-dimensional object, calculated as the mass per area",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      }
+    ]
+  },
+  "mean mass range": {
+    "surfaces": [
+      "mean mass range"
+    ],
+    "description": "product of the mean linear range and the mass density of a material",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      }
+    ]
+  },
+  "mass flow rate": {
+    "surfaces": [
+      "mass flow rate",
+      "flow rate"
+    ],
+    "description": "mass per time of a fluid passing through a cross section",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "mass change rate": {
+    "surfaces": [
+      "mass change rate"
+    ],
+    "description": "mass increment per time",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "snap": {
+    "surfaces": [
+      "snap",
+      "jounce"
+    ],
+    "description": "fourth derivative of the position vector with respect to time, or the rate of change of the jerk with respect to time",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -4
+      }
+    ]
+  },
+  "linear mass density": {
+    "surfaces": [
+      "linear mass density",
+      "lineic mass",
+      "linear density"
+    ],
+    "description": "mass per length",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -1
+      },
+      {
+        "base": "mass",
+        "power": 1
+      }
+    ]
+  },
+  "surface tension": {
+    "surfaces": [
+      "surface tension",
+      "Sức căng bề mặt",
+      "Sức căng mặt ngoài",
+      "Ứng suất bề mặt",
+      "Năng lượng bề mặt"
+    ],
+    "description": "elastic tendency of a fluid surface which makes it acquire the least surface area possible",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "stiffness": {
+    "surfaces": [
+      "stiffness",
+      "rigidity"
+    ],
+    "description": "rigidity of an object",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "x-ray exposure": {
+    "surfaces": [
+      "x-ray exposure"
+    ],
+    "description": "physical quantity",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": 1
+      },
+      {
+        "base": "current",
+        "power": 1
+      }
+    ]
+  },
+  "gamma-ray exposure": {
+    "surfaces": [
+      "gamma-ray exposure"
+    ],
+    "description": "physical quantity",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": 1
+      },
+      {
+        "base": "current",
+        "power": 1
+      }
+    ]
+  },
+  "radiation exposure": {
+    "surfaces": [
+      "exposure",
+      "radiation exposure"
+    ],
+    "description": "absolute value of the electric charge of ions produced in dry air by X- or gamma radiation per mass of air",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": 1
+      },
+      {
+        "base": "current",
+        "power": 1
+      }
+    ]
+  },
+  "ion dose": {
+    "surfaces": [
+      "ion dose"
+    ],
+    "description": "",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": 1
+      },
+      {
+        "base": "current",
+        "power": 1
+      }
+    ]
+  },
+  "electric dipole moment": {
+    "surfaces": [
+      "electric dipole moment",
+      "dipole moment",
+      "Mômen lưỡng cực điện"
+    ],
+    "description": "vector physical quantity measuring the separation of positive and negative electrical charges within a system",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": 1
+      },
+      {
+        "base": "current",
+        "power": 1
+      }
+    ]
+  },
+  "molar mass": {
+    "surfaces": [
+      "molar mass",
+      "Phân tử gam"
+    ],
+    "description": "mass per amount of substance",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "amount of substance",
+        "power": -1
+      }
+    ]
+  },
+  "angular acceleration": {
+    "surfaces": [
+      "angular acceleration",
+      "gia tốc góc"
+    ],
+    "description": "rate of change of angular speed",
+    "dimensions": [
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "sound phase coefficient": {
+    "surfaces": [
+      "sound phase coefficient",
+      "acoustic phase coefficient",
+      "phase coefficient"
+    ],
+    "description": "",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -1
+      }
+    ]
+  },
+  "angular curvature": {
+    "surfaces": [
+      "angular curvature"
+    ],
+    "description": "coefficient of proportionality between the change in angle of a tangent along a curve and the change in position; measured in rad/m",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -1
+      }
+    ]
+  },
+  "stress tensor": {
+    "surfaces": [
+      "stress tensor",
+      "stress",
+      "Cauchy stress tensor",
+      "Tenxơ ứng suất Cauchy"
+    ],
+    "description": "tensor that describes the state of stress at a point inside a material",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -1
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "Wien wavelength displacement law constant": {
+    "surfaces": [
+      "Wien wavelength displacement law constant",
+      "Wien constant",
+      "Wien's displacement constant"
+    ],
+    "description": "constant in Wien's displacement law",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 1
+      },
+      {
+        "base": "temperature",
+        "power": 1
+      }
+    ]
+  },
+  "moment of inertia": {
+    "surfaces": [
+      "moment of inertia",
+      "mass moment of inertia",
+      "Mô men quán tính",
+      "Mômen quán tính",
+      "Momen quán tính"
+    ],
+    "description": "scalar measure of the rotational inertia with respect to a fixed axis of rotation",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      }
+    ]
+  },
+  "inertia tensor": {
+    "surfaces": [
+      "inertia tensor",
+      "moment of inertia tensor",
+      "moment of inertia"
+    ],
+    "description": "tensorial measure of the rotational inertia with respect to a fixed center of rotation",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      }
+    ]
+  },
+  "linear energy density": {
+    "surfaces": [
+      "linear energy density"
+    ],
+    "description": "density of energy with respect to length",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 1
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "spectral radiant energy": {
+    "surfaces": [
+      "spectral radiant energy"
+    ],
+    "description": "physical quantity",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 1
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "stopping power": {
+    "surfaces": [
+      "stopping power",
+      "total linear stopping power",
+      "linear stopping power"
+    ],
+    "description": "kinetic energy lost by charged particles traversing a given material per traversed distance",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 1
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "linear energy transfer": {
+    "surfaces": [
+      "linear energy transfer",
+      "restricted linear collision stopping power"
+    ],
+    "description": "measure for the energy lost by charged particles per traversed distance, including only interactions up to a given energy",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 1
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "specific energy": {
+    "surfaces": [
+      "specific energy",
+      "energy density",
+      "massic energy",
+      "Năng lượng riêng"
+    ],
+    "description": "physical quantity representing energy content per mass",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "luminous exitance": {
+    "surfaces": [
+      "luminous exitance",
+      "luminous emittance"
+    ],
+    "description": "luminous flux per area emitted from a surface",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "luminous intensity",
+        "power": 1
+      }
+    ]
+  },
+  "angular impulse": {
+    "surfaces": [
+      "angular impulse"
+    ],
+    "description": "time integral of the moment of force",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "specific absorption rate": {
+    "surfaces": [
+      "specific absorption rate",
+      "SAR"
+    ],
+    "description": "rate at which energy is absorbed by the human body when exposed to electromagnetic field",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "time",
+        "power": -3
+      }
+    ]
+  },
+  "dose equivalent rate": {
+    "surfaces": [
+      "dose equivalent rate"
+    ],
+    "description": "time derivative of the dose equivalent",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "time",
+        "power": -3
+      }
+    ]
+  },
+  "kerma rate": {
+    "surfaces": [
+      "kerma rate"
+    ],
+    "description": "time derivative of kerma",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "time",
+        "power": -3
+      }
+    ]
+  },
+  "specific power": {
+    "surfaces": [
+      "specific power",
+      "massique power"
+    ],
+    "description": "power per mass",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "time",
+        "power": -3
+      }
+    ]
+  },
+  "absorbed dose rate": {
+    "surfaces": [
+      "absorbed dose rate",
+      "absorbed-dose rate"
+    ],
+    "description": "time derivative of the absorbed dose",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "time",
+        "power": -3
+      }
+    ]
+  },
+  "second moment of area": {
+    "surfaces": [
+      "second moment of area",
+      "area moment of inertia",
+      "moment of inertia of area"
+    ],
+    "description": "mathematical construct in engineering",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 4
+      }
+    ]
+  },
+  "second axial moment of area": {
+    "surfaces": [
+      "second axial moment of area"
+    ],
+    "description": "",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 4
+      }
+    ]
+  },
+  "second polar moment of area": {
+    "surfaces": [
+      "second polar moment of area",
+      "polar moment of inertia"
+    ],
+    "description": "moment",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 4
+      }
+    ]
+  },
+  "first moment of area": {
+    "surfaces": [
+      "first moment of area"
+    ],
+    "description": "property of an object related to its resistance to shear stress",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 3
+      }
+    ]
+  },
+  "surface charge density": {
+    "surfaces": [
+      "surface charge density",
+      "surface density of electric charge",
+      "areic electric charge",
+      "areic charge",
+      "surface electric charge density",
+      "electric surface charge density"
+    ],
+    "description": "electric charge per area",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "time",
+        "power": 1
+      },
+      {
+        "base": "current",
+        "power": 1
+      }
+    ]
+  },
+  "electric displacement": {
+    "surfaces": [
+      "electric displacement",
+      "electric flux density",
+      "electric displacement field"
+    ],
+    "description": "vector field related to displacement current and flux density",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "time",
+        "power": 1
+      },
+      {
+        "base": "current",
+        "power": 1
+      }
+    ]
+  },
+  "electric polarization": {
+    "surfaces": [
+      "electric polarization",
+      "polarization density",
+      "electric polarisation"
+    ],
+    "description": "physical quantity",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "time",
+        "power": 1
+      },
+      {
+        "base": "current",
+        "power": 1
+      }
+    ]
+  },
+  "frequency drift": {
+    "surfaces": [
+      "frequency drift",
+      "chirp rate"
+    ],
+    "description": "rate of change of the frequency",
+    "dimensions": [
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "reciprocal amount of substance": {
+    "surfaces": [
+      "reciprocal amount of substance",
+      "inverse amount of substance"
+    ],
+    "description": "",
+    "dimensions": [
+      {
+        "base": "amount of substance",
+        "power": -1
+      }
+    ]
+  },
+  "heat capacity": {
+    "surfaces": [
+      "heat capacity",
+      "thermal capacity",
+      "nhiệt dung"
+    ],
+    "description": "extensive physical property of the amount of energy required to increase temperature",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      },
+      {
+        "base": "temperature",
+        "power": -1
+      }
+    ]
+  },
+  "temperature difference": {
+    "surfaces": [
+      "temperature difference",
+      "thermodynamic temperature difference",
+      "difference of thermodynamic temperature"
+    ],
+    "description": "difference between thermodynamic temperature and a reference temperature",
+    "dimensions": [
+      {
+        "base": "temperature",
+        "power": 1
+      }
+    ]
+  },
+  "specific heat capacity": {
+    "surfaces": [
+      "specific heat capacity",
+      "specific heat",
+      "Nhiệt dung riêng"
+    ],
+    "description": "intensive quantity, heat capacity per mass",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "time",
+        "power": -2
+      },
+      {
+        "base": "temperature",
+        "power": -1
+      }
+    ]
+  },
+  "energy density": {
+    "surfaces": [
+      "energy density",
+      "Mật độ năng lượng"
+    ],
+    "description": "physical quantity representing the energy per volume",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -1
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "electric charge density": {
+    "surfaces": [
+      "electric charge density",
+      "volumic electric charge",
+      "volume density of charge",
+      "volumic charge",
+      "charge density",
+      "volume charge density"
+    ],
+    "description": "electric charge per volume",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -3
+      },
+      {
+        "base": "time",
+        "power": 1
+      },
+      {
+        "base": "current",
+        "power": 1
+      }
+    ]
+  },
+  "molar heat capacity": {
+    "surfaces": [
+      "molar heat capacity",
+      "molar heat"
+    ],
+    "description": "intensive quantity, heat capacity per amount of substance",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      },
+      {
+        "base": "temperature",
+        "power": -1
+      },
+      {
+        "base": "amount of substance",
+        "power": -1
+      }
+    ]
+  },
+  "radiance": {
+    "surfaces": [
+      "radiance"
+    ],
+    "description": "physical quantity",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      }
+    ]
+  },
+  "catalytic activity concentration": {
+    "surfaces": [
+      "catalytic activity concentration"
+    ],
+    "description": "physical quantity",
+    "dimensions": []
+  },
+  "magnetic dipole moment": {
+    "surfaces": [
+      "magnetic dipole moment"
+    ],
+    "description": "physical quantity; measured in weber metre",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 3
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      },
+      {
+        "base": "current",
+        "power": -1
+      }
+    ]
+  },
+  "magnetic vector potential": {
+    "surfaces": [
+      "magnetic vector potential",
+      "magnetic potential"
+    ],
+    "description": "vector quantity whose rotation is the magnetic flux density",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 1
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      },
+      {
+        "base": "current",
+        "power": -1
+      }
+    ]
+  },
+  "magnetic reluctance": {
+    "surfaces": [
+      "magnetic reluctance",
+      "reluctance",
+      "magnetic resistance"
+    ],
+    "description": "in physics, the ratio of magnetomotive force to magnetic flux; the magnetic analogue of electrical resistance",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": 2
+      },
+      {
+        "base": "current",
+        "power": 2
+      }
+    ]
+  },
+  "momentum": {
+    "surfaces": [
+      "momentum",
+      "linear momentum",
+      "translational momentum",
+      "động lượng",
+      "xung lượng",
+      "xung lượng tương đối tính",
+      "động lượng tương đối tính",
+      "động lượng-4"
+    ],
+    "description": "conserved physical quantity related to the motion of a body",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 1
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "compressibility": {
+    "surfaces": [
+      "compressibility",
+      "coefficient of compressibility",
+      "bulk compressibility",
+      "Độ nén"
+    ],
+    "description": "measure of the relative volume change of a fluid or solid as a response to a pressure change",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 1
+      },
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": 2
+      }
+    ]
+  },
+  "linear expansion coefficient": {
+    "surfaces": [
+      "linear expansion coefficient",
+      "coefficient of linear expansion"
+    ],
+    "description": "relative change of length per change of temperature",
+    "dimensions": [
+      {
+        "base": "temperature",
+        "power": -1
+      }
+    ]
+  },
+  "cubic expansion coefficient": {
+    "surfaces": [
+      "cubic expansion coefficient",
+      "volumetric expansion coefficient",
+      "volume expansion coefficient",
+      "thermal cubic expansion coefficient",
+      "coefficient of cubic expansion"
+    ],
+    "description": "relative change of volume per change of temperature",
+    "dimensions": [
+      {
+        "base": "temperature",
+        "power": -1
+      }
+    ]
+  },
+  "relative pressure coefficient": {
+    "surfaces": [
+      "relative pressure coefficient"
+    ],
+    "description": "relative change of pressure per change of temperature at constant volume",
+    "dimensions": [
+      {
+        "base": "temperature",
+        "power": -1
+      }
+    ]
+  },
+  "coefficient of thermal expansion": {
+    "surfaces": [
+      "coefficient of thermal expansion",
+      "expansion coefficient",
+      "thermal expansion coefficient",
+      "Hệ số giãn nở nhiệt",
+      "Hệ số giãn nở nhiệt thể tích",
+      "Hệ số giãn nở nhiệt toàn phần",
+      "Hệ số giãn nở nhiệt tuyến tính"
+    ],
+    "description": "material property which describes how the size of an object changes with a change in temperature",
+    "dimensions": [
+      {
+        "base": "temperature",
+        "power": -1
+      }
+    ]
+  },
+  "pressure coefficient": {
+    "surfaces": [
+      "pressure coefficient"
+    ],
+    "description": "change of pressure per change of temperature at constant volume",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -1
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      },
+      {
+        "base": "temperature",
+        "power": -1
+      }
+    ]
+  },
+  "linear density of electric charge": {
+    "surfaces": [
+      "linear density of electric charge",
+      "lineic electric charge",
+      "lineic charge",
+      "linear electric charge density",
+      "linear charge density"
+    ],
+    "description": "physical quantity",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": 1
+      },
+      {
+        "base": "current",
+        "power": 1
+      }
+    ]
+  },
+  "spectral radiant energy density in terms of wavenumber": {
+    "surfaces": [
+      "spectral radiant energy density in terms of wavenumber"
+    ],
+    "description": "physical quantity",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "radiant exposure": {
+    "surfaces": [
+      "radiant exposure"
+    ],
+    "description": "incident radiant energy per area",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "areal energy density": {
+    "surfaces": [
+      "areal energy density",
+      "area energy density",
+      "surface energy density",
+      "areic energy density"
+    ],
+    "description": "energy per area",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "thermal conductance": {
+    "surfaces": [
+      "thermal conductance"
+    ],
+    "description": "objects' ability to transfer heat; reciprocal of thermal resistance",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      },
+      {
+        "base": "temperature",
+        "power": -1
+      }
+    ]
+  },
+  "particle fluence": {
+    "surfaces": [
+      "particle fluence",
+      "fluence"
+    ],
+    "description": "number of the radiation particles crossing an area",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      }
+    ]
+  },
+  "reciprocal area": {
+    "surfaces": [
+      "reciprocal area",
+      "inverse area"
+    ],
+    "description": "",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      }
+    ]
+  },
+  "luminous efficacy of radiation": {
+    "surfaces": [
+      "luminous efficacy of radiation",
+      "luminous efficacy"
+    ],
+    "description": "measure of how well a light source produces visible light",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": 3
+      },
+      {
+        "base": "luminous intensity",
+        "power": 1
+      }
+    ]
+  },
+  "spectral luminous efficacy": {
+    "surfaces": [
+      "spectral luminous efficacy"
+    ],
+    "description": "fonction permettant d'exprimer une correspondance entre une longueur d'onde donnée et sa perception par le système visuel humain",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": 3
+      },
+      {
+        "base": "luminous intensity",
+        "power": 1
+      }
+    ]
+  },
+  "luminous efficacy of a source": {
+    "surfaces": [
+      "luminous efficacy of a source",
+      "wall-plug efficiency"
+    ],
+    "description": "Quotient aus ausgestrahltem Lichtstrom und verbrauchter Leistung einer Quelle",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": 3
+      },
+      {
+        "base": "luminous intensity",
+        "power": 1
+      }
+    ]
+  },
+  "maximum luminous efficacy": {
+    "surfaces": [
+      "maximum luminous efficacy"
+    ],
+    "description": "physical quantity",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": 3
+      },
+      {
+        "base": "luminous intensity",
+        "power": 1
+      }
+    ]
+  },
+  "luminous exposure": {
+    "surfaces": [
+      "luminous exposure",
+      "light exposure"
+    ],
+    "description": "incident luminous energy per area",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "time",
+        "power": 1
+      },
+      {
+        "base": "luminous intensity",
+        "power": 1
+      }
+    ]
+  },
+  "photon intensity": {
+    "surfaces": [
+      "photon intensity"
+    ],
+    "description": "density of the photon flux with respect to solid angle",
+    "dimensions": [
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "photon radiance": {
+    "surfaces": [
+      "photon radiance"
+    ],
+    "description": "area density of the photon intensity in a specified direction",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "photon irradiance": {
+    "surfaces": [
+      "photon irradiance"
+    ],
+    "description": "area density of the incident photon flux",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "photon exitance": {
+    "surfaces": [
+      "photon exitance",
+      "photon emittance"
+    ],
+    "description": "area density of the exiting photon flux",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "particle fluence rate": {
+    "surfaces": [
+      "particle fluence rate",
+      "particle flux density",
+      "particle flux",
+      "fluence rate"
+    ],
+    "description": "time derivative of particle fluence",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "particle current density": {
+    "surfaces": [
+      "particle current density"
+    ],
+    "description": "number of particles per time and area crossing a surface",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "surface-activity density": {
+    "surfaces": [
+      "surface-activity density",
+      "surface activity"
+    ],
+    "description": "activity per surface area of a radioactive sample",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "thermal resistivity": {
+    "surfaces": [
+      "thermal resistivity",
+      "specific thermal resistance"
+    ],
+    "description": "material constant; thermal resistance per unit thickness of material",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -1
+      },
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": 3
+      },
+      {
+        "base": "temperature",
+        "power": 1
+      }
+    ]
+  },
+  "enzyme activity": {
+    "surfaces": [
+      "enzyme activity",
+      "enzymatic activity"
+    ],
+    "description": "physical property of an enzyme, measured in  katal = 1 mol / s, or enzyme unit (U) = 1 μmol / min",
+    "dimensions": [
+      {
+        "base": "time",
+        "power": -1
+      },
+      {
+        "base": "amount of substance",
+        "power": 1
+      }
+    ]
+  },
+  "mass attenuation coefficient": {
+    "surfaces": [
+      "mass attenuation coefficient",
+      "photon mass attenuation coefficient"
+    ],
+    "description": "quotient of the linear photon attenuation coefficient and the mass density",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": -1
+      }
+    ]
+  },
+  "mass absorption coefficient": {
+    "surfaces": [
+      "mass absorption coefficient"
+    ],
+    "description": "Quotient aus linearem Absorptionskoeffizient und Massendichte",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": -1
+      }
+    ]
+  },
+  "mass energy-transfer coefficient": {
+    "surfaces": [
+      "mass energy-transfer coefficient"
+    ],
+    "description": "for ionizing uncharged particles, measure for the energy transferred to charged particles in the form of kinetic energy",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": -1
+      }
+    ]
+  },
+  "specific rotation": {
+    "surfaces": [
+      "specific rotation",
+      "specific optical rotatory power"
+    ],
+    "description": "kąt skręcania płaszczyzny światła spolaryzowanego",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": -1
+      }
+    ]
+  },
+  "molar attenuation coefficient": {
+    "surfaces": [
+      "molar attenuation coefficient",
+      "molar absorptivity"
+    ],
+    "description": "chemical quantity",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "amount of substance",
+        "power": -1
+      }
+    ]
+  },
+  "molar absorption coefficient": {
+    "surfaces": [
+      "molar absorption coefficient"
+    ],
+    "description": "product of the linear absorption coefficient and the molar volume",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "amount of substance",
+        "power": -1
+      }
+    ]
+  },
+  "molar optical rotatory power": {
+    "surfaces": [
+      "molar optical rotatory power"
+    ],
+    "description": "",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "amount of substance",
+        "power": -1
+      }
+    ]
+  },
+  "sound exposure": {
+    "surfaces": [
+      "sound exposure",
+      "Phơi nhiễm âm thanh"
+    ],
+    "description": "time integral over the squared sound pressure",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "mass",
+        "power": 2
+      },
+      {
+        "base": "time",
+        "power": -3
+      }
+    ]
+  },
+  "acoustic impedance": {
+    "surfaces": [
+      "acoustic impedance"
+    ],
+    "description": "quotient of average sound pressure at a surface and sound volume flow rate through that surface",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -4
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "mechanical impedance": {
+    "surfaces": [
+      "mechanical impedance",
+      "mechanical surface impedance"
+    ],
+    "description": "quotient of force and resulting speed in the same direction",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "specific acoustic impedance": {
+    "surfaces": [
+      "specific acoustic impedance"
+    ],
+    "description": "",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "specific activity": {
+    "surfaces": [
+      "specific activity",
+      "specific radioactivity",
+      "massic activity",
+      "specific radioactive activity"
+    ],
+    "description": "activity per mass of a radioactive sample",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "molality": {
+    "surfaces": [
+      "molality",
+      "molal concentration"
+    ],
+    "description": "amount of substance of solute divided by the mass of the solvent",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "amount of substance",
+        "power": 1
+      }
+    ]
+  },
+  "ionic strength": {
+    "surfaces": [
+      "ionic strength"
+    ],
+    "description": "quantification of the electrical interactions between ions in solution",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "amount of substance",
+        "power": 1
+      }
+    ]
+  },
+  "electrical elastance": {
+    "surfaces": [
+      "electrical elastance",
+      "electric elastance"
+    ],
+    "description": "inverse of the electric capacitance",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -4
+      },
+      {
+        "base": "current",
+        "power": -2
+      }
+    ]
+  },
+  "mass flow": {
+    "surfaces": [
+      "mass flow",
+      "mass flux"
+    ],
+    "description": "at a point in a fluid, the product of mass density and velocity",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "temperature gradient": {
+    "surfaces": [
+      "temperature gradient",
+      "gradien nhiệt độ"
+    ],
+    "description": "temperature difference per length",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -1
+      },
+      {
+        "base": "temperature",
+        "power": 1
+      }
+    ]
+  },
+  "Joule-Thomson coefficient": {
+    "surfaces": [
+      "Joule-Thomson coefficient"
+    ],
+    "description": "in a Joule-Thomson process, the change of temperature per change of pressure at constant enthalpy",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 1
+      },
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": 2
+      },
+      {
+        "base": "temperature",
+        "power": 1
+      }
+    ]
+  },
+  "spectral irradiance with respect to frequency": {
+    "surfaces": [
+      "spectral irradiance with respect to frequency",
+      "spectral irradiance"
+    ],
+    "description": "density of irradiance with respect to frequency",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "spectral radiant exitance with respect to frequency": {
+    "surfaces": [
+      "spectral radiant exitance with respect to frequency",
+      "spectral radiant exitance"
+    ],
+    "description": "density of radiant exitance with respect to frequency",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "spectral radiant flux": {
+    "surfaces": [
+      "spectral radiant flux",
+      "spectral radiant power"
+    ],
+    "description": "spectral density of radiant flux with respect to wavelength",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 1
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      }
+    ]
+  },
+  "molar conductivity": {
+    "surfaces": [
+      "molar conductivity"
+    ],
+    "description": "conductivity per molar concentration of electrolyte",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": 3
+      },
+      {
+        "base": "current",
+        "power": 2
+      },
+      {
+        "base": "amount of substance",
+        "power": -1
+      }
+    ]
+  },
+  "activity density": {
+    "surfaces": [
+      "activity density",
+      "volumic activity",
+      "activity concentration",
+      "volumetric activity",
+      "radioactive concentration"
+    ],
+    "description": "activity per volume of a radioactive sample",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -3
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "energy distribution of cross section": {
+    "surfaces": [
+      "energy distribution of cross section",
+      "spectral cross-section"
+    ],
+    "description": "differential quotient of the cross section for a process and the energy of the scattered particle",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": 2
+      }
+    ]
+  },
+  "direction and energy distribution of cross section": {
+    "surfaces": [
+      "direction and energy distribution of cross section"
+    ],
+    "description": "partial differential quotient of the cross section of a process with respect to the solid angle around a given direction and the energy of a particle scattered in that direction",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": 2
+      }
+    ]
+  },
+  "total mass stopping power": {
+    "surfaces": [
+      "total mass stopping power",
+      "mass stopping power"
+    ],
+    "description": "quotient of total linear stopping power and mass density",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 4
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "mobility": {
+    "surfaces": [
+      "mobility",
+      "electrical mobility"
+    ],
+    "description": "quotient of the mean drift speed of a charged particle caused by an electric field in a medium and the electric field strength",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": 2
+      },
+      {
+        "base": "current",
+        "power": 1
+      }
+    ]
+  },
+  "particle source density": {
+    "surfaces": [
+      "particle source density"
+    ],
+    "description": "production rate of particles per volume",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -3
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "slowing-down density": {
+    "surfaces": [
+      "slowing-down density"
+    ],
+    "description": "number of slowed-down particles per time and volume",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -3
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "exposure rate": {
+    "surfaces": [
+      "exposure rate"
+    ],
+    "description": "for ionizing radiation, time derivative of the exposure",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "current",
+        "power": 1
+      }
+    ]
+  },
+  "fluidity": {
+    "surfaces": [
+      "fluidity",
+      "độ lỏng",
+      "tính lỏng"
+    ],
+    "description": "reciprocal of the dynamic viscosity",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 1
+      },
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": 1
+      }
+    ]
+  },
+  "spectral radiant intensity in terms of wavelength": {
+    "surfaces": [
+      "spectral radiant intensity in terms of wavelength",
+      "spectral radiant intensity"
+    ],
+    "description": "spectral density of radiant intensity with respect to wavelength",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 1
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      }
+    ]
+  },
+  "reciprocal magnetic flux": {
+    "surfaces": [
+      "reciprocal magnetic flux",
+      "inverse magnetic flux"
+    ],
+    "description": "",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "mass",
+        "power": -1
+      },
+      {
+        "base": "time",
+        "power": 2
+      },
+      {
+        "base": "current",
+        "power": 1
+      }
+    ]
+  },
+  "spectral radiance with respect to frequency": {
+    "surfaces": [
+      "spectral radiance with respect to frequency",
+      "spectral radiance"
+    ],
+    "description": "density of radiance with respect to frequency",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "spectral radiant exposure with respect to frequency": {
+    "surfaces": [
+      "spectral radiant exposure with respect to frequency",
+      "spectral radiant exposure"
+    ],
+    "description": "density of radiant exposure with respect to frequency",
+    "dimensions": [
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "spectral radiant energy density in terms of frequency": {
+    "surfaces": [
+      "spectral radiant energy density in terms of frequency"
+    ],
+    "description": "change of radiant energy density with frequency",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -1
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -1
+      }
+    ]
+  },
+  "spectral radiant intensity in terms of frequency": {
+    "surfaces": [
+      "spectral radiant intensity in terms of frequency",
+      "spectral radiant intensity"
+    ],
+    "description": "spectral density of radiant intensity with respect to frequency",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "mass per energy": {
+    "surfaces": [
+      "mass per energy"
+    ],
+    "description": "physical quantity",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "time",
+        "power": 2
+      }
+    ]
+  },
+  "force density": {
+    "surfaces": [
+      "force density",
+      "volumic force"
+    ],
+    "description": "",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  },
+  "power density": {
+    "surfaces": [
+      "power density",
+      "volumic power",
+      "volume power density"
+    ],
+    "description": "power per volume",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": -1
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -3
+      }
+    ]
+  },
+  "reactive energy": {
+    "surfaces": [
+      "reactive energy",
+      "electric reactive energy"
+    ],
+    "description": "",
+    "dimensions": [
+      {
+        "base": "length",
+        "power": 2
+      },
+      {
+        "base": "mass",
+        "power": 1
+      },
+      {
+        "base": "time",
+        "power": -2
+      }
+    ]
+  }
+}
