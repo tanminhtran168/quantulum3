@@ -27,7 +27,7 @@
     "dimensions": [],
     "URI": "Charge_(physics)"
   },
-  "angle": {
+  "angular measure": {
     "dimensions": [],
     "URI": "Angle"
   },
@@ -399,7 +399,7 @@
     ],
     "URI": "Surface_tension"
   },
-  "permeability": {
+  "magnetic permeability": {
     "dimensions": [
       {
         "base": "mass",

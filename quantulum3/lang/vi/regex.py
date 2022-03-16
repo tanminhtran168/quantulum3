@@ -10,7 +10,7 @@ UNITS = [
     "hai",
     "ba",
     "bốn",
-    "năm",
+    "five",
     "sáu",
     "bảy",
     "tám",
@@ -63,8 +63,8 @@ MULTIPLICATION_OPERATORS = {" lần "}
 
 DIVISION_OPERATORS = {u" mỗi ", u" trên ", u"per"}
 
-GROUPING_OPERATORS = {u",", u" "}
-DECIMAL_OPERATORS = {u"."}
+GROUPING_OPERATORS = {u".", u" "}
+DECIMAL_OPERATORS = {u","}
 
 # Pattern for extracting word based numbers
 TEXT_PATTERN = r"""            # Pattern for extracting mixed digit-spelled num

@@ -9,14 +9,12 @@ from importlib import import_module
 from pathlib import Path
 from . import const
 
-TOP_DIR = Path(__file__).parent or Path("")
-
 
 ###############################################################################
 def languages():
     sub_dirs = [
         x
-        for x in TOP_DIR.joinpath("lang").iterdir()
+        for x in const.TOP_DIR.joinpath("lang").iterdir()
         if x.is_dir() and not x.name.startswith("__")
     ]
     langs = dict((x.name.lower(), x.name) for x in sub_dirs)
@@ -58,4 +56,4 @@ def get(module, lang=const.LANG):
 
 ###############################################################################
 def top_dir(lang=const.LANG):
-    return TOP_DIR.joinpath("lang", subdir(lang))
+    return const.TOP_DIR.joinpath("lang", subdir(lang))

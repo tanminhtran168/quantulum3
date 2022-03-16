@@ -4,7 +4,6 @@
 :mod:`Quantulum` parser.
 """
 
-import logging
 import re
 
 from ... import classes as cls
@@ -12,8 +11,6 @@ from ... import load, parser
 from ... import regex as reg
 from . import lang
 from .load import COMMON_WORDS
-
-_LOGGER = logging.getLogger(__name__)
 
 
 ###############################################################################
@@ -56,18 +53,21 @@ def clean_surface(surface, span):
 
 
 ###############################################################################
-def extract_spell_out_values(text):
+def extract_spell_out_values(text, has_value):
     """
     Convert spelled out numbers in a given text to digits.
     """
-
     values = []
     for item in reg.text_pattern_reg(lang).finditer(text):
         try:
             surface, span = clean_surface(item.group(0), item.span())
             if not surface or surface.lower() in reg.scales(lang):
                 continue
-            curr = result = 0.0
+            if has_value:
+                curr = 0.0
+            else:
+                curr = 1.0
+            result = 0.0
             for word in surface.lower().split():
                 try:
                     scale, increment = (
@@ -97,7 +97,6 @@ def extract_spell_out_values(text):
         except (KeyError, AttributeError):
             # just ignore the match if an error occurred
             pass
-
     return sorted(values, key=lambda x: x["old_span"][0])
 
 
@@ -189,7 +188,6 @@ def build_quantity(orig_text, text, item, values, unit, surface, span, uncert):
         dimension_change = True
         surface = surface[:-1]
         span = (span[0], span[1] - 1)
-        _LOGGER.debug('\tCorrect for "1990s" pattern')
 
     # Usually "1am", "5.12 pm" stand for the time, not pico- or attometer
     if (
@@ -198,7 +196,6 @@ def build_quantity(orig_text, text, item, values, unit, surface, span, uncert):
         and unit.entity.name == "length"
         and re.fullmatch(r"\d(\.\d\d)?", item.group("value"))
     ):
-        _LOGGER.debug("\tCorrect for am/pm time pattern")
         return
 
     # When it comes to currencies, some users prefer the format ($99.99) instead of -$99.99
@@ -239,7 +236,6 @@ def build_quantity(orig_text, text, item, values, unit, surface, span, uncert):
             pruned_common_word = True
             surface = surface[:-3]
             span = (span[0], span[1] - 3)
-            _LOGGER.debug("\tCorrect for 'in' pattern")
             continue
 
         # Usually "my" stands for the determiner, not megayear
@@ -258,7 +254,6 @@ def build_quantity(orig_text, text, item, values, unit, surface, span, uncert):
             pruned_common_word = True
             surface = surface[:-3]
             span = (span[0], span[1] - 3)
-            _LOGGER.debug("\tCorrect for 'my' pattern")
             continue
 
         candidates = [u["power"] == 1 for u in unit.original_dimensions]
@@ -292,9 +287,6 @@ def build_quantity(orig_text, text, item, values, unit, surface, span, uncert):
                 unit.original_dimensions = unit.original_dimensions[:start]
                 dimension_change = True
                 pruned_common_word = True
-                _LOGGER.debug(
-                    "\tDetected common word '{}' and removed it".format(combination)
-                )
                 continue
 
     match = parser.is_quote_artifact(text, item.span())
@@ -306,7 +298,6 @@ def build_quantity(orig_text, text, item, values, unit, surface, span, uncert):
         ):
             unit.original_dimensions = unit.original_dimensions[:-1]
             dimension_change = True
-        _LOGGER.debug("\tCorrect for quotes")
 
     if (
         re.search(r" time$", surface)
@@ -318,7 +309,6 @@ def build_quantity(orig_text, text, item, values, unit, surface, span, uncert):
         dimension_change = True
         surface = surface[:-5]
         span = (span[0], span[1] - 5)
-        _LOGGER.debug('\tCorrect for "time"')
 
     if dimension_change:
         if unit.original_dimensions:
@@ -335,7 +325,6 @@ def build_quantity(orig_text, text, item, values, unit, surface, span, uncert):
         or re.search(r"\d+[A-Z]+\d+", surface)
         or re.search(r"\ba second\b", surface, re.IGNORECASE)
     ):
-        _LOGGER.debug('\tMeaningless quantity ("%s"), discard', surface)
         return
 
     objs = []

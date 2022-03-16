@@ -11,19 +11,17 @@ from collections import defaultdict
 
 import inflect
 
-from ... import load
+from ... import load, const
 from . import lang
-
-TOPDIR = os.path.dirname(__file__) or "."
 
 
 ###############################################################################
 def build_common_words():
     # Read raw 4 letter file
-    path = os.path.join(TOPDIR, "common-units.txt")
+    path = os.path.join(const.TOP_DIR, "common-units.txt")
     with open(path, "r", encoding="utf-8") as file:
         common_units = {line.strip() for line in file if not line.startswith("#")}
-    path = os.path.join(TOPDIR, "data/common-words.txt")
+    path = os.path.join(const.TOP_DIR, "data/common-words.txt")
     words = defaultdict(list)  # Collect words based on length
     with open(path, "r", encoding="utf-8") as file:
         for line in file:
@@ -41,7 +39,7 @@ def build_common_words():
 
 ###############################################################################
 def load_common_words():
-    path = os.path.join(TOPDIR, "common-words.json")
+    path = os.path.join(const.TOP_DIR, "common-words.json")
     dumped = {}
     try:
         with open(path, "r", encoding="utf-8") as file:

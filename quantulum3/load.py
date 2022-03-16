@@ -11,7 +11,6 @@ from typing import Any, List, Tuple, Union
 
 from . import language, classes, const
 
-TOP_DIR = Path(__file__).parent or Path("")
 
 ###############################################################################
 _CACHE_DICT = {}
@@ -55,19 +54,6 @@ def object_pairs_hook_defer_duplicate_keys(object_pairs: List[Tuple[str, Any]]):
 # @cached
 def _get_load(lang=const.LANG):
     return language.get("load", lang)
-
-
-GENERAL_UNITS_PATH = TOP_DIR.joinpath("data/units.json")
-GENERAL_ENTITIES_PATH = TOP_DIR.joinpath("data/entities.json")
-
-
-def LANGUAGE_ENTITIES_PATH(lang=const.LANG):
-    return TOP_DIR.joinpath(language.top_dir(lang), "data/entities.json")
-
-
-def LANGUAGE_UNITS_PATH(lang=const.LANG):
-    return TOP_DIR.joinpath(language.top_dir(lang), "data/unit_conversion.json")
-
 
 def _load_json(path_or_string: Union[Path, str]):
     if isinstance(path_or_string, Path):
@@ -203,7 +189,7 @@ def entities(lang=const.LANG):
     Cached entity object
     """
     return Entities(
-        [GENERAL_ENTITIES_PATH, LANGUAGE_ENTITIES_PATH(lang), CUSTOM_ENTITIES]
+        [const.GENERAL_ENTITIES_PATH, const.LANG_ENTITIES_PATH, CUSTOM_ENTITIES]
     )
 
 
@@ -340,7 +326,7 @@ def units(lang=const.LANG):
     """
     Cached unit object
     """
-    return Units([GENERAL_UNITS_PATH, LANGUAGE_UNITS_PATH(lang), CUSTOM_UNITS], lang)
+    return Units([const.GENERAL_UNITS_PATH, const.LANG_UNITS_PATH, CUSTOM_UNITS], lang)
 
 
 ###############################################################################

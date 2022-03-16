@@ -1468,7 +1468,10 @@
     "conversion": {
       "silabel": "joule",
       "factor": 1.60217656535e-19
-    }
+    },
+    "prefixes": [
+      "m"
+    ]
   },
   "kilowatt hour": {
     "surfaces": [
@@ -2044,7 +2047,7 @@
       "angular degree",
       "độ"
     ],
-    "entity": "angle",
+    "entity": "angular measure",
     "URI": "Degree_(angle)",
     "dimensions": [],
     "symbols": [
@@ -2058,7 +2061,7 @@
       "radian",
       "rađian"
     ],
-    "entity": "angle",
+    "entity": "angular measure",
     "URI": "Radian",
     "dimensions": [],
     "symbols": [
@@ -2076,7 +2079,7 @@
       "square radian",
       "sterađian"
     ],
-    "entity": "angle",
+    "entity": "angular measure",
     "URI": "Steradian",
     "dimensions": [],
     "symbols": [
@@ -2098,7 +2101,7 @@
       "phút góc",
       "phút cung"
     ],
-    "entity": "angle",
+    "entity": "angular measure",
     "URI": "Minute_and_second_of_arc",
     "dimensions": [],
     "symbols": [
@@ -2287,7 +2290,7 @@
       "culông",
       "cu-lông"
     ],
-    "entity": "charge",
+    "entity": "electric charge",
     "URI": "Coulomb",
     "dimensions": [],
     "symbols": [
@@ -2303,7 +2306,7 @@
       "millicoulomb",
       "miliculông"
     ],
-    "entity": "charge",
+    "entity": "electric charge",
     "URI": "Coulomb",
     "dimensions": [],
     "symbols": [
@@ -2319,7 +2322,7 @@
       "microcoulomb",
       "micrôculông"
     ],
-    "entity": "charge",
+    "entity": "electric charge",
     "URI": "Coulomb",
     "dimensions": [],
     "symbols": [
@@ -2337,7 +2340,7 @@
       "amp-hour",
       "ampe giờ"
     ],
-    "entity": "charge",
+    "entity": "electric charge",
     "URI": "Coulomb",
     "dimensions": [
       {
@@ -2360,7 +2363,7 @@
       "milliamp-hour",
       "miliampe giờ"
     ],
-    "entity": "charge",
+    "entity": "electric charge",
     "URI": "Coulomb",
     "dimensions": [
       {
@@ -2582,7 +2585,7 @@
       "cumec",
       "mét khối trên giây"
     ],
-    "entity": "volumetric flow",
+    "entity": "volumetric flow rate",
     "URI": "Cubic_metre_per_second",
     "dimensions": [
       {
@@ -2691,8 +2694,7 @@
   },
   "lạng": {
     "surfaces": [
-      "lạng",
-      "lượng"
+      "lạng"
     ],
     "entity": "mass",
     "URI": "Lạng",
@@ -3820,7 +3822,7 @@
       "angular second",
       "arc second"
     ],
-    "entity": "angle",
+    "entity": "angular measure",
     "URI": "Minute_and_second_of_arc",
     "dimensions": [],
     "symbols": [
@@ -4485,9 +4487,9 @@
     "surfaces": [
       "statcoulomb",
       "franklin",
-      "electrostatic unit of charge"
+      "electrostatic unit of electric charge"
     ],
-    "entity": "charge",
+    "entity": "electric charge",
     "URI": "Statcoulomb",
     "dimensions": [],
     "symbols": [
@@ -4559,7 +4561,7 @@
     "surfaces": [
       "faraday"
     ],
-    "entity": "charge",
+    "entity": "electric charge",
     "URI": "Faraday_constant",
     "dimensions": [],
     "symbols": [],
@@ -4886,7 +4888,7 @@
     "surfaces": [
       "cubic foot per second"
     ],
-    "entity": "volumetric flow",
+    "entity": "volumetric flow rate",
     "URI": "Cubic_foot#Cubic_foot_per_minute",
     "dimensions": [
       {
@@ -4911,7 +4913,7 @@
     "surfaces": [
       "standard cubic centimetre per minute"
     ],
-    "entity": "volumetric flow",
+    "entity": "volumetric flow rate",
     "URI": "SCCM_(flow_unit)",
     "dimensions": [
       {
@@ -4931,7 +4933,7 @@
     "surfaces": [
       "standard cubic feet per minute"
     ],
-    "entity": "volumetric flow",
+    "entity": "volumetric flow rate",
     "URI": "Standard_cubic_feet_per_minute",
     "dimensions": [
       {
@@ -4951,7 +4953,7 @@
     "surfaces": [
       "standard litre per minute"
     ],
-    "entity": "volumetric flow",
+    "entity": "volumetric flow rate",
     "URI": "Standard_litre_per_minute",
     "dimensions": [
       {
@@ -5064,7 +5066,7 @@
       "darcy",
       "darcy unit"
     ],
-    "entity": "permeability",
+    "entity": "magnetic permeability",
     "URI": "Darcy_(unit)",
     "dimensions": [],
     "symbols": [],

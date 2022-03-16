@@ -26,11 +26,11 @@ def _get_parser(lang=const.LANG):
 
 
 ###############################################################################
-def extract_spell_out_values(text, lang=const.LANG):
+def extract_spell_out_values(text, has_value, lang=const.LANG):
     """
     Convert spelled out numbers in a given text to digits.
     """
-    return _get_parser(lang).extract_spell_out_values(text)
+    return _get_parser(lang).extract_spell_out_values(text, has_value)
 
 
 ###############################################################################
@@ -128,7 +128,6 @@ def resolve_exponents(value, lang=const.LANG):
     Returns:
         str, string with basis and exponent removed
         array of float, factors for multiplication
-
     """
     factors = []
     matches = re.finditer(
@@ -186,7 +185,7 @@ def get_conversion_from_dimensions(dimensions, lang='vi'):
             si_label, factor = unit_dict[unit_label]['conversion'].values()
             dim = dimension['power']
 
-            # TODO handle X/litre: Entity(litre) = volume, si_label = cubic metre
+            # handle X/litre: Entity(litre) = volume, si_label = cubic metre
             if len(si_label.split()) == 2:
                 if 'square' in si_label:
                     si_label = si_label.split()[1]
@@ -198,9 +197,9 @@ def get_conversion_from_dimensions(dimensions, lang='vi'):
             conversion_dict.append({"base": si_label, "power": dim})
             res = res * (factor ** dim)
         # print(conversion_dict)
-        si_units = json.load(open("quantulum3/data/si_units.json"))
+        si_units = json.load(open(const.SI_UNITS_PATH))
         for si, value in si_units.items():
-            if value == conversion_dict:
+            if value['dimensions'] == conversion_dict:
                 return {"silabel": si, "factor": res}
     except KeyError:
         return None
@@ -222,7 +221,7 @@ def get_unit_from_dimensions(dimensions, text, lang=const.LANG):
         unit = cls.Unit(
             name=build_unit_name(dimensions, lang),
             dimensions=dimensions,
-            entity=get_entity_from_dimensions(dimensions, text, lang),
+            entity=get_entity_from_dimensions(dimensions, lang),
             conversion=get_conversion_from_dimensions(dimensions)
         )
     # Carry on original composition
@@ -249,7 +248,7 @@ def infer_name(unit):
 
 
 ###############################################################################
-def get_entity_from_dimensions(dimensions, text, lang=const.LANG):
+def get_entity_from_dimensions(dimensions, lang=const.LANG):
     """
     Infer the underlying entity of a unit (e.g. "volume" for "m^3") based on
     its dimensionality.
@@ -259,11 +258,10 @@ def get_entity_from_dimensions(dimensions, text, lang=const.LANG):
         {"base": load.units(lang).names[i["base"]].entity.name, "power": i["power"]}
         for i in dimensions
     ]
-
     # print(load.entities(lang).derived[(('mass', 1), ('volume', -1))])
     final_derived = []
     for der in new_derived:
-        # TODO handle {'base': length, 'power': -3} --> {'base': volume, 'power': -1}
+        # handle {'base': length, 'power': -3} --> {'base': volume, 'power': -1}
         entity = sorted(load.entities(lang).derived[((der['base'], abs(der['power'])),)], key=lambda x: x.name)
         if len(entity):
             der = {
@@ -275,8 +273,24 @@ def get_entity_from_dimensions(dimensions, text, lang=const.LANG):
     final_derived = sorted(final_derived, key=lambda x: x["base"])
     key = load.get_key_from_dimensions(final_derived)
     ent = dis.disambiguate_entity(key, lang)
-
     if ent is None:
+        try:
+            si_entities = json.load(open(const.GENERAL_SI_ENTITIES_PATH, encoding='utf-8'))
+            entity_dimensions = {}
+            for item in key:
+                for dim in si_entities[item[0]]['dimensions']:
+                    entity_dimensions[dim['base']] = entity_dimensions.setdefault(dim['base'], 0) + (dim['power'] * item[1])
+            entity_dimension_list = []
+            for item in entity_dimensions.items():
+                entity_dimension_list.append({'base': item[0], 'power': item[1]})
+
+            for si_entity, si_value in si_entities.items():
+                if sorted(si_value['dimensions'], key=lambda x: x['base']) == sorted(entity_dimension_list, key=lambda x: x['base']):
+                    ent = cls.Entity(name=si_entity, dimensions=entity_dimension_list)
+                    break
+
+        except KeyError:
+            pass
         ent = cls.Entity(name="unknown", dimensions=new_derived)
     return ent
 
@@ -433,44 +447,49 @@ def clean_text(text, lang=const.LANG):
         if word in text:
             text = text.replace(word, word.replace(' ', '_'))
 
-    maps = {"×": "x", "–": "-", "−": "-"}
+    maps = {"×": "x", "–": "-", "−": "-", "-": "-"}
     for element in maps:
         text = text.replace(element, maps[element])
-
     # Language specific cleaning
     text = _get_parser(lang).clean_text(text)
-
     return text
 
 
 ###############################################################################
-def parse(text, lang=const.LANG) -> List[cls.Quantity]:
+def parse(text, lang=const.LANG, has_value=True) -> List[cls.Quantity]:
     """
     Extract all quantities from unstructured text.
     """
     orig_text = text
 
     text = clean_text(text, lang)
-    values = extract_spell_out_values(text, lang)
+    values = extract_spell_out_values(text, has_value, lang)
     text, shifts = substitute_values(text, values)
 
     quantities = []
-    for item in reg.units_regex(lang).finditer(text):
+    for item in reg.units_regex(lang, has_value).finditer(text):
+        if item.group() != '':
+            # groups = dict([i for i in item.groupdict().items() if i[1] and i[1].strip()])
+            try:
+                if has_value:
+                    uncertain, _values = get_values(item, lang)
+                else:
+                    uncertain = None
+                    _values = []
+                    for v in values:
+                        _values.append(v['new_surface'])
+                    if len(_values) == 0:
+                        _values = [0]
 
-        groups = dict([i for i in item.groupdict().items() if i[1] and i[1].strip()])
-
-        try:
-            uncertain, values = get_values(item, lang)
-
-            unit, unit_shortening = get_unit(item, text)
-            surface, span = get_surface(shifts, orig_text, item, text, unit_shortening)
-            objs = build_quantity(
-                orig_text, text, item, values, unit, surface, span, uncertain, lang
-            )
-            if objs is not None:
-                quantities += objs
-        except ValueError as err:
-            print("Could not parse quantity: %s", err)
+                unit, unit_shortening = get_unit(item, text)
+                surface, span = get_surface(shifts, orig_text, item, text, unit_shortening)
+                objs = build_quantity(
+                    orig_text, text, item, _values, unit, surface, span, uncertain, lang
+                )
+                if objs is not None:
+                    quantities += objs
+            except ValueError as err:
+                print("Could not parse quantity: %s", err)
 
     return quantities
 

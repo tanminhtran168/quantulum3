@@ -1,1728 +1,2335 @@
 {
-  "1": [],
+  "kilogram": {
+    "id": "Q11570",
+    "dimensions": [
+      {
+        "base": "kilogram",
+        "power": 1
+      }
+    ]
+  },
   "metre": {
-    "base": "metre",
-    "power": 1
+    "id": "Q11573",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": 1
+      }
+    ]
   },
   "second": {
-    "base": "second",
-    "power": 1
-  },
-  "coulomb": {
-    "base": "coulomb",
-    "power": 1
-  },
-  "kilogram": {
-    "base": "kilogram",
-    "power": 1
+    "id": "Q11574",
+    "dimensions": [
+      {
+        "base": "second",
+        "power": 1
+      }
+    ]
   },
   "kelvin": {
-    "base": "kelvin",
-    "power": 1
+    "id": "Q11579",
+    "dimensions": [
+      {
+        "base": "kelvin",
+        "power": 1
+      }
+    ]
   },
-  "cubic metre": [
-    {
-      "base": "metre",
-      "power": 3
-    }
-  ],
   "newton": {
-    "base": "newton",
-    "power": 1
+    "id": "Q12438",
+    "dimensions": [
+      {
+        "base": "newton",
+        "power": 1
+      }
+    ]
   },
   "watt": {
-    "base": "watt",
-    "power": 1
+    "id": "Q25236",
+    "dimensions": [
+      {
+        "base": "watt",
+        "power": 1
+      }
+    ]
   },
   "volt": {
-    "base": "volt",
-    "power": 1
+    "id": "Q25250",
+    "dimensions": [
+      {
+        "base": "volt",
+        "power": 1
+      }
+    ]
   },
   "joule": {
-    "base": "joule",
-    "power": 1
+    "id": "Q25269",
+    "dimensions": [
+      {
+        "base": "joule",
+        "power": 1
+      }
+    ]
   },
   "ampere": {
-    "base": "ampere",
-    "power": 1
+    "id": "Q25272",
+    "dimensions": [
+      {
+        "base": "ampere",
+        "power": 1
+      }
+    ]
   },
-  "square metre": [
-    {
-      "base": "metre",
-      "power": 2
-    }
-  ],
+  "square metre": {
+    "id": "Q25343",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": 2
+      }
+    ]
+  },
+  "coulomb": {
+    "id": "Q25406",
+    "dimensions": [
+      {
+        "base": "coulomb",
+        "power": 1
+      }
+    ]
+  },
+  "cubic metre": {
+    "id": "Q25517",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": 3
+      }
+    ]
+  },
   "radian": {
-    "base": "radian",
-    "power": 1
+    "id": "Q33680",
+    "dimensions": [
+      {
+        "base": "radian",
+        "power": 1
+      }
+    ]
+  },
+  "hertz": {
+    "id": "Q39369",
+    "dimensions": [
+      {
+        "base": "hertz",
+        "power": 1
+      }
+    ]
   },
   "mole": {
-    "base": "mole",
-    "power": 1
+    "id": "Q41509",
+    "dimensions": [
+      {
+        "base": "mole",
+        "power": 1
+      }
+    ]
   },
-  "cubic metre per second": [
-    {
-      "base": "metre",
-      "power": 3
-    },
-    {
-      "base": "second",
-      "power": -1
-    }
-  ],
-  "hertz": {
-    "base": "hertz",
-    "power": 1
-  },
-  "coulomb metre": [
-    {
-      "base": "coulomb",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": 1
-    }
-  ],
   "pascal": {
-    "base": "pascal",
-    "power": 1
+    "id": "Q44395",
+    "dimensions": [
+      {
+        "base": "pascal",
+        "power": 1
+      }
+    ]
   },
   "ohm": {
-    "base": "ohm",
-    "power": 1
+    "id": "Q47083",
+    "dimensions": [
+      {
+        "base": "ohm",
+        "power": 1
+      }
+    ]
   },
   "candela": {
-    "base": "candela",
-    "power": 1
+    "id": "Q83216",
+    "dimensions": [
+      {
+        "base": "candela",
+        "power": 1
+      }
+    ]
   },
   "becquerel": {
-    "base": "becquerel",
-    "power": 1
+    "id": "Q102573",
+    "dimensions": [
+      {
+        "base": "becquerel",
+        "power": 1
+      }
+    ]
   },
   "sievert": {
-    "base": "sievert",
-    "power": 1
+    "id": "Q103246",
+    "dimensions": [
+      {
+        "base": "sievert",
+        "power": 1
+      }
+    ]
   },
-  "metre per second": [
-    {
-      "base": "metre",
-      "power": 1
-    },
-    {
-      "base": "second",
-      "power": -1
-    }
-  ],
   "farad": {
-    "base": "farad",
-    "power": 1
+    "id": "Q131255",
+    "dimensions": [
+      {
+        "base": "farad",
+        "power": 1
+      }
+    ]
   },
   "tesla": {
-    "base": "tesla",
-    "power": 1
+    "id": "Q163343",
+    "dimensions": [
+      {
+        "base": "tesla",
+        "power": 1
+      }
+    ]
   },
   "henry": {
-    "base": "henry",
-    "power": 1
+    "id": "Q163354",
+    "dimensions": [
+      {
+        "base": "henry",
+        "power": 1
+      }
+    ]
   },
   "siemens": {
-    "base": "siemens",
-    "power": 1
+    "id": "Q169893",
+    "dimensions": [
+      {
+        "base": "siemens",
+        "power": 1
+      }
+    ]
   },
   "weber": {
-    "base": "weber",
-    "power": 1
+    "id": "Q170804",
+    "dimensions": [
+      {
+        "base": "weber",
+        "power": 1
+      }
+    ]
   },
   "steradian": {
-    "base": "steradian",
-    "power": 1
+    "id": "Q177612",
+    "dimensions": [
+      {
+        "base": "steradian",
+        "power": 1
+      }
+    ]
   },
   "lux": {
-    "base": "lux",
-    "power": 1
+    "id": "Q179836",
+    "dimensions": [
+      {
+        "base": "lux",
+        "power": 1
+      }
+    ]
+  },
+  "metre per second": {
+    "id": "Q182429",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": 1
+      },
+      {
+        "base": "second",
+        "power": -1
+      }
+    ]
   },
   "gray": {
-    "base": "gray",
-    "power": 1
+    "id": "Q190095",
+    "dimensions": [
+      {
+        "base": "gray",
+        "power": 1
+      }
+    ]
   },
-  "reciprocal metre": [
-    {
-      "base": "metre",
-      "power": -1
-    }
-  ],
-  "reciprocal second": [
-    {
-      "base": "second",
-      "power": -1
-    }
-  ],
   "katal": {
-    "base": "katal",
-    "power": 1
+    "id": "Q208634",
+    "dimensions": [
+      {
+        "base": "katal",
+        "power": 1
+      }
+    ]
   },
-  "newton metre": [
-    {
-      "base": "newton",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": 1
-    }
-  ],
-  "newton second": [
-    {
-      "base": "newton",
-      "power": 1
-    },
-    {
-      "base": "second",
-      "power": 1
-    }
-  ],
-  "candela per square metre": [
-    {
-      "base": "candela",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -2
-    }
-  ],
-  "coulomb per kilogram": [
-    {
-      "base": "coulomb",
-      "power": 1
-    },
-    {
-      "base": "kilogram",
-      "power": -1
-    }
-  ],
+  "newton metre": {
+    "id": "Q215571",
+    "dimensions": [
+      {
+        "base": "newton",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": 1
+      }
+    ]
+  },
+  "candela per square metre": {
+    "id": "Q281096",
+    "dimensions": [
+      {
+        "base": "candela",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -2
+      }
+    ]
+  },
   "lumen": {
-    "base": "lumen",
-    "power": 1
+    "id": "Q484092",
+    "dimensions": [
+      {
+        "base": "lumen",
+        "power": 1
+      }
+    ]
   },
-  "metre per square second": [
-    {
-      "base": "metre",
-      "power": 1
-    },
-    {
-      "base": "second",
-      "power": -2
-    }
-  ],
-  "kilogram per cubic metre": [
-    {
-      "base": "kilogram",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -3
-    }
-  ],
-  "volt ampere": [
-    {
-      "base": "volt",
-      "power": 1
-    },
-    {
-      "base": "ampere",
-      "power": 1
-    }
-  ],
-  "volt-ampere reactive": [
-    {
-      "base": "volt-ampere reactive",
-      "power": 1
-    }
-  ],
-  "pascal second": [
-    {
-      "base": "pascal",
-      "power": 1
-    },
-    {
-      "base": "second",
-      "power": 1
-    }
-  ],
-  "joule per mole": [
-    {
-      "base": "joule",
-      "power": 1
-    },
-    {
-      "base": "mole",
-      "power": -1
-    }
-  ],
-  "ampere per metre": [
-    {
-      "base": "ampere",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -1
-    }
-  ],
-  "lumen second": [
-    {
-      "base": "lumen",
-      "power": 1
-    },
-    {
-      "base": "second",
-      "power": 1
-    }
-  ],
-  "radian per second": [
-    {
-      "base": "radian",
-      "power": 1
-    },
-    {
-      "base": "second",
-      "power": -1
-    }
-  ],
-  "kilogram per metre": [
-    {
-      "base": "kilogram",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -1
-    }
-  ],
-  "joule per kelvin": [
-    {
-      "base": "joule",
-      "power": 1
-    },
-    {
-      "base": "kelvin",
-      "power": -1
-    }
-  ],
-  "reciprocal farad": [
-    {
-      "base": "farad",
-      "power": -1
-    }
-  ],
-  "watt per square metre hertz": [
-    {
-      "base": "watt",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -2
-    },
-    {
-      "base": "hertz",
-      "power": -1
-    }
-  ],
-  "ohm metre": [
-    {
-      "base": "ohm",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": 1
-    }
-  ],
-  "watt per metre kelvin": [
-    {
-      "base": "watt",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -1
-    },
-    {
-      "base": "kelvin",
-      "power": -1
-    }
-  ],
-  "newton per square ampere": [
-    {
-      "base": "newton",
-      "power": 1
-    },
-    {
-      "base": "ampere",
-      "power": -2
-    }
-  ],
-  "square metre per second": [
-    {
-      "base": "metre",
-      "power": 2
-    },
-    {
-      "base": "second",
-      "power": -1
-    }
-  ],
-  "joule second": [
-    {
-      "base": "joule",
-      "power": 1
-    },
-    {
-      "base": "second",
-      "power": 1
-    }
-  ],
-  "joule per square metre": [
-    {
-      "base": "joule",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -2
-    }
-  ],
-  "ampere second": [
-    {
-      "base": "ampere",
-      "power": 1
-    },
-    {
-      "base": "second",
-      "power": 1
-    }
-  ],
+  "volt ampere": {
+    "id": "Q550341",
+    "dimensions": [
+      {
+        "base": "volt",
+        "power": 1
+      },
+      {
+        "base": "ampere",
+        "power": 1
+      }
+    ]
+  },
+  "volt-ampere reactive": {
+    "id": "Q630369",
+    "dimensions": [
+      {
+        "base": "volt-ampere",
+        "power": 1
+      }
+    ]
+  },
+  "cubic metre per second": {
+    "id": "Q794261",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": 3
+      },
+      {
+        "base": "second",
+        "power": -1
+      }
+    ]
+  },
+  "kilogram per cubic metre": {
+    "id": "Q844211",
+    "dimensions": [
+      {
+        "base": "kilogram",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -3
+      }
+    ]
+  },
+  "lumen second": {
+    "id": "Q910311",
+    "dimensions": [
+      {
+        "base": "lumen",
+        "power": 1
+      },
+      {
+        "base": "second",
+        "power": 1
+      }
+    ]
+  },
+  "metre per square second": {
+    "id": "Q1051665",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": 1
+      },
+      {
+        "base": "second",
+        "power": -2
+      }
+    ]
+  },
+  "radian per second": {
+    "id": "Q1063756",
+    "dimensions": [
+      {
+        "base": "radian",
+        "power": 1
+      },
+      {
+        "base": "second",
+        "power": -1
+      }
+    ]
+  },
+  "ohm metre": {
+    "id": "Q1441459",
+    "dimensions": [
+      {
+        "base": "ohm",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": 1
+      }
+    ]
+  },
+  "watt per metre kelvin": {
+    "id": "Q1463969",
+    "dimensions": [
+      {
+        "base": "watt",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -1
+      },
+      {
+        "base": "kelvin",
+        "power": -1
+      }
+    ]
+  },
+  "joule second": {
+    "id": "Q1709783",
+    "dimensions": [
+      {
+        "base": "joule",
+        "power": 1
+      },
+      {
+        "base": "second",
+        "power": 1
+      }
+    ]
+  },
+  "mole per cubic metre": {
+    "id": "Q2415352",
+    "dimensions": [
+      {
+        "base": "mole",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -3
+      }
+    ]
+  },
+  "ampere per square metre": {
+    "id": "Q2844477",
+    "dimensions": [
+      {
+        "base": "ampere",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -2
+      }
+    ]
+  },
+  "ampere per metre": {
+    "id": "Q2844478",
+    "dimensions": [
+      {
+        "base": "ampere",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -1
+      }
+    ]
+  },
+  "joule per kilogram kelvin": {
+    "id": "Q3085309",
+    "dimensions": [
+      {
+        "base": "joule",
+        "power": 1
+      },
+      {
+        "base": "kilogram",
+        "power": -1
+      },
+      {
+        "base": "kelvin",
+        "power": -1
+      }
+    ]
+  },
+  "joule per cubic metre kelvin": {
+    "id": "Q3186734",
+    "dimensions": [
+      {
+        "base": "joule",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -3
+      },
+      {
+        "base": "kelvin",
+        "power": -1
+      }
+    ]
+  },
+  "kelvin per watt": {
+    "id": "Q3194958",
+    "dimensions": [
+      {
+        "base": "kelvin",
+        "power": 1
+      },
+      {
+        "base": "watt",
+        "power": -1
+      }
+    ]
+  },
+  "square metre kelvin per watt": {
+    "id": "Q3332092",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": 2
+      },
+      {
+        "base": "kelvin",
+        "power": 1
+      },
+      {
+        "base": "watt",
+        "power": -1
+      }
+    ]
+  },
+  "cubic metre per kilogram": {
+    "id": "Q3332095",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": 3
+      },
+      {
+        "base": "kilogram",
+        "power": -1
+      }
+    ]
+  },
+  "square metre per second": {
+    "id": "Q3332099",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": 2
+      },
+      {
+        "base": "second",
+        "power": -1
+      }
+    ]
+  },
+  "newton second": {
+    "id": "Q3395194",
+    "dimensions": [
+      {
+        "base": "newton",
+        "power": 1
+      },
+      {
+        "base": "second",
+        "power": 1
+      }
+    ]
+  },
+  "volt per metre": {
+    "id": "Q3562962",
+    "dimensions": [
+      {
+        "base": "volt",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -1
+      }
+    ]
+  },
+  "watt per square metre": {
+    "id": "Q3566737",
+    "dimensions": [
+      {
+        "base": "watt",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -2
+      }
+    ]
+  },
+  "watt per square metre kelvin": {
+    "id": "Q3566738",
+    "dimensions": [
+      {
+        "base": "watt",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -2
+      },
+      {
+        "base": "kelvin",
+        "power": -1
+      }
+    ]
+  },
+  "reciprocal second": {
+    "id": "Q6137407",
+    "dimensions": [
+      {
+        "base": "second",
+        "power": -1
+      }
+    ]
+  },
+  "watt second": {
+    "id": "Q7974920",
+    "dimensions": [
+      {
+        "base": "watt",
+        "power": 1
+      },
+      {
+        "base": "second",
+        "power": 1
+      }
+    ]
+  },
+  "reciprocal metre": {
+    "id": "Q11547251",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": -1
+      }
+    ]
+  },
+  "joule per mole": {
+    "id": "Q13035094",
+    "dimensions": [
+      {
+        "base": "joule",
+        "power": 1
+      },
+      {
+        "base": "mole",
+        "power": -1
+      }
+    ]
+  },
+  "watt per steradian": {
+    "id": "Q16683188",
+    "dimensions": [
+      {
+        "base": "watt",
+        "power": 1
+      },
+      {
+        "base": "steradian",
+        "power": -1
+      }
+    ]
+  },
+  "ampere per volt metre": {
+    "id": "Q20966435",
+    "dimensions": [
+      {
+        "base": "ampere",
+        "power": 1
+      },
+      {
+        "base": "volt",
+        "power": -1
+      },
+      {
+        "base": "metre",
+        "power": -1
+      }
+    ]
+  },
+  "joule per mole kelvin": {
+    "id": "Q20966455",
+    "dimensions": [
+      {
+        "base": "joule",
+        "power": 1
+      },
+      {
+        "base": "mole",
+        "power": -1
+      },
+      {
+        "base": "kelvin",
+        "power": -1
+      }
+    ]
+  },
+  "pascal second": {
+    "id": "Q21016931",
+    "dimensions": [
+      {
+        "base": "pascal",
+        "power": 1
+      },
+      {
+        "base": "second",
+        "power": 1
+      }
+    ]
+  },
+  "joule per tesla": {
+    "id": "Q21088638",
+    "dimensions": [
+      {
+        "base": "joule",
+        "power": 1
+      },
+      {
+        "base": "tesla",
+        "power": -1
+      }
+    ]
+  },
+  "hertz per tesla": {
+    "id": "Q21095810",
+    "dimensions": [
+      {
+        "base": "hertz",
+        "power": 1
+      },
+      {
+        "base": "tesla",
+        "power": -1
+      }
+    ]
+  },
+  "farad per metre": {
+    "id": "Q21294882",
+    "dimensions": [
+      {
+        "base": "farad",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -1
+      }
+    ]
+  },
+  "newton per square ampere": {
+    "id": "Q21392882",
+    "dimensions": [
+      {
+        "base": "newton",
+        "power": 1
+      },
+      {
+        "base": "ampere",
+        "power": -2
+      }
+    ]
+  },
+  "joule per kelvin": {
+    "id": "Q21393312",
+    "dimensions": [
+      {
+        "base": "joule",
+        "power": 1
+      },
+      {
+        "base": "kelvin",
+        "power": -1
+      }
+    ]
+  },
+  "newton square metre per square kilogram": {
+    "id": "Q21395031",
+    "dimensions": [
+      {
+        "base": "newton",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": 2
+      },
+      {
+        "base": "kilogram",
+        "power": -2
+      }
+    ]
+  },
+  "watt per square metre kelvin to the fourth power": {
+    "id": "Q21395834",
+    "dimensions": [
+      {
+        "base": "watt",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -2
+      },
+      {
+        "base": "kelvin",
+        "power": -1
+      }
+    ]
+  },
+  "coulomb per mole": {
+    "id": "Q21396202",
+    "dimensions": [
+      {
+        "base": "coulomb",
+        "power": 1
+      },
+      {
+        "base": "mole",
+        "power": -1
+      }
+    ]
+  },
+  "reciprocal cubic metre": {
+    "id": "Q21401573",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": -3
+      }
+    ]
+  },
+  "cubic metre per mole": {
+    "id": "Q21615967",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": 3
+      },
+      {
+        "base": "mole",
+        "power": -1
+      }
+    ]
+  },
+  "metre per cubic second": {
+    "id": "Q21719454",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": 1
+      },
+      {
+        "base": "second",
+        "power": -3
+      }
+    ]
+  },
+  "metre per farad": {
+    "id": "Q24666811",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": 1
+      },
+      {
+        "base": "farad",
+        "power": -1
+      }
+    ]
+  },
+  "kilogram per square metre": {
+    "id": "Q25377184",
+    "dimensions": [
+      {
+        "base": "kilogram",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -2
+      }
+    ]
+  },
+  "kilogram per second": {
+    "id": "Q25381181",
+    "dimensions": [
+      {
+        "base": "kilogram",
+        "power": 1
+      },
+      {
+        "base": "second",
+        "power": -1
+      }
+    ]
+  },
+  "metre per second to the fourth power": {
+    "id": "Q25381678",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": 1
+      },
+      {
+        "base": "second",
+        "power": -1
+      }
+    ]
+  },
+  "kilogram per metre": {
+    "id": "Q25999243",
+    "dimensions": [
+      {
+        "base": "kilogram",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -1
+      }
+    ]
+  },
+  "newton per metre": {
+    "id": "Q26156113",
+    "dimensions": [
+      {
+        "base": "newton",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -1
+      }
+    ]
+  },
+  "coulomb per kilogram": {
+    "id": "Q28683485",
+    "dimensions": [
+      {
+        "base": "coulomb",
+        "power": 1
+      },
+      {
+        "base": "kilogram",
+        "power": -1
+      }
+    ]
+  },
+  "coulomb metre": {
+    "id": "Q28739766",
+    "dimensions": [
+      {
+        "base": "coulomb",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": 1
+      }
+    ]
+  },
+  "kilogram per mole": {
+    "id": "Q28924753",
+    "dimensions": [
+      {
+        "base": "kilogram",
+        "power": 1
+      },
+      {
+        "base": "mole",
+        "power": -1
+      }
+    ]
+  },
+  "ampere per joule": {
+    "id": "Q30064159",
+    "dimensions": [
+      {
+        "base": "ampere",
+        "power": 1
+      },
+      {
+        "base": "joule",
+        "power": -1
+      }
+    ]
+  },
+  "ampere per radian": {
+    "id": "Q30064202",
+    "dimensions": [
+      {
+        "base": "ampere",
+        "power": 1
+      },
+      {
+        "base": "radian",
+        "power": -1
+      }
+    ]
+  },
+  "radian per square second": {
+    "id": "Q30338333",
+    "dimensions": [
+      {
+        "base": "radian",
+        "power": 1
+      },
+      {
+        "base": "second",
+        "power": -2
+      }
+    ]
+  },
+  "radian per metre": {
+    "id": "Q30338605",
+    "dimensions": [
+      {
+        "base": "radian",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -1
+      }
+    ]
+  },
+  "newton per square metre": {
+    "id": "Q39469927",
+    "dimensions": [
+      {
+        "base": "newton",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -2
+      }
+    ]
+  },
+  "metre kelvin": {
+    "id": "Q41588368",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": 1
+      },
+      {
+        "base": "kelvin",
+        "power": 1
+      }
+    ]
+  },
+  "kilogram square metre": {
+    "id": "Q50808017",
+    "dimensions": [
+      {
+        "base": "kilogram",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": 2
+      }
+    ]
+  },
+  "joule per metre": {
+    "id": "Q56023789",
+    "dimensions": [
+      {
+        "base": "joule",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -1
+      }
+    ]
+  },
+  "joule per kilogram": {
+    "id": "Q57175225",
+    "dimensions": [
+      {
+        "base": "joule",
+        "power": 1
+      },
+      {
+        "base": "kilogram",
+        "power": -1
+      }
+    ]
+  },
+  "lumen per square metre": {
+    "id": "Q64833836",
+    "dimensions": [
+      {
+        "base": "lumen",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -2
+      }
+    ]
+  },
+  "kilogram square metre per second": {
+    "id": "Q65665675",
+    "dimensions": [
+      {
+        "base": "kilogram",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": 2
+      },
+      {
+        "base": "second",
+        "power": -1
+      }
+    ]
+  },
+  "ampere second": {
+    "id": "Q65665809",
+    "dimensions": [
+      {
+        "base": "ampere",
+        "power": 1
+      },
+      {
+        "base": "second",
+        "power": 1
+      }
+    ]
+  },
+  "watt per kilogram": {
+    "id": "Q67060736",
+    "dimensions": [
+      {
+        "base": "watt",
+        "power": 1
+      },
+      {
+        "base": "kilogram",
+        "power": -1
+      }
+    ]
+  },
+  "metre to the fourth power": {
+    "id": "Q67147153",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": 1
+      }
+    ]
+  },
+  "metre to the power of three": {
+    "id": "Q67147815",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": 1
+      }
+    ]
+  },
+  "metre to the power of six": {
+    "id": "Q67147817",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": 1
+      }
+    ]
+  },
+  "coulomb per square metre": {
+    "id": "Q68343206",
+    "dimensions": [
+      {
+        "base": "coulomb",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -2
+      }
+    ]
+  },
+  "hertz per second": {
+    "id": "Q68582988",
+    "dimensions": [
+      {
+        "base": "hertz",
+        "power": 1
+      },
+      {
+        "base": "second",
+        "power": -1
+      }
+    ]
+  },
+  "reciprocal mole": {
+    "id": "Q68712008",
+    "dimensions": [
+      {
+        "base": "mole",
+        "power": -1
+      }
+    ]
+  },
+  "joule per kelvin difference": {
+    "id": "Q68975544",
+    "dimensions": [
+      {
+        "base": "joule",
+        "power": 1
+      },
+      {
+        "base": "kelvin",
+        "power": -1
+      }
+    ]
+  },
+  "degree Celsius difference": {
+    "id": "Q69362731",
+    "dimensions": []
+  },
+  "kelvin difference": {
+    "id": "Q69363953",
+    "dimensions": [
+      {
+        "base": "kelvin",
+        "power": 1
+      }
+    ]
+  },
+  "joule per kilogram kelvin difference": {
+    "id": "Q69423273",
+    "dimensions": [
+      {
+        "base": "joule",
+        "power": 1
+      },
+      {
+        "base": "kilogram",
+        "power": -1
+      },
+      {
+        "base": "kelvin",
+        "power": -1
+      }
+    ]
+  },
+  "joule per cubic metre": {
+    "id": "Q69424806",
+    "dimensions": [
+      {
+        "base": "joule",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -3
+      }
+    ]
+  },
+  "coulomb per cubic metre": {
+    "id": "Q69425409",
+    "dimensions": [
+      {
+        "base": "coulomb",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -3
+      }
+    ]
+  },
+  "henry per metre": {
+    "id": "Q69426951",
+    "dimensions": [
+      {
+        "base": "henry",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -1
+      }
+    ]
+  },
+  "joule per mole kelvin difference": {
+    "id": "Q69427692",
+    "dimensions": [
+      {
+        "base": "joule",
+        "power": 1
+      },
+      {
+        "base": "mole",
+        "power": -1
+      },
+      {
+        "base": "kelvin",
+        "power": -1
+      }
+    ]
+  },
+  "gray per second": {
+    "id": "Q69428896",
+    "dimensions": [
+      {
+        "base": "gray",
+        "power": 1
+      },
+      {
+        "base": "second",
+        "power": -1
+      }
+    ]
+  },
+  "watt per square metre steradian": {
+    "id": "Q69429226",
+    "dimensions": [
+      {
+        "base": "watt",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -2
+      },
+      {
+        "base": "steradian",
+        "power": -1
+      }
+    ]
+  },
+  "katal per cubic metre": {
+    "id": "Q69429606",
+    "dimensions": [
+      {
+        "base": "katal",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -3
+      }
+    ]
+  },
+  "weber metre": {
+    "id": "Q71580762",
+    "dimensions": [
+      {
+        "base": "weber",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": 1
+      }
+    ]
+  },
+  "ampere square metre": {
+    "id": "Q71581529",
+    "dimensions": [
+      {
+        "base": "ampere",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": 2
+      }
+    ]
+  },
+  "newton metre second": {
+    "id": "Q73429216",
+    "dimensions": [
+      {
+        "base": "newton",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": 1
+      },
+      {
+        "base": "second",
+        "power": 1
+      }
+    ]
+  },
+  "weber per metre": {
+    "id": "Q77899731",
+    "dimensions": [
+      {
+        "base": "weber",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -1
+      }
+    ]
+  },
+  "reciprocal henry": {
+    "id": "Q77996931",
+    "dimensions": [
+      {
+        "base": "henry",
+        "power": -1
+      }
+    ]
+  },
+  "cubic metre per kilogram square second": {
+    "id": "Q78336909",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": 3
+      },
+      {
+        "base": "kilogram",
+        "power": -1
+      },
+      {
+        "base": "second",
+        "power": -2
+      }
+    ]
+  },
+  "kilogram metre per second": {
+    "id": "Q78775089",
+    "dimensions": [
+      {
+        "base": "kilogram",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": 1
+      },
+      {
+        "base": "second",
+        "power": -1
+      }
+    ]
+  },
+  "reciprocal pascal": {
+    "id": "Q79104611",
+    "dimensions": [
+      {
+        "base": "pascal",
+        "power": -1
+      }
+    ]
+  },
+  "reciprocal kelvin difference": {
+    "id": "Q79331235",
+    "dimensions": [
+      {
+        "base": "kelvin",
+        "power": -1
+      }
+    ]
+  },
+  "pascal per kelvin difference": {
+    "id": "Q79398638",
+    "dimensions": [
+      {
+        "base": "pascal",
+        "power": 1
+      },
+      {
+        "base": "kelvin",
+        "power": -1
+      }
+    ]
+  },
+  "coulomb per metre": {
+    "id": "Q80117150",
+    "dimensions": [
+      {
+        "base": "coulomb",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -1
+      }
+    ]
+  },
+  "joule per square metre": {
+    "id": "Q80374519",
+    "dimensions": [
+      {
+        "base": "joule",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -2
+      }
+    ]
+  },
+  "siemens per metre": {
+    "id": "Q80842107",
+    "dimensions": [
+      {
+        "base": "siemens",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -1
+      }
+    ]
+  },
+  "watt per kelvin": {
+    "id": "Q81663366",
+    "dimensions": [
+      {
+        "base": "watt",
+        "power": 1
+      },
+      {
+        "base": "kelvin",
+        "power": -1
+      }
+    ]
+  },
+  "reciprocal square metre": {
+    "id": "Q82966924",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": -2
+      }
+    ]
+  },
+  "lumen per watt": {
+    "id": "Q83386886",
+    "dimensions": [
+      {
+        "base": "lumen",
+        "power": 1
+      },
+      {
+        "base": "watt",
+        "power": -1
+      }
+    ]
+  },
+  "lux second": {
+    "id": "Q83620455",
+    "dimensions": [
+      {
+        "base": "lux",
+        "power": 1
+      },
+      {
+        "base": "second",
+        "power": 1
+      }
+    ]
+  },
+  "per second steradian": {
+    "id": "Q83853845",
+    "dimensions": [
+      {
+        "base": "second",
+        "power": -1
+      },
+      {
+        "base": "steradian",
+        "power": -1
+      }
+    ]
+  },
+  "per square metre second steradian": {
+    "id": "Q83855084",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": -2
+      },
+      {
+        "base": "second",
+        "power": -1
+      },
+      {
+        "base": "steradian",
+        "power": -1
+      }
+    ]
+  },
+  "volt metre": {
+    "id": "Q83948162",
+    "dimensions": [
+      {
+        "base": "volt",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": 1
+      }
+    ]
+  },
+  "per square metre second": {
+    "id": "Q83951055",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": -2
+      },
+      {
+        "base": "second",
+        "power": -1
+      }
+    ]
+  },
+  "kelvin metre per watt": {
+    "id": "Q84451486",
+    "dimensions": [
+      {
+        "base": "kelvin",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": 1
+      },
+      {
+        "base": "watt",
+        "power": -1
+      }
+    ]
+  },
+  "mole per second": {
+    "id": "Q85178038",
+    "dimensions": [
+      {
+        "base": "mole",
+        "power": 1
+      },
+      {
+        "base": "second",
+        "power": -1
+      }
+    ]
+  },
+  "square metre per kilogram": {
+    "id": "Q86200529",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": 2
+      },
+      {
+        "base": "kilogram",
+        "power": -1
+      }
+    ]
+  },
+  "square metre per mole": {
+    "id": "Q86203731",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": 2
+      },
+      {
+        "base": "mole",
+        "power": -1
+      }
+    ]
+  },
+  "square pascal second": {
+    "id": "Q86897783",
+    "dimensions": [
+      {
+        "base": "pascal",
+        "power": 2
+      },
+      {
+        "base": "second",
+        "power": 1
+      }
+    ]
+  },
+  "pascal second per cubic metre": {
+    "id": "Q87047886",
+    "dimensions": [
+      {
+        "base": "pascal",
+        "power": 1
+      },
+      {
+        "base": "second",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -3
+      }
+    ]
+  },
+  "newton second per metre": {
+    "id": "Q87049028",
+    "dimensions": [
+      {
+        "base": "newton",
+        "power": 1
+      },
+      {
+        "base": "second",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -1
+      }
+    ]
+  },
+  "pascal second per metre": {
+    "id": "Q87051580",
+    "dimensions": [
+      {
+        "base": "pascal",
+        "power": 1
+      },
+      {
+        "base": "second",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -1
+      }
+    ]
+  },
+  "becquerel per kilogram": {
+    "id": "Q88768297",
+    "dimensions": [
+      {
+        "base": "becquerel",
+        "power": 1
+      },
+      {
+        "base": "kilogram",
+        "power": -1
+      }
+    ]
+  },
+  "mole per kilogram": {
+    "id": "Q88957663",
+    "dimensions": [
+      {
+        "base": "mole",
+        "power": 1
+      },
+      {
+        "base": "kilogram",
+        "power": -1
+      }
+    ]
+  },
+  "reciprocal farad": {
+    "id": "Q89992008",
+    "dimensions": [
+      {
+        "base": "farad",
+        "power": -1
+      }
+    ]
+  },
+  "kilogram per square metre second": {
+    "id": "Q92011107",
+    "dimensions": [
+      {
+        "base": "kilogram",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -2
+      },
+      {
+        "base": "second",
+        "power": -1
+      }
+    ]
+  },
+  "joule per second": {
+    "id": "Q92711514",
+    "dimensions": [
+      {
+        "base": "joule",
+        "power": 1
+      },
+      {
+        "base": "second",
+        "power": -1
+      }
+    ]
+  },
+  "kelvin difference per metre": {
+    "id": "Q92717607",
+    "dimensions": [
+      {
+        "base": "kelvin",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -1
+      }
+    ]
+  },
+  "metre per kilogram": {
+    "id": "Q92896481",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": 1
+      },
+      {
+        "base": "kilogram",
+        "power": -1
+      }
+    ]
+  },
+  "kelvin per pascal": {
+    "id": "Q93947085",
+    "dimensions": [
+      {
+        "base": "kelvin",
+        "power": 1
+      },
+      {
+        "base": "pascal",
+        "power": -1
+      }
+    ]
+  },
+  "watt per square metre hertz": {
+    "id": "Q95375885",
+    "dimensions": [
+      {
+        "base": "watt",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -2
+      },
+      {
+        "base": "hertz",
+        "power": -1
+      }
+    ]
+  },
+  "watt per metre": {
+    "id": "Q96192470",
+    "dimensions": [
+      {
+        "base": "watt",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -1
+      }
+    ]
+  },
+  "siemens square metre per mole": {
+    "id": "Q96309077",
+    "dimensions": [
+      {
+        "base": "siemens",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": 2
+      },
+      {
+        "base": "mole",
+        "power": -1
+      }
+    ]
+  },
+  "radian square metre per mole": {
+    "id": "Q96347486",
+    "dimensions": [
+      {
+        "base": "radian",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": 2
+      },
+      {
+        "base": "mole",
+        "power": -1
+      }
+    ]
+  },
+  "radian square metre per kilogram": {
+    "id": "Q96347983",
+    "dimensions": [
+      {
+        "base": "radian",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": 2
+      },
+      {
+        "base": "kilogram",
+        "power": -1
+      }
+    ]
+  },
+  "ampere square metre per joule second": {
+    "id": "Q97540991",
+    "dimensions": [
+      {
+        "base": "ampere",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": 2
+      },
+      {
+        "base": "joule",
+        "power": -1
+      },
+      {
+        "base": "second",
+        "power": -1
+      }
+    ]
+  },
+  "ampere second per kilogram": {
+    "id": "Q97541209",
+    "dimensions": [
+      {
+        "base": "ampere",
+        "power": 1
+      },
+      {
+        "base": "second",
+        "power": 1
+      },
+      {
+        "base": "kilogram",
+        "power": -1
+      }
+    ]
+  },
+  "per tesla second": {
+    "id": "Q97543281",
+    "dimensions": [
+      {
+        "base": "tesla",
+        "power": -1
+      },
+      {
+        "base": "second",
+        "power": -1
+      }
+    ]
+  },
+  "becquerel per cubic metre": {
+    "id": "Q98102832",
+    "dimensions": [
+      {
+        "base": "becquerel",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -3
+      }
+    ]
+  },
+  "becquerel per square metre": {
+    "id": "Q98103135",
+    "dimensions": [
+      {
+        "base": "becquerel",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -2
+      }
+    ]
+  },
+  "square metre per steradian": {
+    "id": "Q98266832",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": 2
+      },
+      {
+        "base": "steradian",
+        "power": -1
+      }
+    ]
+  },
+  "square metre per joule": {
+    "id": "Q98267267",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": 2
+      },
+      {
+        "base": "joule",
+        "power": -1
+      }
+    ]
+  },
+  "square metre per steradian joule": {
+    "id": "Q98269780",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": 2
+      },
+      {
+        "base": "steradian",
+        "power": -1
+      },
+      {
+        "base": "joule",
+        "power": -1
+      }
+    ]
+  },
+  "joule square metre per kilogram": {
+    "id": "Q98643033",
+    "dimensions": [
+      {
+        "base": "joule",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": 2
+      },
+      {
+        "base": "kilogram",
+        "power": -1
+      }
+    ]
+  },
+  "square metre per volt second": {
+    "id": "Q98813401",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": 2
+      },
+      {
+        "base": "volt",
+        "power": -1
+      },
+      {
+        "base": "second",
+        "power": -1
+      }
+    ]
+  },
+  "per cubic metre second": {
+    "id": "Q98915792",
+    "dimensions": [
+      {
+        "base": "metre",
+        "power": -3
+      },
+      {
+        "base": "second",
+        "power": -1
+      }
+    ]
+  },
+  "sievert per second": {
+    "id": "Q99605059",
+    "dimensions": [
+      {
+        "base": "sievert",
+        "power": 1
+      },
+      {
+        "base": "second",
+        "power": -1
+      }
+    ]
+  },
+  "coulomb per kilogram second": {
+    "id": "Q99721917",
+    "dimensions": [
+      {
+        "base": "coulomb",
+        "power": 1
+      },
+      {
+        "base": "kilogram",
+        "power": -1
+      },
+      {
+        "base": "second",
+        "power": -1
+      }
+    ]
+  },
   "reciprocal pascal second": {
-    "base": "reciprocal pascal second",
-    "power": 1
+    "id": "Q100293463",
+    "dimensions": [
+      {
+        "base": "pascal",
+        "power": -1
+      },
+      {
+        "base": "second",
+        "power": -1
+      }
+    ]
   },
-  "mole per cubic metre": [
-    {
-      "base": "mole",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -3
-    }
-  ],
-  "ampere per square metre": [
-    {
-      "base": "ampere",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -2
-    }
-  ],
-  "joule per kilogram kelvin": [
-    {
-      "base": "joule",
-      "power": 1
-    },
-    {
-      "base": "kilogram",
-      "power": -1
-    },
-    {
-      "base": "kelvin",
-      "power": -1
-    }
-  ],
-  "joule per cubic metre kelvin": [
-    {
-      "base": "joule",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -3
-    },
-    {
-      "base": "kelvin",
-      "power": -1
-    }
-  ],
-  "kelvin per watt": [
-    {
-      "base": "kelvin",
-      "power": 1
-    },
-    {
-      "base": "watt",
-      "power": -1
-    }
-  ],
-  "square metre kelvin per watt": [
-    {
-      "base": "metre",
-      "power": 2
-    },
-    {
-      "base": "kelvin",
-      "power": 1
-    },
-    {
-      "base": "watt",
-      "power": -1
-    }
-  ],
-  "cubic metre per kilogram": [
-    {
-      "base": "metre",
-      "power": 3
-    },
-    {
-      "base": "kilogram",
-      "power": -1
-    }
-  ],
-  "volt per metre": [
-    {
-      "base": "volt",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -1
-    }
-  ],
-  "watt per square metre": [
-    {
-      "base": "watt",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -2
-    }
-  ],
-  "watt per square metre kelvin": [
-    {
-      "base": "watt",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -2
-    },
-    {
-      "base": "kelvin",
-      "power": -1
-    }
-  ],
-  "pascal second per cubic metre": [
-    {
-      "base": "pascal",
-      "power": 1
-    },
-    {
-      "base": "second",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -3
-    }
-  ],
-  "joule per kilogram": [
-    {
-      "base": "joule",
-      "power": 1
-    },
-    {
-      "base": "kilogram",
-      "power": -1
-    }
-  ],
-  "watt second": [
-    {
-      "base": "watt",
-      "power": 1
-    },
-    {
-      "base": "second",
-      "power": 1
-    }
-  ],
-  "joule per tesla": [
-    {
-      "base": "joule",
-      "power": 1
-    },
-    {
-      "base": "tesla",
-      "power": -1
-    }
-  ],
-  "volt-ampere-reactive second": [
-    {
-      "base": "second",
-      "power": 1
-    }
-  ],
-  "watt per steradian": [
-    {
-      "base": "watt",
-      "power": 1
-    },
-    {
-      "base": "steradian",
-      "power": -1
-    }
-  ],
-  "ampere per volt metre": [
-    {
-      "base": "ampere",
-      "power": 1
-    },
-    {
-      "base": "volt",
-      "power": -1
-    },
-    {
-      "base": "metre",
-      "power": -1
-    }
-  ],
-  "joule per mole kelvin": [
-    {
-      "base": "joule",
-      "power": 1
-    },
-    {
-      "base": "mole",
-      "power": -1
-    },
-    {
-      "base": "kelvin",
-      "power": -1
-    }
-  ],
-  "hertz per tesla": [
-    {
-      "base": "hertz",
-      "power": 1
-    },
-    {
-      "base": "tesla",
-      "power": -1
-    }
-  ],
-  "farad per metre": [
-    {
-      "base": "farad",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -1
-    }
-  ],
-  "newton square metre per square kilogram": [
-    {
-      "base": "newton",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": 2
-    },
-    {
-      "base": "kilogram",
-      "power": -2
-    }
-  ],
-  "watt per square metre kelvin to the fourth power": [
-    {
-      "base": "watt",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -2
-    },
-    {
-      "base": "kelvin",
-      "power": -1
-    }
-  ],
-  "coulomb per mole": [
-    {
-      "base": "coulomb",
-      "power": 1
-    },
-    {
-      "base": "mole",
-      "power": -1
-    }
-  ],
-  "reciprocal cubic metre": [
-    {
-      "base": "metre",
-      "power": -3
-    }
-  ],
-  "cubic metre per mole": [
-    {
-      "base": "metre",
-      "power": 3
-    },
-    {
-      "base": "mole",
-      "power": -1
-    }
-  ],
-  "metre per cubic second": [
-    {
-      "base": "metre",
-      "power": 1
-    },
-    {
-      "base": "second",
-      "power": -3
-    }
-  ],
-  "metre per farad": [
-    {
-      "base": "metre",
-      "power": 1
-    },
-    {
-      "base": "farad",
-      "power": -1
-    }
-  ],
-  "kilogram per square metre": [
-    {
-      "base": "kilogram",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -2
-    }
-  ],
-  "kilogram per second": [
-    {
-      "base": "kilogram",
-      "power": 1
-    },
-    {
-      "base": "second",
-      "power": -1
-    }
-  ],
-  "metre per second to the fourth power": [
-    {
-      "base": "metre",
-      "power": 1
-    },
-    {
-      "base": "second",
-      "power": -1
-    }
-  ],
-  "newton per metre": [
-    {
-      "base": "newton",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -1
-    }
-  ],
-  "kilogram per mole": [
-    {
-      "base": "kilogram",
-      "power": 1
-    },
-    {
-      "base": "mole",
-      "power": -1
-    }
-  ],
-  "coulomb per square metre": [
-    {
-      "base": "coulomb",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -2
-    }
-  ],
-  "volt metre": [
-    {
-      "base": "volt",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": 1
-    }
-  ],
-  "volt second": [
-    {
-      "base": "volt",
-      "power": 1
-    },
-    {
-      "base": "second",
-      "power": 1
-    }
-  ],
-  "ampere per radian": [
-    {
-      "base": "ampere",
-      "power": 1
-    },
-    {
-      "base": "radian",
-      "power": -1
-    }
-  ],
-  "ampere per joule": [
-    {
-      "base": "ampere",
-      "power": 1
-    },
-    {
-      "base": "joule",
-      "power": -1
-    }
-  ],
-  "radian per square second": [
-    {
-      "base": "radian",
-      "power": 1
-    },
-    {
-      "base": "second",
-      "power": -2
-    }
-  ],
-  "radian per metre": [
-    {
-      "base": "radian",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -1
-    }
-  ],
-  "newton per square metre": [
-    {
-      "base": "newton",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -2
-    }
-  ],
-  "metre kelvin": [
-    {
-      "base": "metre",
-      "power": 1
-    },
-    {
-      "base": "kelvin",
-      "power": 1
-    }
-  ],
-  "kilogram square metre": [
-    {
-      "base": "kilogram",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": 2
-    }
-  ],
-  "joule per metre": [
-    {
-      "base": "joule",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -1
-    }
-  ],
-  "square metre per kilogram": [
-    {
-      "base": "metre",
-      "power": 2
-    },
-    {
-      "base": "kilogram",
-      "power": -1
-    }
-  ],
-  "lumen per square metre": [
-    {
-      "base": "lumen",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -2
-    }
-  ],
-  "kilogram square metre per second": [
-    {
-      "base": "kilogram",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": 2
-    },
-    {
-      "base": "second",
-      "power": -1
-    }
-  ],
-  "watt per kilogram": [
-    {
-      "base": "watt",
-      "power": 1
-    },
-    {
-      "base": "kilogram",
-      "power": -1
-    }
-  ],
-  "metre to the fourth power": [
-    {
-      "base": "metre",
-      "power": 1
-    }
-  ],
-  "metre to the power of three": [
-    {
-      "base": "metre",
-      "power": 1
-    }
-  ],
-  "metre to the power of six": [
-    {
-      "base": "metre",
-      "power": 1
-    }
-  ],
-  "hertz per second": [
-    {
-      "base": "hertz",
-      "power": 1
-    },
-    {
-      "base": "second",
-      "power": -1
-    }
-  ],
-  "reciprocal mole": [
-    {
-      "base": "mole",
-      "power": -1
-    }
-  ],
-  "joule per kelvin difference": [
-    {
-      "base": "joule",
-      "power": 1
-    },
-    {
-      "base": "kelvin",
-      "power": -1
-    }
-  ],
-  "degree Celsius difference": [],
-  "kelvin difference": [
-    {
-      "base": "kelvin",
-      "power": 1
-    }
-  ],
-  "joule per kilogram kelvin difference": [
-    {
-      "base": "joule",
-      "power": 1
-    },
-    {
-      "base": "kilogram",
-      "power": -1
-    },
-    {
-      "base": "kelvin",
-      "power": -1
-    }
-  ],
-  "joule per cubic metre": [
-    {
-      "base": "joule",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -3
-    }
-  ],
-  "coulomb per cubic metre": [
-    {
-      "base": "coulomb",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -3
-    }
-  ],
-  "henry per metre": [
-    {
-      "base": "henry",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -1
-    }
-  ],
-  "joule per mole kelvin difference": [
-    {
-      "base": "joule",
-      "power": 1
-    },
-    {
-      "base": "mole",
-      "power": -1
-    },
-    {
-      "base": "kelvin",
-      "power": -1
-    }
-  ],
-  "gray per second": [
-    {
-      "base": "gray",
-      "power": 1
-    },
-    {
-      "base": "second",
-      "power": -1
-    }
-  ],
-  "watt per square metre steradian": [
-    {
-      "base": "watt",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -2
-    },
-    {
-      "base": "steradian",
-      "power": -1
-    }
-  ],
-  "katal per cubic metre": [
-    {
-      "base": "katal",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -3
-    }
-  ],
-  "weber metre": [
-    {
-      "base": "weber",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": 1
-    }
-  ],
-  "ampere square metre": [
-    {
-      "base": "ampere",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": 2
-    }
-  ],
-  "newton metre second": [
-    {
-      "base": "newton",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": 1
-    },
-    {
-      "base": "second",
-      "power": 1
-    }
-  ],
-  "weber per metre": [
-    {
-      "base": "weber",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -1
-    }
-  ],
-  "reciprocal henry": [
-    {
-      "base": "henry",
-      "power": -1
-    }
-  ],
-  "cubic metre per kilogram square second": [
-    {
-      "base": "metre",
-      "power": 3
-    },
-    {
-      "base": "kilogram",
-      "power": -1
-    },
-    {
-      "base": "second",
-      "power": -2
-    }
-  ],
-  "kilogram metre per second": [
-    {
-      "base": "kilogram",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": 1
-    },
-    {
-      "base": "second",
-      "power": -1
-    }
-  ],
-  "reciprocal pascal": [
-    {
-      "base": "pascal",
-      "power": -1
-    }
-  ],
-  "reciprocal kelvin difference": [
-    {
-      "base": "kelvin",
-      "power": -1
-    }
-  ],
-  "pascal per kelvin difference": [
-    {
-      "base": "pascal",
-      "power": 1
-    },
-    {
-      "base": "kelvin",
-      "power": -1
-    }
-  ],
-  "coulomb per metre": [
-    {
-      "base": "coulomb",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -1
-    }
-  ],
-  "siemens per metre": [
-    {
-      "base": "siemens",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -1
-    }
-  ],
-  "watt per metre": [
-    {
-      "base": "watt",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -1
-    }
-  ],
-  "watt per steradian metre": [
-    {
-      "base": "watt",
-      "power": 1
-    },
-    {
-      "base": "steradian",
-      "power": -1
-    },
-    {
-      "base": "metre",
-      "power": -1
-    }
-  ],
-  "watt per kelvin": [
-    {
-      "base": "watt",
-      "power": 1
-    },
-    {
-      "base": "kelvin",
-      "power": -1
-    }
-  ],
-  "reciprocal square metre": [
-    {
-      "base": "metre",
-      "power": -2
-    }
-  ],
-  "lumen per watt": [
-    {
-      "base": "lumen",
-      "power": 1
-    },
-    {
-      "base": "watt",
-      "power": -1
-    }
-  ],
-  "lux second": [
-    {
-      "base": "lux",
-      "power": 1
-    },
-    {
-      "base": "second",
-      "power": 1
-    }
-  ],
-  "per second steradian": [
-    {
-      "base": "second",
-      "power": -1
-    },
-    {
-      "base": "steradian",
-      "power": -1
-    }
-  ],
-  "per square metre second steradian": [
-    {
-      "base": "metre",
-      "power": -2
-    },
-    {
-      "base": "second",
-      "power": -1
-    },
-    {
-      "base": "steradian",
-      "power": -1
-    }
-  ],
-  "per square metre second": [
-    {
-      "base": "metre",
-      "power": -2
-    },
-    {
-      "base": "second",
-      "power": -1
-    }
-  ],
-  "kelvin metre per watt": [
-    {
-      "base": "kelvin",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": 1
-    },
-    {
-      "base": "watt",
-      "power": -1
-    }
-  ],
-  "mole per second": [
-    {
-      "base": "mole",
-      "power": 1
-    },
-    {
-      "base": "second",
-      "power": -1
-    }
-  ],
-  "square metre per mole": [
-    {
-      "base": "metre",
-      "power": 2
-    },
-    {
-      "base": "mole",
-      "power": -1
-    }
-  ],
-  "square pascal second": [
-    {
-      "base": "pascal",
-      "power": 2
-    },
-    {
-      "base": "second",
-      "power": 1
-    }
-  ],
-  "newton second per metre": [
-    {
-      "base": "newton",
-      "power": 1
-    },
-    {
-      "base": "second",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -1
-    }
-  ],
-  "pascal second per metre": [
-    {
-      "base": "pascal",
-      "power": 1
-    },
-    {
-      "base": "second",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -1
-    }
-  ],
-  "becquerel per kilogram": [
-    {
-      "base": "becquerel",
-      "power": 1
-    },
-    {
-      "base": "kilogram",
-      "power": -1
-    }
-  ],
-  "mole per kilogram": [
-    {
-      "base": "mole",
-      "power": 1
-    },
-    {
-      "base": "kilogram",
-      "power": -1
-    }
-  ],
-  "kilogram per square metre second": [
-    {
-      "base": "kilogram",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -2
-    },
-    {
-      "base": "second",
-      "power": -1
-    }
-  ],
-  "joule per second": [
-    {
-      "base": "joule",
-      "power": 1
-    },
-    {
-      "base": "second",
-      "power": -1
-    }
-  ],
-  "kelvin difference per metre": [
-    {
-      "base": "kelvin",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -1
-    }
-  ],
-  "metre per kilogram": [
-    {
-      "base": "metre",
-      "power": 1
-    },
-    {
-      "base": "kilogram",
-      "power": -1
-    }
-  ],
-  "kelvin per pascal": [
-    {
-      "base": "kelvin",
-      "power": 1
-    },
-    {
-      "base": "pascal",
-      "power": -1
-    }
-  ],
-  "siemens square metre per mole": [
-    {
-      "base": "siemens",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": 2
-    },
-    {
-      "base": "mole",
-      "power": -1
-    }
-  ],
-  "radian square metre per mole": [
-    {
-      "base": "radian",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": 2
-    },
-    {
-      "base": "mole",
-      "power": -1
-    }
-  ],
-  "radian square metre per kilogram": [
-    {
-      "base": "radian",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": 2
-    },
-    {
-      "base": "kilogram",
-      "power": -1
-    }
-  ],
-  "ampere square metre per joule second": [
-    {
-      "base": "ampere",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": 2
-    },
-    {
-      "base": "joule",
-      "power": -1
-    },
-    {
-      "base": "second",
-      "power": -1
-    }
-  ],
-  "ampere second per kilogram": [
-    {
-      "base": "ampere",
-      "power": 1
-    },
-    {
-      "base": "second",
-      "power": 1
-    },
-    {
-      "base": "kilogram",
-      "power": -1
-    }
-  ],
-  "per tesla second": [
-    {
-      "base": "tesla",
-      "power": -1
-    },
-    {
-      "base": "second",
-      "power": -1
-    }
-  ],
-  "becquerel per cubic metre": [
-    {
-      "base": "becquerel",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -3
-    }
-  ],
-  "becquerel per square metre": [
-    {
-      "base": "becquerel",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -2
-    }
-  ],
-  "square metre per steradian": [
-    {
-      "base": "metre",
-      "power": 2
-    },
-    {
-      "base": "steradian",
-      "power": -1
-    }
-  ],
-  "square metre per joule": [
-    {
-      "base": "metre",
-      "power": 2
-    },
-    {
-      "base": "joule",
-      "power": -1
-    }
-  ],
-  "square metre per steradian joule": [
-    {
-      "base": "metre",
-      "power": 2
-    },
-    {
-      "base": "steradian",
-      "power": -1
-    },
-    {
-      "base": "joule",
-      "power": -1
-    }
-  ],
-  "joule square metre per kilogram": [
-    {
-      "base": "joule",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": 2
-    },
-    {
-      "base": "kilogram",
-      "power": -1
-    }
-  ],
-  "square metre per volt second": [
-    {
-      "base": "metre",
-      "power": 2
-    },
-    {
-      "base": "volt",
-      "power": -1
-    },
-    {
-      "base": "second",
-      "power": -1
-    }
-  ],
-  "per cubic metre second": [
-    {
-      "base": "metre",
-      "power": -3
-    },
-    {
-      "base": "second",
-      "power": -1
-    }
-  ],
-  "sievert per second": [
-    {
-      "base": "sievert",
-      "power": 1
-    },
-    {
-      "base": "second",
-      "power": -1
-    }
-  ],
-  "coulomb per kilogram second": [
-    {
-      "base": "coulomb",
-      "power": 1
-    },
-    {
-      "base": "kilogram",
-      "power": -1
-    },
-    {
-      "base": "second",
-      "power": -1
-    }
-  ],
-  "hertz per volt": [
-    {
-      "base": "hertz",
-      "power": 1
-    },
-    {
-      "base": "volt",
-      "power": -1
-    }
-  ],
-  "watt per steradian square metre hertz": [
-    {
-      "base": "watt",
-      "power": 1
-    },
-    {
-      "base": "steradian",
-      "power": -1
-    },
-    {
-      "base": "metre",
-      "power": -2
-    },
-    {
-      "base": "hertz",
-      "power": -1
-    }
-  ],
-  "joule per square metre hertz": [
-    {
-      "base": "joule",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -2
-    },
-    {
-      "base": "hertz",
-      "power": -1
-    }
-  ],
-  "joule per cubic metre hertz": [
-    {
-      "base": "joule",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -3
-    },
-    {
-      "base": "hertz",
-      "power": -1
-    }
-  ],
-  "watt per hertz": [
-    {
-      "base": "watt",
-      "power": 1
-    },
-    {
-      "base": "hertz",
-      "power": -1
-    }
-  ],
-  "watt per steradian hertz": [
-    {
-      "base": "watt",
-      "power": 1
-    },
-    {
-      "base": "steradian",
-      "power": -1
-    },
-    {
-      "base": "hertz",
-      "power": -1
-    }
-  ],
-  "kilogram per joule": [
-    {
-      "base": "kilogram",
-      "power": 1
-    },
-    {
-      "base": "joule",
-      "power": -1
-    }
-  ],
-  "newton per cubic metre": [
-    {
-      "base": "newton",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -3
-    }
-  ],
-  "watt per cubic metre": [
-    {
-      "base": "watt",
-      "power": 1
-    },
-    {
-      "base": "metre",
-      "power": -3
-    }
-  ]
+  "volt second": {
+    "id": "Q100293891",
+    "dimensions": [
+      {
+        "base": "volt",
+        "power": 1
+      },
+      {
+        "base": "second",
+        "power": 1
+      }
+    ]
+  },
+  "watt per steradian metre": {
+    "id": "Q100294053",
+    "dimensions": [
+      {
+        "base": "watt",
+        "power": 1
+      },
+      {
+        "base": "steradian",
+        "power": -1
+      },
+      {
+        "base": "metre",
+        "power": -1
+      }
+    ]
+  },
+  "hertz per volt": {
+    "id": "Q101195156",
+    "dimensions": [
+      {
+        "base": "hertz",
+        "power": 1
+      },
+      {
+        "base": "volt",
+        "power": -1
+      }
+    ]
+  },
+  "watt per steradian square metre hertz": {
+    "id": "Q101434890",
+    "dimensions": [
+      {
+        "base": "watt",
+        "power": 1
+      },
+      {
+        "base": "steradian",
+        "power": -1
+      },
+      {
+        "base": "metre",
+        "power": -2
+      },
+      {
+        "base": "hertz",
+        "power": -1
+      }
+    ]
+  },
+  "joule per square metre hertz": {
+    "id": "Q101435195",
+    "dimensions": [
+      {
+        "base": "joule",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -2
+      },
+      {
+        "base": "hertz",
+        "power": -1
+      }
+    ]
+  },
+  "joule per cubic metre hertz": {
+    "id": "Q101460091",
+    "dimensions": [
+      {
+        "base": "joule",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -3
+      },
+      {
+        "base": "hertz",
+        "power": -1
+      }
+    ]
+  },
+  "watt per hertz": {
+    "id": "Q101460900",
+    "dimensions": [
+      {
+        "base": "watt",
+        "power": 1
+      },
+      {
+        "base": "hertz",
+        "power": -1
+      }
+    ]
+  },
+  "watt per steradian hertz": {
+    "id": "Q101461942",
+    "dimensions": [
+      {
+        "base": "watt",
+        "power": 1
+      },
+      {
+        "base": "steradian",
+        "power": -1
+      },
+      {
+        "base": "hertz",
+        "power": -1
+      }
+    ]
+  },
+  "kilogram per joule": {
+    "id": "Q101515303",
+    "dimensions": [
+      {
+        "base": "kilogram",
+        "power": 1
+      },
+      {
+        "base": "joule",
+        "power": -1
+      }
+    ]
+  },
+  "newton per cubic metre": {
+    "id": "Q103419450",
+    "dimensions": [
+      {
+        "base": "newton",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -3
+      }
+    ]
+  },
+  "watt per cubic metre": {
+    "id": "Q104381302",
+    "dimensions": [
+      {
+        "base": "watt",
+        "power": 1
+      },
+      {
+        "base": "metre",
+        "power": -3
+      }
+    ]
+  },
+  "volt-ampere-reactive second": {
+    "id": "Q104628312",
+    "dimensions": [
+      {
+        "base": "second",
+        "power": 1
+      }
+    ]
+  }
 }

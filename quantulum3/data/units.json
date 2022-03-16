@@ -62,7 +62,7 @@
     "URI": "Per_mille",
     "dimensions": [],
     "symbols": [
-      "\u2030"
+      "‰"
     ]
   },
   "parts-per-million": {
@@ -115,7 +115,7 @@
     "dimensions": [],
     "symbols": [
       "bp",
-      "\u2031"
+      "‱"
     ]
   },
   "count": {
@@ -155,7 +155,7 @@
       "M",
       "k",
       "m",
-      "\u00b5",
+      "µ",
       "n",
       "p",
       "f",
@@ -179,7 +179,7 @@
     ],
     "symbols": [
       "fb-1",
-      "fb\u22121"
+      "fb−1"
     ]
   },
   "metre": {
@@ -259,7 +259,7 @@
     "URI": "Micrometre",
     "dimensions": [],
     "symbols": [
-      "\u00b5m"
+      "µm"
     ]
   },
   "light-year": {
@@ -368,7 +368,7 @@
     "symbols": [
       "ft",
       "'",
-      "\u2032"
+      "′"
     ]
   },
   "cubit": {
@@ -399,23 +399,23 @@
     "symbols": [
       "in",
       "\"",
-      "\u2033",
-      "\u201d"
+      "″",
+      "”"
     ]
   },
-  "\u00e5ngstr\u00f6m": {
+  "ångström": {
     "surfaces": [
       "Angstrom",
-      "\u00e5ngstr\u00f6m",
-      "\u00e5ngstrom",
-      "angstr\u00f6m",
+      "ångström",
+      "ångstrom",
+      "angström",
       "angstrom"
     ],
     "entity": "length",
-    "URI": "\u00c5ngstr\u00f6m",
+    "URI": "Ångström",
     "dimensions": [],
     "symbols": [
-      "\u00c5"
+      "Å"
     ]
   },
   "twip": {
@@ -435,7 +435,7 @@
     "URI": "Solar_mass",
     "dimensions": [],
     "symbols": [
-      "M\u2609"
+      "M☉"
     ]
   },
   "earth mass": {
@@ -446,7 +446,7 @@
     "URI": "Earth_mass",
     "dimensions": [],
     "symbols": [
-      "M\u2295"
+      "M⊕"
     ]
   },
   "short ton": {
@@ -518,7 +518,7 @@
     "URI": "Microgram",
     "dimensions": [],
     "symbols": [
-      "\u00b5g",
+      "µg",
       "mcg"
     ]
   },
@@ -560,7 +560,7 @@
     "dimensions": [],
     "symbols": [
       "oz",
-      "\u2125"
+      "℥"
     ]
   },
   "ton": {
@@ -665,7 +665,7 @@
     "URI": "Euro",
     "dimensions": [],
     "symbols": [
-      "\u20ac",
+      "€",
       "EUR"
     ],
     "currency_code": "EUR"
@@ -679,7 +679,7 @@
     "URI": "Pound_sterling",
     "dimensions": [],
     "symbols": [
-      "\u00a3",
+      "£",
       "GBP"
     ],
     "currency_code": "GBP"
@@ -732,9 +732,9 @@
     "URI": "Japanese_yen",
     "dimensions": [],
     "symbols": [
-      "\u5186",
-      "\u5713",
-      "\u00a5",
+      "円",
+      "圓",
+      "¥",
       "JPY"
     ],
     "currency_code": "JPY"
@@ -802,7 +802,7 @@
     "URI": "Indian_rupee",
     "dimensions": [],
     "symbols": [
-      "\u20b9",
+      "₹",
       "INR"
     ],
     "currency_code": "INR"
@@ -831,7 +831,7 @@
     "URI": "Russian_ruble",
     "dimensions": [],
     "symbols": [
-      "\u20bd",
+      "₽",
       "RUB"
     ],
     "currency_code": "RUB"
@@ -845,8 +845,8 @@
     "URI": "Chinese_yuan",
     "dimensions": [],
     "symbols": [
-      "\u00a5",
-      "\u5143",
+      "¥",
+      "元",
       "CNY"
     ],
     "currency_code": "CNY"
@@ -861,8 +861,8 @@
     "URI": "South_Korean_won",
     "dimensions": [],
     "symbols": [
-      "\uc6d0",
-      "\u20a9",
+      "원",
+      "₩",
       "KRW"
     ],
     "currency_code": "KRW"
@@ -940,8 +940,8 @@
       }
     ],
     "symbols": [
-      "\u00b5l",
-      "\u00b5L"
+      "µl",
+      "µL"
     ]
   },
   "litre": {
@@ -963,7 +963,7 @@
       "l",
       "L",
       "ltr",
-      "\u2113"
+      "ℓ"
     ]
   },
   "centilitre": {
@@ -1254,7 +1254,7 @@
     "dimensions": [],
     "symbols": [
       "K",
-      "\u00b0K"
+      "°K"
     ]
   },
   "degree Celsius": {
@@ -1271,7 +1271,7 @@
     "dimensions": [],
     "symbols": [
       "C",
-      "\u00b0C"
+      "°C"
     ]
   },
   "degree fahrenheit": {
@@ -1284,7 +1284,7 @@
     "dimensions": [],
     "symbols": [
       "F",
-      "\u00b0F"
+      "°F"
     ]
   },
   "degree rankine": {
@@ -1296,8 +1296,8 @@
     "URI": "Rankine_scale",
     "dimensions": [],
     "symbols": [
-      "\u00b0R",
-      "\u00b0Ra"
+      "°R",
+      "°Ra"
     ]
   },
   "circular mil": {
@@ -1448,7 +1448,7 @@
     "dimensions": [],
     "symbols": [
       "Pa",
-      "\u33a9"
+      "㎩"
     ]
   },
   "hectopascal": {
@@ -1471,7 +1471,7 @@
     "dimensions": [],
     "symbols": [
       "kPa",
-      "\u33aa"
+      "㎪"
     ]
   },
   "megapascal": {
@@ -1510,7 +1510,7 @@
       "d",
       "c",
       "m",
-      "\u00b5"
+      "µ"
     ]
   },
   "pound per square inch": {
@@ -1962,7 +1962,7 @@
       "f",
       "p",
       "n",
-      "\u00b5",
+      "µ",
       "m",
       "k",
       "M",
@@ -2172,7 +2172,7 @@
       "s",
       "sec",
       "\"",
-      "\u2033"
+      "″"
     ]
   },
   "millisecond": {
@@ -2189,15 +2189,15 @@
   },
   "microsecond": {
     "surfaces": [
-      "\u00b5s",
+      "µs",
       "microsecond"
     ],
     "entity": "time",
     "URI": "Microsecond",
     "dimensions": [],
     "symbols": [
-      "\u03bcs",
-      "\u03bcsec"
+      "μs",
+      "μsec"
     ]
   },
   "nanosecond": {
@@ -2222,7 +2222,7 @@
     "symbols": [
       "min",
       "'",
-      "\u2032"
+      "′"
     ]
   },
   "hour": {
@@ -2489,11 +2489,11 @@
       "arcdegree",
       "angular degree"
     ],
-    "entity": "angle",
+    "entity": "angular measure",
     "URI": "Degree_(angle)",
     "dimensions": [],
     "symbols": [
-      "\u00b0",
+      "°",
       "deg",
       "arcdeg"
     ]
@@ -2502,12 +2502,12 @@
     "surfaces": [
       "radian"
     ],
-    "entity": "angle",
+    "entity": "angular measure",
     "URI": "Radian",
     "dimensions": [],
     "symbols": [
       "rad",
-      "\u33ad"
+      "㎭"
     ]
   },
   "steradian": {
@@ -2515,7 +2515,7 @@
       "steradian",
       "square radian"
     ],
-    "entity": "angle",
+    "entity": "angular measure",
     "URI": "Steradian",
     "dimensions": [],
     "symbols": [
@@ -2531,12 +2531,12 @@
       "angular minute",
       "arc minute"
     ],
-    "entity": "angle",
+    "entity": "angular measure",
     "URI": "Minute_and_second_of_arc",
     "dimensions": [],
     "symbols": [
       "'",
-      "\u2032",
+      "′",
       "MOA",
       "arcmin",
       "amin"
@@ -2551,12 +2551,12 @@
       "angular second",
       "arc second"
     ],
-    "entity": "angle",
+    "entity": "angular measure",
     "URI": "Minute_and_second_of_arc",
     "dimensions": [],
     "symbols": [
       "\"",
-      "\u2033",
+      "″",
       "SOA",
       "arcsec",
       "asec"
@@ -3227,7 +3227,7 @@
     "dimensions": [],
     "symbols": [
       "Hz",
-      "\u3390",
+      "㎐",
       "rps"
     ],
     "prefixes": [
@@ -3295,7 +3295,7 @@
     "URI": "Coulomb",
     "dimensions": [],
     "symbols": [
-      "\u00b5C"
+      "µC"
     ]
   },
   "ampere-hour": {
@@ -3359,7 +3359,7 @@
       "f",
       "p",
       "n",
-      "\u00b5",
+      "µ",
       "m",
       "k",
       "M",
@@ -3404,8 +3404,8 @@
     "URI": "Ohm",
     "dimensions": [],
     "symbols": [
-      "\u2126",
-      "\u03a9"
+      "Ω",
+      "Ω"
     ],
     "prefixes": [
       "m",
@@ -3464,7 +3464,7 @@
       "F"
     ],
     "prefixes": [
-      "\u00b5",
+      "µ",
       "m",
       "k",
       "M",
@@ -3536,7 +3536,7 @@
     "URI": "Weber_(unit)",
     "dimensions": [],
     "symbols": [
-      "\u00b5Wb"
+      "µWb"
     ]
   },
   "maxwell": {
@@ -3653,7 +3653,7 @@
   "roentgen": {
     "surfaces": [
       "roentgen",
-      "r\u00f6ntgen"
+      "röntgen"
     ],
     "entity": "radiation exposure",
     "URI": "Roentgen_(unit)",
@@ -4003,7 +4003,7 @@
       "darcy",
       "darcy unit"
     ],
-    "entity": "permeability",
+    "entity": "magnetic permeability",
     "URI": "Darcy_(unit)",
     "dimensions": [],
     "symbols": []
@@ -4096,7 +4096,7 @@
     "URI": "Cent_(currency)",
     "dimensions": [],
     "symbols": [
-      "\u00a2",
+      "¢",
       "c",
       "cts",
       "Ct."
@@ -4110,7 +4110,7 @@
     "URI": "Centavo",
     "dimensions": [],
     "symbols": [
-      "\u00a2",
+      "¢",
       "c",
       "cts",
       "ctvs",
@@ -4211,7 +4211,7 @@
     "URI": "Mill_(currency)",
     "dimensions": [],
     "symbols": [
-      "\u20a5"
+      "₥"
     ]
   },
   "dime": {
@@ -4222,7 +4222,7 @@
     "URI": "Dime_(United_States_coin)",
     "dimensions": [],
     "symbols": [
-      "\u20ab"
+      "₫"
     ]
   },
   "quantum bit": {

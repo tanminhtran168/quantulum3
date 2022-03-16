@@ -55,7 +55,7 @@ def ranges(lang=const.LANG):
 
 
 def uncertainties(lang=const.LANG):
-    uncertainties_ = {r"\+/-", r"±"}
+    uncertainties_ = {r"\+/-", r"±", r"\+"}
     uncertainties_.update(_get_regex(lang).UNCERTAINTIES)
     return uncertainties_
 
@@ -251,13 +251,13 @@ def range_pattern(lang=const.LANG):
     num_pattern_no_groups = number_pattern_no_groups(lang)
     return r"""                        # Pattern for a range of numbers
 
-    (?:                                    # First number
-        (?<![a-zA-Z0-9+.-])                # lookbehind, avoid "Area51"
+    (?:                                     # First number
+        (?<![a-zA-Z0-9+.-])                 # lookbehind, avoid "Area51"
         %s
     )
-    (?:                                    # Second number
-        \ ?(?:(?:-\ )?(?:%s|%s))\ ?  # Group for ranges or uncertainties
-    %s)?
+    (?:                                    
+        \ ?(?:(?:-\ )?(?:%s|%s))\ ?         # Group for ranges or uncertainties
+    %s)?                                    # Second number
 
     """ % (
         num_pattern_no_groups,
@@ -277,7 +277,7 @@ def text_pattern_reg(lang=const.LANG):
 
 
 ###############################################################################
-def units_regex(lang=const.LANG):
+def units_regex(lang=const.LANG, has_value=True):
     """
     Build a compiled regex object. Groups of the extracted items, with 4
     repetitions, are:
@@ -310,8 +310,8 @@ def units_regex(lang=const.LANG):
 
     """
 
+    # TODO different unit in number range. e.g: "124 keV - 300+ GeV"
     op_keys = sorted(list(operators(lang)), key=len, reverse=True)
-    # print('op_keys =', op_keys)
     unit_keys = sorted(
         list(load.units(lang).surfaces.keys()) + list(load.units(lang).symbols.keys()),
         key=len,
@@ -326,21 +326,39 @@ def units_regex(lang=const.LANG):
     all_ops = "|".join([r"{}".format(re.escape(i)) for i in op_keys])
     all_units = "|".join([r"{}".format(re.escape(i)) for i in unit_keys])
     all_symbols = "|".join([r"{}".format(re.escape(i)) for i in symbol_keys])
-
-    pattern = r"""
-        (?<!\w)                                     # "begin" of word
-        (?P<prefix>(?:%s)(?![a-zA-Z]))?         # Currencies, mainly
-        (?P<value>%s)-?                           # Number
-        (?:(?P<operator1>%s(?=(%s)%s))?(?P<unit1>(?:%s)%s)?)    # Operator + Unit (1)
-        (?:(?P<operator2>%s(?=(%s)%s))?(?P<unit2>(?:%s)%s)?)    # Operator + Unit (2)
-        (?:(?P<operator3>%s(?=(%s)%s))?(?P<unit3>(?:%s)%s)?)    # Operator + Unit (3)
-        (?:(?P<operator4>%s(?=(%s)%s))?(?P<unit4>(?:%s)%s)?)    # Operator + Unit (4)
-        (?!\w)                                      # "end" of word
-    """ % tuple(
-        [all_symbols, range_pattern(lang)]
-        + 4 * [all_ops, all_units, exponent, all_units, exponent]
-    )
-
+    if has_value:
+        pattern = r"""
+            (?<!\w)                                     # "begin" of word
+            (?P<prefix>(?:%s)(?![a-zA-Z]))?         # Currencies, mainly
+            (?P<value>%s)[+-]?                           # Number
+            (?:(?P<operator1>%s(?=(%s)%s))?(?P<unit1>(?:%s)%s)?)    # Operator + Unit (1)
+            (?:(?P<operator2>%s(?=(%s)%s))?(?P<unit2>(?:%s)%s)?)    # Operator + Unit (2)
+            (?:(?P<operator3>%s(?=(%s)%s))?(?P<unit3>(?:%s)%s)?)    # Operator + Unit (3)
+            (?:(?P<operator4>%s(?=(%s)%s))?(?P<unit4>(?:%s)%s)?)    # Operator + Unit (4)
+            (?!\w)                                      # "end" of word
+        """ % tuple(
+            [all_symbols, range_pattern(lang)]
+            + 4 * [all_ops, all_units, exponent, all_units, exponent]
+        )
+    else:
+        pattern = r"""
+                    (?P<scale>               # optional exponent
+                        (?:P<multipliers>)?                #   multiplicative operators
+                        (?P<base>(E|e|\d+)\^?)    #   required exponent prefix
+                        (?P<exponent>[+-]?\d+|[P<superscript>]) # required exponent, superscript
+                                                              # or normal
+                    )?
+                    (?<!\w)                                     # "begin" of word
+                    (?P<prefix>(?:%s)(?![a-zA-Z]))?         # Currencies, mainly
+                    (?:(?P<operator1>%s(?=(%s)%s))?(?P<unit1>(?:%s)%s)?)    # Operator + Unit (1)
+                    (?:(?P<operator2>%s(?=(%s)%s))?(?P<unit2>(?:%s)%s)?)    # Operator + Unit (2)
+                    (?:(?P<operator3>%s(?=(%s)%s))?(?P<unit3>(?:%s)%s)?)    # Operator + Unit (3)
+                    (?:(?P<operator4>%s(?=(%s)%s))?(?P<unit4>(?:%s)%s)?)    # Operator + Unit (4)
+                    (?!\w)                                      # "end" of word
+                """ % tuple(
+            [all_symbols]
+            + 4 * [all_ops, all_units, exponent, all_units, exponent]
+        )
     regex = re.compile(pattern, re.VERBOSE | re.IGNORECASE)
 
     return regex
